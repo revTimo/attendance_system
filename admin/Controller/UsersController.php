@@ -142,6 +142,16 @@ class UsersController extends AppController {
 		}
 	}
 
+	//管理者追加
+	public function add_member ()
+	{
+		if ($this->request->is('get'))
+		{
+			return;
+		}
+		
+	}
+
 	//ユーザー削除
 	public function delete ($id = null)
 	{

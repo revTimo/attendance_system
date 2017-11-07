@@ -1,3 +1,26 @@
+<!-- 管理者追加 -->
+<div class="row">
+  <div class="col-sm-12">
+    <div class="panel panel-primary">
+      <div class="panel-heading"><strong>管理者追加</strong></div>
+        <div class="panel-body">  
+          <?= $this->Form->create('User',['url' => 'add_member'])?>
+          <div class="form-group">
+            <label for="name">管理者名</label>
+            <?= $this->Form->input('name',['label' => false,'class' => 'form-control']) ?>
+          </div>
+          <div class="form-group">
+            <label for="email">メールアドレス</label>
+            <?= $this->Form->input('email',['label' => false,'class' => 'form-control','placeholder'=>'招待する人のメールアドレスを入力してください']) ?>
+          </div>
+          <button type="submit" class="btn btn-primary">管理者追加</button>
+          <?= $this->Form->end() ?>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- 管理者一覧 -->
 <div class="row">
   <div class="col-sm-12">
     <div class="panel panel-primary">
