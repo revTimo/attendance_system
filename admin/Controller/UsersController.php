@@ -55,7 +55,7 @@ class UsersController extends AppController {
 		return $this->redirect($this->Auth->redirect());
 	}
 
-	public function register ()
+	public function register ($status = null)
 	{
 		$this->layout = 'login_register';
 		//method -> post のみ
@@ -148,8 +148,7 @@ class UsersController extends AppController {
 		if ($this->request->is('get'))
 		{
 			return;
-		}
-		
+		}	
 	}
 
 	//ユーザー削除

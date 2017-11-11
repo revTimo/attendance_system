@@ -18,7 +18,7 @@
       <label for="email">新しいパスワード</label>
       <?= $this->Form->input('password',['label' => false,'class' => 'form-control','type' => 'password']) ?>
     </div>
-    <a href="member" class="btn btn-primary">戻る</a>
+    <a href="index" class="btn btn-primary">戻る</a>
     <button type="submit" class="btn btn-primary">編集</button>
     <?= $this->Form->end() ?>
   </div>

@@ -19,6 +19,7 @@
 	<?= $this->Html->css('../dist/css/skins/skin-blue.min') ?>
 	<!-- Google Font -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -181,7 +182,7 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>出席一覧</span></a></li>
+        <li class="active"><a href="/attendance_system/admin/attendances/index"><i class="fa fa-link"></i> <span>出席一覧</span></a></li>
         <li><a href="/attendance_system/admin/users/index"><i class="fa fa-link"></i> <span>管理者</span></a></li>
         <li class="treeview">
           <a href="#"><i class="fa fa-link"></i> <span>学生管理</span>
@@ -190,8 +191,10 @@
               </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#">学生登録</a></li>
-            <li><a href="#">Link in level 2</a></li>
+            <li><a href="/attendance_system/admin/students/add_student">学生登録</a></li>
+            <li><a href="/attendance_system/admin/students/index">学生一覧</a></li>
+            <li><a href="/attendance_system/admin/students/index">教室</a></li>
+            <li><a href="/attendance_system/admin/subjects/index">学科</a></li>
           </ul>
         </li>
         <li><a href="#"><i class="fa fa-link"></i> <span>お知らせ</span></a></li>
@@ -302,20 +305,10 @@
 <!-- ./wrapper -->
 
 <!-- REQUIRED JS SCRIPTS -->
-
-<!-- jQuery 3.1.1 -->
-<!-- Latest compiled and minified JavaScript -->
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
-<!-- <script src="plugins/jQuery/jquery-3.1.1.min.js"></script> -->
-<?= $this->Html->script('../plugins/jQuery/jquery-3.1.1.min') ?>
-<!-- Bootstrap 3.3.7 -->
-<!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
 <?= $this->Html->script('../bootstrap/js/bootstrap.min') ?>
 <!-- AdminLTE App -->
-<!-- <script src="dist/js/adminlte.min.js"></script> -->
 <?= $this->Html->script('../dist/js/adminlte.min')?>
-<!-- Optionally, you can add Slimscroll and FastClick plugins.
-     Both of these plugins are recommended to enhance the
-     user experience. -->
+<?= $this->Html->script('../plugins/datatables/jquery.dataTables.min') ?>
+<?= $this->Html->script('../plugins/datatables/dataTables.bootstrap.min') ?>
 </body>
 </html>

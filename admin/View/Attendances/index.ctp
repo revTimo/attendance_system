@@ -1,1 +1,2 @@
-ログイン後
+attendances page
+出席一覧
