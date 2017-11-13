@@ -7,9 +7,18 @@ class SubjectsController extends AppController {
 	];
 	public function index ()
 	{
-
+		$data = $this->Major->find('all', [
+			'conditions' => [
+				'school_id' => $this->Auth->user('school_id'),
+			],
+			'order' => [
+				'Major.modified' => 'desc'
+			],
+		]);
+		$this->set('majors_subjects', $data);
 	}
 
+	//専攻や科目を入力した後確認画面
 	public function confirm_subject ()
 	{
 		if ($this->request->is('get'))
@@ -19,6 +28,7 @@ class SubjectsController extends AppController {
 		$this->set('major_subjects',$this->request->data);
 	}
 
+	//学科登録
 	public function add_subject ()
 	{
 		if ($this->request->is('get'))
@@ -28,6 +38,7 @@ class SubjectsController extends AppController {
 
 		$major = [
 			'name' => $this->request->data['Subject']['major_name'],
+			'school_id' => $this->Auth->user('school_id'),
 		];
 		$subjects = [];
 		try
@@ -48,6 +59,7 @@ class SubjectsController extends AppController {
 				$subjects[] = [
 					'major_id' => $this->Major->id,
 					'name' => $value,
+					'school_id' => $this->Auth->user('school_id'),
 				];
 			}
 
@@ -70,5 +82,11 @@ class SubjectsController extends AppController {
 		//成功
 		$this->Flash->setFlashSuccess('登録完了しました');
 		return $this->redirect(['action' => 'index']);
+	}
+
+	public function edit ($id = null)
+	{
+		pr($id);
+		exit;
 	}
 }

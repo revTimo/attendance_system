@@ -182,8 +182,37 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
+        <?php if($this->request->params['controller'] == 'attendances') :?>
         <li class="active"><a href="/attendance_system/admin/attendances/index"><i class="fa fa-link"></i> <span>出席一覧</span></a></li>
+        <?php else :?>
+        <li><a href="/attendance_system/admin/attendances/index"><i class="fa fa-link"></i> <span>出席一覧</span></a></li>
+        <?php endif ?>
+        <?php if($this->request->params['controller'] == 'users') :?>
+        <li class="active"><a href="/attendance_system/admin/users/index"><i class="fa fa-link"></i> <span>管理者</span></a></li>
+        <?php else :?>
         <li><a href="/attendance_system/admin/users/index"><i class="fa fa-link"></i> <span>管理者</span></a></li>
+        <?php endif ?>
+        <?php if($this->request->params['controller'] == 'students') :?>
+        <li class="treeview active">
+          <a href="#"><i class="fa fa-link"></i> <span>学生管理</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <?php if($this->request->params['action'] == 'add_student') :?>
+            <li class="active"><a href="/attendance_system/admin/students/add_student">学生登録</a></li>
+            <?php else :?>
+            <li><a href="/attendance_system/admin/students/add_student">学生登録</a></li>
+            <?php endif ?>
+            <?php if($this->request->params['action'] == 'index') :?>
+            <li class="active"><a href="/attendance_system/admin/students/index">学生一覧</a></li>
+            <?php else:?>
+            <li><a href="/attendance_system/admin/students/index">学生一覧</a></li>
+            <?php endif ?>
+          </ul>
+        </li>
+        <?php else :?>
         <li class="treeview">
           <a href="#"><i class="fa fa-link"></i> <span>学生管理</span>
             <span class="pull-right-container">
@@ -193,10 +222,15 @@
           <ul class="treeview-menu">
             <li><a href="/attendance_system/admin/students/add_student">学生登録</a></li>
             <li><a href="/attendance_system/admin/students/index">学生一覧</a></li>
-            <li><a href="/attendance_system/admin/students/index">教室</a></li>
-            <li><a href="/attendance_system/admin/subjects/index">学科</a></li>
           </ul>
         </li>
+        <?php endif ?>
+        <?php if($this->request->params['controller'] == 'subjects') :?>
+        <li class="active"><a href="/attendance_system/admin/subjects/index">学科</a></li>
+        <?php else :?>
+        <li><a href="/attendance_system/admin/subjects/index">学科</a></li>
+        <?php endif ?>
+        <li><a href="#">教室</a></li>
         <li><a href="#"><i class="fa fa-link"></i> <span>お知らせ</span></a></li>
       </ul>
       <!-- /.sidebar-menu -->

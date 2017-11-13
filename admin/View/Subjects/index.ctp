@@ -28,43 +28,33 @@
    <div class="box-header">
       <h3 class="box-title">学科一覧</h3>
    </div>
-   <!-- /.box-header -->
    <div class="box-body">
       <table id="example1" class="table table-bordered table-striped">
          <thead>
             <tr>
-               <th>Rendering engine</th>
-               <th>Browser</th>
-               <th>Platform(s)</th>
-               <th>Engine version</th>
-               <th>CSS grade</th>
+               <th>専攻</th>
+               <th>科目</th>
+               <th>編集</th>
+               <th>削除</th>
             </tr>
          </thead>
          <tbody>
+         	<?php foreach ($majors_subjects as $data) : ?>
             <tr>
-               <td>Trident</td>
-               <td>Internet
-                  Explorer 4.0
-               </td>
-               <td>Win 95+</td>
-               <td> 4</td>
-               <td>X</td>
+               <td><?= $data['Major']['name'] ?></td>
+               <td>
+               	<?php foreach($data['Subject'] as $sub) :?>
+               	<?= $sub['name']?>
+               	<?php endforeach ?>
+               	</td>
+               	<td><a href="edit/<?= $data['Major']['id']?>">edit</a></td>
+               	<td><a href="">delete</a></td>
             </tr>
+        	<?php endforeach ?>
          </tbody>
-         <tfoot>
-            <tr>
-               <th>Rendering engine</th>
-               <th>Browser</th>
-               <th>Platform(s)</th>
-               <th>Engine version</th>
-               <th>CSS grade</th>
-            </tr>
-         </tfoot>
       </table>
    </div>
-   <!-- /.box-body -->
 </div>
-<!-- /.box -->
 
 
 <script>
