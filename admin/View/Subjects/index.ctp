@@ -47,8 +47,8 @@
                	<?= $sub['name']?>
                	<?php endforeach ?>
                	</td>
-               	<td><a href="edit/<?= $data['Major']['id']?>">edit</a></td>
-               	<td><a href="">delete</a></td>
+               	<td><a href="/attendance_system/admin/subjects/edit/<?= $data['Major']['id']?>">edit</a></td>
+               	<td><a href="/attendance_system/admin/subjects/delete/<?= $data['Major']['id']?>">delete</a></td>
             </tr>
         	<?php endforeach ?>
          </tbody>
