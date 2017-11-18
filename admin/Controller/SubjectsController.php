@@ -5,6 +5,7 @@ class SubjectsController extends AppController {
 		'Subject',
 		'Major',
 	];
+	
 	public function index ()
 	{
 		$data = $this->Major->find('all', [

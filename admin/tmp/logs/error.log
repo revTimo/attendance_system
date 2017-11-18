@@ -8478,3 +8478,681 @@ Stack Trace:
 #1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
 #2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2017-11-18 14:23:20 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:24:04 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/admin/students/add_student
+Stack Trace:
+#0 [internal function]: StudentsController->add_student()
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-11-18 14:24:05 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:24:57 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:28:09 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:28:35 Error: [MissingActionException] Action StudentsController::register() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'register',
+)
+Request URL: /attendance_system/admin/students/register/member_add
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:28:36 Error: [MissingActionException] Action StudentsController::register() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'register',
+)
+Request URL: /attendance_system/admin/students/register/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:29:22 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:29:24 Error: [MissingActionException] Action StudentsController::register() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'register',
+)
+Request URL: /attendance_system/admin/students/register/member_add
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:29:25 Error: [MissingActionException] Action StudentsController::register() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'register',
+)
+Request URL: /attendance_system/admin/students/register/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:29:27 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:31:50 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:33:59 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:35:36 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:44:50 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:45:12 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:45:14 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:45:27 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:46:22 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:49:32 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:52:57 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:54:07 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:54:34 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:55:46 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:55:55 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:58:11 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 15:00:23 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 15:00:44 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 15:01:09 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 15:02:29 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 15:10:45 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 15:13:21 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 15:13:40 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 15:21:50 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 15:22:14 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 15:23:20 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 15:24:51 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 15:25:00 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 15:25:11 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 15:25:26 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 15:25:42 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 15:26:16 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 16:40:50 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 16:41:13 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 16:41:24 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 16:43:03 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 16:43:13 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 16:43:37 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 16:43:50 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 16:44:00 Error: Fatal Error (64): Cannot use [] for reading in [/home/tuang/attendance_system/admin/View/Students/index.ctp, line 25]
+2017-11-18 16:44:00 Error: [FatalErrorException] Cannot use [] for reading
+Request URL: /attendance_system/admin/students/index
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', '/home/tuang/att...', 25)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Cannot use [] f...', '/home/tuang/att...', 25, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-11-18 16:44:01 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 16:44:07 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 16:44:29 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 16:44:31 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 16:44:47 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 16:44:48 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 16:45:56 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 16:47:48 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 16:50:17 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 16:50:29 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 16:50:47 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 16:53:36 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

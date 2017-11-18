@@ -5,9 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>出席管理</title>
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-	<!-- Bootstrap 3.3.7 -->
-	<!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
   <?= $this->Html->css ('../bootstrap/css/bootstrap.min.css')?>
+  <?= $this->Html->css ('style')?>
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 	<!-- Ionicons -->
@@ -60,7 +59,7 @@
                     <a href="#">
                       <div class="pull-left">
                         <!-- User Image -->
-                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <img src="" class="img-circle" alt="User Image">
                       </div>
                       <!-- Message title and timestamp -->
                       <h4>
@@ -344,5 +343,30 @@
 <?= $this->Html->script('../dist/js/adminlte.min')?>
 <?= $this->Html->script('../plugins/datatables/jquery.dataTables.min') ?>
 <?= $this->Html->script('../plugins/datatables/dataTables.bootstrap.min') ?>
+<script>
+  $(function () {
+    //日本語にする
+    $.extend( $.fn.dataTable.defaults, { 
+      language: {
+        url: "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Japanese.json"
+      }
+    });
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    });
+  });
+    //checkbox 複数削除したい
+  $(function(){
+    $('.checkbox').click(function(){
+      $('#off').prop('disabled', !$('.checkbox:checked').length);
+    })
+  })
+</script>
 </body>
 </html>

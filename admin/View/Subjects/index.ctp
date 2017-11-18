@@ -29,7 +29,7 @@
 		<h3 class="box-title">学科一覧</h3>
 	</div>
 	<div class="box-body">
-		<form id="multi_delete" method="post" action="/attendance_system/admin/subjects/delete" onsubmit="return confirm('複数の専攻と科目が削除されます。よろしいいですか');">
+		<form id="multi_delete" method="post" action="/attendance_system/admin/subjects/delete" onsubmit="return confirm('選択されている全ての専攻と科目が削除されます。よろしいですか');">
 			<button type="submit" name="multi_delete_btn" disabled class="btn btn-danger" id="off">選択した専攻を削除する</button><br><br>
 			<table id="example1" class="table table-bordered table-striped">
 				<thead>
@@ -73,29 +73,4 @@
 	function remove_item(target) {
 		$(target).parents('.sub').remove();
 	}
-
-	$(function () {
-		//日本語にする
-		$.extend( $.fn.dataTable.defaults, { 
-			language: {
-				url: "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Japanese.json"
-			}
-		});
-		$('#example1').DataTable()
-		$('#example2').DataTable({
-			'paging'      : true,
-			'lengthChange': false,
-			'searching'   : false,
-			'ordering'    : true,
-			'info'        : true,
-			'autoWidth'   : false
-		});
-	});
-
-	//checkbox 複数削除したい
-	$(function(){
-		$('.checkbox').click(function(){
-			$('#off').prop('disabled', !$('.checkbox:checked').length);
-		})
-	})
 </script>
