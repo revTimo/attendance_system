@@ -25,39 +25,43 @@
 
 <!-- 一覧 -->
 <div class="box">
-   <div class="box-header">
-      <h3 class="box-title">学科一覧</h3>
-   </div>
-   <div class="box-body">
-      <table id="example1" class="table table-bordered table-striped">
-         <thead>
-            <tr>
-               <th>専攻</th>
-               <th>科目</th>
-               <th>編集</th>
-               <th>削除</th>
-            </tr>
-         </thead>
-         <tbody>
-         	<?php foreach ($majors_subjects as $data) : ?>
-            <tr>
-               <td><?= $data['Major']['name'] ?></td>
-               <td>
-               	<?php foreach($data['Subject'] as $sub) :?>
-               	<?= $sub['name']?>
-               	<?php endforeach ?>
-               	</td>
-               	<td><a href="/attendance_system/admin/subjects/edit/<?= $data['Major']['id']?>">edit</a></td>
-               	<td><a href="/attendance_system/admin/subjects/delete/<?= $data['Major']['id']?>">delete</a></td>
-            </tr>
-        	<?php endforeach ?>
-         </tbody>
-      </table>
-   </div>
+	<div class="box-header">
+		<h3 class="box-title">学科一覧</h3>
+	</div>
+	<div class="box-body">
+		<form id="multi_delete" method="post" action="/attendance_system/admin/subjects/delete" onsubmit="return confirm('複数の専攻と科目が削除されます。よろしいいですか');">
+			<button type="submit" name="multi_delete_btn" disabled class="btn btn-danger" id="off">選択した専攻を削除する</button><br><br>
+			<table id="example1" class="table table-bordered table-striped">
+				<thead>
+					<tr>
+						<th>専攻</th>
+						<th>科目</th>
+						<th>編集</th>
+						<th>削除</th>
+					</tr>
+				</thead>
+				<tbody>
+					<?php foreach ($majors_subjects as $data) : ?>
+						<tr>
+							<td><input type="checkbox" name="deletedata[]" value="<?= $data['Major']['id']?>" class="checkbox"><?= $data['Major']['name'] ?></td>
+							<td>
+								<?php foreach($data['Subject'] as $sub) :?>
+									<?= $sub['name']?>
+								<?php endforeach ?>		
+							</td>
+							<td><a href="/attendance_system/admin/subjects/edit/<?= $data['Major']['id']?>">edit</a></td>
+							<td><a href="/attendance_system/admin/subjects/delete/<?= $data['Major']['id']?>" onclick="return confirm('専攻と科目を削除します、よろしいですか？');">delete</a></td>
+						</tr>
+					<?php endforeach ?>
+				</tbody>
+			</table>
+		</form>
+	</div>
 </div>
 
 
 <script>
+	//科目を追加
 	$(document).ready(function(){
 		var subject_clone_count = 1;
 		$("#subject_add").click(function(){
@@ -65,7 +69,7 @@
 			subject_clone_count++;
 		});
 	});
-
+	//追加したのを削除
 	function remove_item(target) {
 		$(target).parents('.sub').remove();
 	}
@@ -87,4 +91,11 @@
 			'autoWidth'   : false
 		});
 	});
+
+	//checkbox 複数削除したい
+	$(function(){
+		$('.checkbox').click(function(){
+			$('#off').prop('disabled', !$('.checkbox:checked').length);
+		})
+	})
 </script>

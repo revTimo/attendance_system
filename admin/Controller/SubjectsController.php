@@ -35,7 +35,6 @@ class SubjectsController extends AppController {
 		{
 			return;
 		}
-
 		$major = [
 			'name' => $this->request->data['Subject']['major_name'],
 			'school_id' => $this->Auth->user('school_id'),
@@ -53,23 +52,26 @@ class SubjectsController extends AppController {
 				return $this->redirect(['action' => 'index']);
 			}
 			
-			//専攻id　と　科目
-			foreach ($this->request->data['Subject']['subjects'] as $key => $value)
+			//科目があるときだけ
+			if (!empty($this->request->data['Subject']['subjects']))
 			{
-				$subjects[] = [
-					'major_id' => $this->Major->id,
-					'name' => $value,
-					'school_id' => $this->Auth->user('school_id'),
-				];
-			}
+				//専攻id　と　科目
+				foreach ($this->request->data['Subject']['subjects'] as $key => $value)
+				{
+					$subjects[] = [
+						'major_id' => $this->Major->id,
+						'name' => $value,
+						'school_id' => $this->Auth->user('school_id'),
+					];
+				}
 
-			if ($this->Subject->saveAll($subjects) == false)
-			{
-				$this->Subject->rollback();
-				$this->Flash->setFlashError('科目登録失敗');
-				return $this->redirect(['action' => 'index']);
-			}
-
+				if ($this->Subject->saveAll($subjects) == false)
+				{
+					$this->Subject->rollback();
+					$this->Flash->setFlashError('科目登録失敗');
+					return $this->redirect(['action' => 'index']);
+				}
+			}	
 			$this->Subject->commit();
 		}
 		catch (Exception $e)
@@ -189,36 +191,106 @@ class SubjectsController extends AppController {
 
 	public function delete ($id = null)
 	{
-		$subject_delete = $this->Major->find('first', [
-			'conditions' => [
-				'id' => $id,
-			],
-		]);
-		pr($subject_delete);
-		exit;
-		//無理やり存在しないidを入力して、アタック
-		if (empty($subject_delete))
+		//複数の削除の場合postになる
+		if ($this->request->is('post'))
 		{
-			return $this->redirect(['action' => 'index']);
-		}
-		//他の学校のidも編集できないように
-		if ($this->Auth->user('school_id') != $subject_delete['Major']['school_id'])
-		{
-			$this->Flash->setFlashError('不正アクセス');
-			return $this->redirect(['action' => 'index']);
+			//まずは削除する専攻idから関連科目全てを取得
+			$multi_delete_data = [];
+			foreach ($this->request->data['deletedata'] as $value)
+			{
+				$multi_delete_data[] = $this->Major->find('first', [
+					'conditions' => [
+						'id' => $value
+					],
+					'fields' => ['id']
+				]);
+			}
+			
+			//複数の専攻id
+			$major_ids = [];
+			//複数の科目のid
+			$subject_ids = [];
+			foreach ($multi_delete_data as $value)
+			{
+				$major_ids[] = $value['Major']['id'];
+				foreach ($value['Subject'] as $sub_value)
+				{
+					$subjects_ids[] = $sub_value['id'];
+				}
+			}
+			//削除するrecordのidsをセット
+			$this->Major->id = $major_ids;
+			//専攻だけ登録されている場合
+			if (!empty($subjects_ids))
+			{
+				$this->Subject->id = $subjects_ids;
+			}
 		}
 
+		//一個ずつで削除
+		if ($this->request->is('get'))
+		{
+			$subject_delete = $this->Major->find('first', [
+				'conditions' => [
+					'id' => $id,
+				],
+			]);
+			//無理やり存在しないidを入力して、アタック
+			if (empty($subject_delete))
+			{
+				return $this->redirect(['action' => 'index']);
+			}
+			//削除するrecordのidをセット
+			$this->Major->id = $id;
+			
+			//削除する科目のidまとめ
+			$subs_ids = [];
+			foreach ($subject_delete['Subject'] as $key => $value) {
+				$subs_ids[] = $value['id'];
+			}
+			//削除するrecordのidをセット
+			$this->Subject->id = $subs_ids;
+
+			//他の学校のidできないように
+			if ($this->Auth->user('school_id') != $subject_delete['Major']['school_id'])
+			{
+				$this->Flash->setFlashError('不正アクセス');
+				return $this->redirect(['action' => 'index']);
+			}
+		}
+
+		//POSTもGETも共通、削除処理
 		try
 		{
 			$this->Subject->begin();
-			$this->Major->id = $id;
-			if ($this->Major->deleteAll($subject_delete) == false)
+			
+			//専攻は１つだけなので固定ＩＤを指定して1rowだけを削除
+			if ($this->Major->delete() == false)
 			{
-				$this->Flash->setFlashError('削除失敗しました');
+				$this->Flash->setFlashError('専攻削除失敗しました');
 				return $this->redirect(['action' => 'index']);
 				$this->Subject->rollback();
 			}
+
+			//念のためもしsubjectsが空で入ってきた場合
+			if (empty($subs_ids) && empty($subjects_ids))
+			{
+				$this->Subject->commit();
+				$this->Flash->setFlashSuccess('専攻を削除しました');
+				return $this->redirect(['action' => 'index']);
+			}
+			
+			//科目は複数なのでidをまとめてdeleteで削除
+			if ($this->Subject->delete() == false)
+			{
+				$this->Flash->setFlashError('科目の削除が失敗');
+				return $this->redirect(['action' => 'index']);
+				$this->Subject->rollback();
+			}
+
 			$this->Subject->commit();
+			$this->Flash->setFlashSuccess('専攻と科目を削除しました');
+			return $this->redirect(['action' => 'index']);
 		}
 		catch(Exception $e)
 		{
@@ -226,8 +298,21 @@ class SubjectsController extends AppController {
 			$this->Flash->setFlashError('削除できませんでした'.$e);
 			return $this->redirect(['action' => 'index']);
 		}
+	}
 
-		$this->Flash->setFlashSuccess('専攻と科目を削除しました');
-		return $this->redirect(['action' => 'index']);
+	//編集画面の科目を削除
+	public function delete_edit ()
+	{
+		$this->autoRender = FALSE;
+		if ($this->request->is('ajax'))
+		{
+			if (empty($this->request->data['id']))
+			{
+				return;
+			}
+			$this->Subject->id = $this->request->data['id'];
+			$this->Subject->delete();
+			return;
+		}
 	}
 }

@@ -7289,3 +7289,1192 @@ Stack Trace:
 #4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
 #5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2017-11-15 15:18:44 Error: [MissingActionException] Action UsersController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/users/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-15 15:19:24 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-15 15:19:25 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-15 15:19:26 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-15 15:19:28 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-15 15:19:33 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-15 15:20:07 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 09:49:26 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 09:53:54 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 09:54:09 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 09:54:18 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 09:57:07 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 09:59:32 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 10:05:48 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 10:12:30 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /attendance_system/admin/subjects/index
+Stack Trace:
+#0 [internal function]: App::load('SubjectsControl...')
+#1 [internal function]: spl_autoload_call('SubjectsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SubjectsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-18 10:12:31 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 [internal function]: App::load('SubjectsControl...')
+#1 [internal function]: spl_autoload_call('SubjectsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SubjectsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-18 10:12:43 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 10:16:29 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 10:16:30 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 10:18:06 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 10:46:11 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 10:48:15 Error: [MissingControllerException] Controller class AttendanceSystemController could not be found.
+Exception Attributes: array (
+  'class' => 'AttendanceSystemController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/attendance_system/admin/subjects/delete
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-18 10:48:15 Error: [MissingControllerException] Controller class AttendanceSystemController could not be found.
+Exception Attributes: array (
+  'class' => 'AttendanceSystemController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-18 10:54:29 Error: [MissingActionException] Action UsersController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/users/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 10:54:32 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 10:56:49 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:02:26 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:04:21 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:04:42 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:05:22 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:15:42 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:16:11 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:16:30 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:18:02 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:18:18 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:20:05 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:20:27 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:32:08 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:38:41 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:38:50 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:44:26 Error: [ParseError] syntax error, unexpected '　' (T_STRING)
+Request URL: /attendance_system/admin/subjects/index
+Stack Trace:
+#0 [internal function]: App::load('SubjectsControl...')
+#1 [internal function]: spl_autoload_call('SubjectsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SubjectsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-18 11:44:26 Error: [ParseError] syntax error, unexpected '　' (T_STRING)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 [internal function]: App::load('SubjectsControl...')
+#1 [internal function]: spl_autoload_call('SubjectsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SubjectsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-18 11:44:49 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:45:01 Error: [ParseError] syntax error, unexpected '　' (T_STRING)
+Request URL: /attendance_system/admin/subjects/index
+Stack Trace:
+#0 [internal function]: App::load('SubjectsControl...')
+#1 [internal function]: spl_autoload_call('SubjectsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SubjectsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-18 11:45:01 Error: [ParseError] syntax error, unexpected '　' (T_STRING)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 [internal function]: App::load('SubjectsControl...')
+#1 [internal function]: spl_autoload_call('SubjectsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SubjectsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-18 11:45:18 Error: [ParseError] syntax error, unexpected '　' (T_STRING)
+Request URL: /attendance_system/admin/subjects/index
+Stack Trace:
+#0 [internal function]: App::load('SubjectsControl...')
+#1 [internal function]: spl_autoload_call('SubjectsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SubjectsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-18 11:45:19 Error: [ParseError] syntax error, unexpected '　' (T_STRING)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 [internal function]: App::load('SubjectsControl...')
+#1 [internal function]: spl_autoload_call('SubjectsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SubjectsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-18 11:45:19 Error: [ParseError] syntax error, unexpected '　' (T_STRING)
+Request URL: /attendance_system/admin/subjects/index
+Stack Trace:
+#0 [internal function]: App::load('SubjectsControl...')
+#1 [internal function]: spl_autoload_call('SubjectsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SubjectsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-18 11:45:19 Error: [ParseError] syntax error, unexpected '　' (T_STRING)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 [internal function]: App::load('SubjectsControl...')
+#1 [internal function]: spl_autoload_call('SubjectsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SubjectsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-18 11:45:55 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:46:17 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:46:30 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:47:55 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:48:07 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:54:04 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:54:15 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:54:28 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:54:35 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:56:21 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:56:34 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 11:58:40 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 12:35:44 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 12:35:58 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 12:37:43 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 12:40:00 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 12:40:03 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 12:40:04 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 12:40:07 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 12:44:19 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 12:44:21 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 12:44:24 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 12:46:45 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 12:46:50 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 12:49:38 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 12:50:01 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 12:50:17 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 13:05:19 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 13:08:48 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 13:08:49 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 13:27:02 Error: [MissingViewException] View file "Subjects/delete_edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Subjects/delete_edit.ctp',
+)
+Request URL: /attendance_system/admin/subjects/delete_edit
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(470): View->_getViewFileName('Subjects/delete...')
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-11-18 13:37:49 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 13:39:12 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /attendance_system/admin/subjects/confirm_subject
+Stack Trace:
+#0 [internal function]: App::load('SubjectsControl...')
+#1 [internal function]: spl_autoload_call('SubjectsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SubjectsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-18 13:39:12 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 [internal function]: App::load('SubjectsControl...')
+#1 [internal function]: spl_autoload_call('SubjectsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SubjectsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-18 13:39:38 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /attendance_system/admin/subjects
+Stack Trace:
+#0 [internal function]: App::load('SubjectsControl...')
+#1 [internal function]: spl_autoload_call('SubjectsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SubjectsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-18 13:39:39 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /attendance_system/admin/subjects
+Stack Trace:
+#0 [internal function]: App::load('SubjectsControl...')
+#1 [internal function]: spl_autoload_call('SubjectsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SubjectsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-18 13:40:06 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /attendance_system/admin/subjects
+Stack Trace:
+#0 [internal function]: App::load('SubjectsControl...')
+#1 [internal function]: spl_autoload_call('SubjectsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SubjectsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-18 13:40:31 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /attendance_system/admin/subjects
+Stack Trace:
+#0 [internal function]: App::load('SubjectsControl...')
+#1 [internal function]: spl_autoload_call('SubjectsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SubjectsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-18 13:41:29 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /attendance_system/admin/subjects
+Stack Trace:
+#0 [internal function]: App::load('SubjectsControl...')
+#1 [internal function]: spl_autoload_call('SubjectsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SubjectsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-18 13:42:23 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /attendance_system/admin/subjects
+Stack Trace:
+#0 [internal function]: App::load('SubjectsControl...')
+#1 [internal function]: spl_autoload_call('SubjectsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SubjectsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-18 13:42:42 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 13:51:07 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 13:51:11 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 13:51:20 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 13:51:51 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 13:54:29 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 13:55:32 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 13:55:41 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 13:56:45 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 13:58:53 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:00:57 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:01:11 Error: [MissingActionException] Action StudentsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/students/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:04:07 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:04:10 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:04:17 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:05:36 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:06:06 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:06:38 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:07:40 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:07:43 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-18 14:08:00 Error: [MissingActionException] Action SubjectsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'SubjectsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/subjects/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
