@@ -85,4 +85,26 @@ class AppController extends Controller {
 			$this->set('login_user',$this->Auth->user('name'));
 		}
 	}
+
+	// 学生編集と詳細ページ用
+	public function get_student($id = null)
+	{
+		$search_student = $this->Student->find('first', [
+			'conditions' => [
+				'id' => $id,
+				'school_id' => $this->Auth->user('school_id'),
+			],
+		]);
+
+		if (empty($search_student))
+		{
+			return $this->redirect(['action' => 'index']);
+		}
+		//自分の学校以外を編集できないようにする
+		if ($this->Auth->user('school_id') != $search_student['Student']['school_id'])
+		{
+			return $this->redirect(['action' => 'index']);
+		}
+		$this->set('edit_student', $search_student);
+	}
 }

@@ -15,6 +15,7 @@
 								<th>学生番号</th>
 								<th>学年</th>
 								<th>専攻名</th>
+								<th>学生の詳細</th>
 								<th>編集</th>
 								<th>削除</th>
 							</tr>
@@ -22,16 +23,23 @@
 						<tbody>
 							<?php foreach ($all_student as $data) : ?>
 								<tr>
-									<td><input type="checkbox" name="deletedata[]" value="<?= $data['Student']['id']?>" class="checkbox"><?= $data['Student']['name'] ?></td>
+									<td>
+										<input type="checkbox" name="deletedata[]" value="<?= $data['Student']['id']?>" class="checkbox">
+										<?= $data['Student']['name'] ?>
+									</td>
 									<td><?= $data['Student']['student_number']?></td>
 									<td><?= $data['Student']['grade']?></td>
 									<td>
-										<?php foreach($major as $data['Student']['major_id'] => $major_name) :?>
-											<?= $major_name ?>
-										<?php endforeach ?>
+										<?php
+											for($i=0;$i<count($data);$i++)
+											{
+												echo $major[$data['Student']['major_id']];
+											}
+										?>
 									</td>
-									<td><a href="/attendance_system/admin/subjects/edit/<?= $data['Student']['id']?>">edit</a></td>
-									<td><a href="/attendance_system/admin/subjects/delete/<?= $data['Student']['id']?>" onclick="return confirm('専攻と科目を削除します、よろしいですか？');">delete</a></td>
+									<td><a href="/attendance_system/admin/students/detail/<?= $data['Student']['id']?>/<?= $data['Student']['major_id']?>">詳細</a></td>
+									<td><a href="/attendance_system/admin/students/edit/<?= $data['Student']['id']?>">edit</a></td>
+									<td><a href="/attendance_system/admin/students/delete/<?= $data['Student']['id']?>" onclick="return confirm('学生を削除します、よろしいですか？');">delete</a></td>
 								</tr>
 							<?php endforeach ?>
 						</tbody>

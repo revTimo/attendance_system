@@ -14,5 +14,13 @@ class Student extends AppModel {
 			'rule' => 'isUnique',
 			'message' => '学生のメールアドレスが既に登録されています',
 		],
+		'image' => [
+			'rule' => [
+				'extension',
+				//['fileSize', '<=', '1MB'],
+				['jpeg', 'png', 'jpg'],
+			],
+			'message' => 'ファイルアップロードできませんでした。画像は 1MB 未満でなければなりません。有効な画像ファイルを指定してください。',
+		],
 	];
 }

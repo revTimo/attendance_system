@@ -9156,3 +9156,469 @@ Stack Trace:
 #1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
 #2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2017-11-21 10:06:14 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /attendance_system/admin/students/add_student
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('INSERT INTO `at...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1092): DboSource->execute('INSERT INTO `at...')
+#3 /home/tuang/attendance_system/lib/Cake/Model/Model.php(1940): DboSource->create(Object(Student), Array, Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(1758): Model->_doSave(Array, Array)
+#5 /home/tuang/attendance_system/admin/Controller/StudentsController.php(59): Model->save(Array)
+#6 [internal function]: StudentsController->add_student()
+#7 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#8 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#10 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-11-21 10:07:45 Error: [ParseError] syntax error, unexpected ''student_name'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+Request URL: /attendance_system/admin/students/add_student
+Stack Trace:
+#0 [internal function]: App::load('StudentsControl...')
+#1 [internal function]: spl_autoload_call('StudentsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('StudentsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-21 10:39:15 Error: [MissingActionException] Action StudentsController::cinqueterre.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'cinqueterre.jpg',
+)
+Request URL: /attendance_system/admin/students/cinqueterre.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-21 10:47:36 Error: [ParseError] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /attendance_system/admin/students/index
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-21 13:01:27 Error: Fatal Error (64): Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in [/home/tuang/attendance_system/admin/Controller/StudentsController.php, line 48]
+2017-11-21 13:01:27 Error: [FatalErrorException] Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+Request URL: /attendance_system/admin/students/add_student
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot use isse...', '/home/tuang/att...', 48)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Cannot use isse...', '/home/tuang/att...', 48, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-11-21 13:16:58 Error: [ParseError] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /attendance_system/admin/students/edit/20
+Stack Trace:
+#0 [internal function]: App::load('StudentsControl...')
+#1 [internal function]: spl_autoload_call('StudentsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('StudentsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-21 13:17:12 Error: [MissingViewException] View file "Students/edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Students/edit.ctp',
+)
+Request URL: /attendance_system/admin/students/edit/20
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(470): View->_getViewFileName('Students/edit')
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-11-21 13:40:54 Error: Fatal Error (64): Constant expression contains invalid operations in [/home/tuang/attendance_system/admin/Model/Student.php, line 32]
+2017-11-21 13:40:54 Error: [FatalErrorException] Constant expression contains invalid operations
+Request URL: /attendance_system/admin/students
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Constant expres...', '/home/tuang/att...', 32)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Constant expres...', '/home/tuang/att...', 32, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-11-21 13:41:25 Error: [ParseError] syntax error, unexpected '}', expecting ',' or ';'
+Request URL: /attendance_system/admin/students
+Stack Trace:
+#0 [internal function]: App::load('Student')
+#1 [internal function]: spl_autoload_call('Student')
+#2 /home/tuang/attendance_system/lib/Cake/Utility/ClassRegistry.php(146): class_exists('Student')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('Student')
+#4 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Student')
+#5 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(406): Controller->__isset('Student')
+#6 /home/tuang/attendance_system/admin/Controller/StudentsController.php(15): Controller->__get('Student')
+#7 [internal function]: StudentsController->index()
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-11-21 13:41:35 Error: Fatal Error (64): Constant expression contains invalid operations in [/home/tuang/attendance_system/admin/Model/Student.php, line 32]
+2017-11-21 13:41:35 Error: [FatalErrorException] Constant expression contains invalid operations
+Request URL: /attendance_system/admin/students
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Constant expres...', '/home/tuang/att...', 32)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Constant expres...', '/home/tuang/att...', 32, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-11-21 13:42:20 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'school_id' in where clause is ambiguous
+Request URL: /attendance_system/admin/students
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Student...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Student...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Student...', Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Student), Array)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /home/tuang/attendance_system/admin/Controller/StudentsController.php(17): Model->find('all', Array)
+#7 [internal function]: StudentsController->index()
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-11-21 13:42:32 Error: Fatal Error (64): Constant expression contains invalid operations in [/home/tuang/attendance_system/admin/Model/Student.php, line 32]
+2017-11-21 13:42:32 Error: [FatalErrorException] Constant expression contains invalid operations
+Request URL: /attendance_system/admin/students
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Constant expres...', '/home/tuang/att...', 32)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Constant expres...', '/home/tuang/att...', 32, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-11-21 13:43:17 Error: Fatal Error (64): Constant expression contains invalid operations in [/home/tuang/attendance_system/admin/Model/Student.php, line 32]
+2017-11-21 13:43:17 Error: [FatalErrorException] Constant expression contains invalid operations
+Request URL: /attendance_system/admin/students
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Constant expres...', '/home/tuang/att...', 32)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Constant expres...', '/home/tuang/att...', 32, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-11-21 13:43:18 Error: Fatal Error (64): Constant expression contains invalid operations in [/home/tuang/attendance_system/admin/Model/Student.php, line 32]
+2017-11-21 13:43:18 Error: [FatalErrorException] Constant expression contains invalid operations
+Request URL: /attendance_system/admin/students
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Constant expres...', '/home/tuang/att...', 32)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Constant expres...', '/home/tuang/att...', 32, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-11-21 13:44:13 Error: Fatal Error (64): Constant expression contains invalid operations in [/home/tuang/attendance_system/admin/Model/Student.php, line 39]
+2017-11-21 13:44:13 Error: [FatalErrorException] Constant expression contains invalid operations
+Request URL: /attendance_system/admin/students
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Constant expres...', '/home/tuang/att...', 39)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Constant expres...', '/home/tuang/att...', 39, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-11-21 13:44:30 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'school_id' in where clause is ambiguous
+Request URL: /attendance_system/admin/students
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Student...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Student...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Student...', Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Student), Array)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /home/tuang/attendance_system/admin/Controller/StudentsController.php(17): Model->find('all', Array)
+#7 [internal function]: StudentsController->index()
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-11-21 13:46:17 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'school_id' in where clause is ambiguous
+Request URL: /attendance_system/admin/students
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Student...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Student...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Student...', Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Student), Array)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /home/tuang/attendance_system/admin/Controller/StudentsController.php(17): Model->find('all', Array)
+#7 [internal function]: StudentsController->index()
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-11-21 13:47:07 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'school_id' in where clause is ambiguous
+Request URL: /attendance_system/admin/students
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Student...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Student...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Student...', Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Student), Array)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /home/tuang/attendance_system/admin/Controller/StudentsController.php(17): Model->find('all', Array)
+#7 [internal function]: StudentsController->index()
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-11-21 13:47:14 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'school_id' in where clause is ambiguous
+Request URL: /attendance_system/admin/students
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Student...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Student...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Student...', Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Student), Array)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /home/tuang/attendance_system/admin/Controller/StudentsController.php(17): Model->find('all', Array)
+#7 [internal function]: StudentsController->index()
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-11-21 13:47:52 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'school_id' in where clause is ambiguous
+Request URL: /attendance_system/admin/students
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Student...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Student...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Student...', Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Student), Array)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /home/tuang/attendance_system/admin/Controller/StudentsController.php(17): Model->find('all', Array)
+#7 [internal function]: StudentsController->index()
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-11-21 13:54:39 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+Request URL: /attendance_system/admin/students/edit/2
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Student...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Student...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Student...', Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Student), Array)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('first', Array)
+#6 /home/tuang/attendance_system/admin/Controller/StudentsController.php(80): Model->find('first', Array)
+#7 [internal function]: StudentsController->edit('2')
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-11-21 13:55:44 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+Request URL: /attendance_system/admin/students/edit/2
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Student...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Student...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Student...', Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Student), Array)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('first', Array)
+#6 /home/tuang/attendance_system/admin/Controller/StudentsController.php(80): Model->find('first', Array)
+#7 [internal function]: StudentsController->edit('2')
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-11-21 14:19:06 Error: [MissingControllerException] Controller class AssetsController could not be found.
+Exception Attributes: array (
+  'class' => 'AssetsController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/assets/js/jquery.uploadPreview.min.js
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-21 14:19:16 Error: [MissingActionException] Action StudentsController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'assets',
+)
+Request URL: /attendance_system/admin/students/assets/js/jquery.uploadPreview.min.js
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-21 14:58:54 Error: [Error] Call to a member function is() on null
+Request URL: /attendance_system/admin/students/add_student/28/2
+Stack Trace:
+#0 [internal function]: StudentsController->add_student('28', '2')
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-11-21 15:00:59 Error: [Error] Call to a member function is() on null
+Request URL: /attendance_system/admin/students/add_student/28/2
+Stack Trace:
+#0 [internal function]: StudentsController->add_student('28', '2')
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-11-21 15:01:03 Error: [Error] Call to a member function is() on null
+Request URL: /attendance_system/admin/students/add_student/28/2
+Stack Trace:
+#0 [internal function]: StudentsController->add_student('28', '2')
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-11-21 15:01:29 Error: [Error] Call to a member function is() on null
+Request URL: /attendance_system/admin/students/add_student/28/2
+Stack Trace:
+#0 [internal function]: StudentsController->add_student('28', '2')
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-11-21 15:13:30 Error: [ParseError] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /attendance_system/admin/students
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-21 15:13:52 Error: [ParseError] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /attendance_system/admin/students
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-21 15:13:53 Error: [ParseError] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /attendance_system/admin/students
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-21 15:14:11 Error: [ParseError] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /attendance_system/admin/students
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-21 15:14:27 Error: [ParseError] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /attendance_system/admin/students
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-21 15:14:28 Error: [ParseError] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /attendance_system/admin/students
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-21 15:14:40 Error: [ParseError] syntax error, unexpected ')'
+Request URL: /attendance_system/admin/students
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-21 15:14:50 Error: [ParseError] syntax error, unexpected '?>'
+Request URL: /attendance_system/admin/students
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-21 15:24:30 Error: [ParseError] syntax error, unexpected '?>'
+Request URL: /attendance_system/admin/students
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-23 09:31:07 Error: [MissingActionException] Action StudentsController::index2.html() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'index2.html',
+)
+Request URL: /attendance_system/admin/students/index2.html
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-23 11:42:04 Error: [Error] Call to undefined method StudentsController::get_student()
+Request URL: /attendance_system/admin/students/edit/4
+Stack Trace:
+#0 [internal function]: StudentsController->edit('4')
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-11-23 11:42:20 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'get_student' at line 1
+Request URL: /attendance_system/admin/students/edit/4
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('get_student', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('get_student', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(618): DboSource->fetchAll('get_student', Array, Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(834): DboSource->query('get_student', Array, Object(Student))
+#5 /home/tuang/attendance_system/admin/Controller/StudentsController.php(109): Model->__call('get_student', Array)
+#6 [internal function]: StudentsController->edit('4')
+#7 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#8 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#10 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-11-23 12:06:14 Error: [ParseError] syntax error, unexpected ''">'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';'
+Request URL: /attendance_system/admin/students/detail/4/18
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
