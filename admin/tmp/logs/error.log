@@ -9622,3 +9622,129 @@ Stack Trace:
 #4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
 #5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2017-11-25 13:17:09 Error: [ParseError] syntax error, unexpected ']', expecting ',' or ')'
+Request URL: /attendance_system/admin/students/
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-25 13:53:18 Error: [MissingViewException] View file "Users/delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/delete.ctp',
+)
+Request URL: /attendance_system/admin/users/delete/12
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(470): View->_getViewFileName('Users/delete')
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-11-28 09:19:31 Error: [SocketException] Invalid email: "dev2.m-fr.net"
+Request URL: /attendance_system/admin/students/edit/4
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Network/Email/CakeEmail.php(604): CakeEmail->_validateEmail('dev2.m-fr.net')
+#1 /home/tuang/attendance_system/lib/Cake/Network/Email/CakeEmail.php(642): CakeEmail->_setEmail('_from', Array, NULL)
+#2 /home/tuang/attendance_system/lib/Cake/Network/Email/CakeEmail.php(387): CakeEmail->_setEmailSingle('_from', Array, NULL, 'From requires o...')
+#3 /home/tuang/attendance_system/admin/Controller/StudentsController.php(95): CakeEmail->from(Array)
+#4 [internal function]: StudentsController->edit('4')
+#5 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#6 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#8 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2017-11-28 09:46:44 Error: [MissingControllerException] Controller class DeleteController could not be found.
+Exception Attributes: array (
+  'class' => 'DeleteController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/delete/5
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-28 09:46:53 Error: [MissingControllerException] Controller class DeleteController could not be found.
+Exception Attributes: array (
+  'class' => 'DeleteController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/delete/5
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-28 10:21:14 Error: [Error] Call to a member function user() on null
+Request URL: /attendance_system/admin/users/add_member
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/UsersController.php(170): User->member_invite_mail(Array)
+#1 [internal function]: UsersController->add_member()
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-28 10:21:33 Error: [Error] Call to a member function user() on null
+Request URL: /attendance_system/admin/users/add_member
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/UsersController.php(170): User->member_invite_mail(Array)
+#1 [internal function]: UsersController->add_member()
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-28 10:32:08 Error: [SocketException] Invalid email: "dev2.m-fr.net"
+Request URL: /attendance_system/admin/students/edit/4
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Network/Email/CakeEmail.php(592): CakeEmail->_validateEmail('dev2.m-fr.net')
+#1 /home/tuang/attendance_system/lib/Cake/Network/Email/CakeEmail.php(642): CakeEmail->_setEmail('_from', 'dev2.m-fr.net', NULL)
+#2 /home/tuang/attendance_system/lib/Cake/Network/Email/CakeEmail.php(387): CakeEmail->_setEmailSingle('_from', 'dev2.m-fr.net', NULL, 'From requires o...')
+#3 /home/tuang/attendance_system/lib/Cake/Network/Email/CakeEmail.php(1273): CakeEmail->from('dev2.m-fr.net')
+#4 /home/tuang/attendance_system/lib/Cake/Network/Email/CakeEmail.php(1154): CakeEmail->_applyConfig(Array)
+#5 /home/tuang/attendance_system/lib/Cake/Network/Email/CakeEmail.php(366): CakeEmail->config('default')
+#6 /home/tuang/attendance_system/admin/Controller/StudentsController.php(94): CakeEmail->__construct()
+#7 [internal function]: StudentsController->edit('4')
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-11-28 10:35:42 Error: [MissingControllerException] Controller class EditController could not be found.
+Exception Attributes: array (
+  'class' => 'EditController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/edit
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-28 11:24:18 Error: [ParseError] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')'
+Request URL: /attendance_system/admin/students/edit/7
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-28 11:24:45 Error: [MissingHelperException] Helper class FromHelper could not be found.
+Exception Attributes: array (
+  'class' => 'FromHelper',
+  'plugin' => false,
+)
+Request URL: /attendance_system/admin/students/edit/7
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('From')
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(858): HelperCollection->__isset('From')
+#2 /home/tuang/attendance_system/admin/View/Students/edit.ctp(44): View->__get('From')
+#3 /home/tuang/attendance_system/lib/Cake/View/View.php(971): include('/home/tuang/att...')
+#4 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#5 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#6 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#9 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

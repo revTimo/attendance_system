@@ -33,11 +33,16 @@
             <label for="email">学生メールアドレス</label>
             <?= $this->Form->input('email',['label' => false,'class' => 'form-control','placeholder'=>'メールアドレスを入力してください', 'value' => $edit_student['Student']['email']]) ?>
           </div>
+          <div class="form-group">
+            <label for="address">住所</label>
+            <?= $this->Form->input('address',['label' => false,'class' => 'form-control','value' => $edit_student['Student']['address']]) ?>
+          </div>
           <div class="form-group profile_img">
             <!-- 画像アップロード -->
             <?=$this->Html->image('../student_image/'.$edit_student['Student']['image'],['class'=>'img-thumbnail', 'alt' => 'student_profile_img', 'width' => '200', 'height' => '200'])?>
+            <?=$this->Form->input('current_img',['type' => 'hidden', 'value' => $edit_student['Student']['image']]) ?>
           </div>
-          <a class="btn btn-primary btn-xs" id="image_add">画像を変える</a><br><br>
+          <a class="btn btn-primary btn-xs" id="image_add">プロフィル写真を変える</a><br><br>
           <a href="../" class="btn btn-warning">一覧へ戻る</a>
           <button type="submit" class="btn btn-primary">編集する</button>
           <?= $this->Form->end() ?>

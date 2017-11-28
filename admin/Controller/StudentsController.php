@@ -1,5 +1,5 @@
 <?php
-
+App::uses('CakeEmail', 'Network/Email');
 class StudentsController extends AppController {
 	public $uses = [
 		'User',
@@ -53,6 +53,14 @@ class StudentsController extends AppController {
 				move_uploaded_file($this->request->data['Student']['image']['tmp_name'],'../webroot/student_image/'.$this->request->data['Student']['image']['name']);
 				$profile_img = $this->request->data['Student']['image']['name'];
 			}
+
+			// 編集画面の場合
+			if ($sign == 28)
+			{
+				$this->Student->id = $id;
+				$profile_img = $this->request->data['Student']['current_img'];
+			}
+
 			$save_data = [
 				'name' => $this->request->data['Student']['name'],
 				'student_number' => $this->request->data['Student']['student_number'],
@@ -60,21 +68,16 @@ class StudentsController extends AppController {
 				'school_id' => $this->Auth->user('school_id'),
 				'major_id' => $this->request->data['Student']['major_id'],
 				'email' => $this->request->data['Student']['email'],
+				'address' => $this->request->data['Student']['address'],
 				'image' => $profile_img,
 			];
-
-			// 編集画面の場合
-			if ($sign == 28)
-			{
-				$this->Student->id = $id;
-			}
 
 			if ($this->Student->save($save_data) == false)
 			{
 				return $this->Flash->setFlashError('学生登録失敗しました。');
 			}
 
-			// 編集画面の場合
+			// 編集画面の場合成功メッセージ
 			if ($sign == 28)
 			{
 				$this->Flash->setFlashSuccess('学生の情報を編集しました。');
@@ -116,37 +119,43 @@ class StudentsController extends AppController {
 			],
 			'fields' => ['id', 'name'],
 		]);
-		if (empty($all_major))
-		{
-			$this->Flash->setFlashError('不正アクセス');
-			return $this->redirect(['action' => 'index']);;
-		}
 		$this->set('major', $all_major);
 	}
 
 	//学生削除
 	public function delete ($id = null)
 	{
-		// 他の学校のIDを削除しないように
-		$check = $this->Student->find('first', [
-			'conditions' => [
-				'id' => $id,
-				'school_id' => $this->Auth->user('school_id'),
-			],
-			'fields' => ['school_id'],
-		]);
-
-		if (empty($check))
+		// 複数の削除
+		if ($this->request->is('post'))
 		{
-			return $this->redirect(['action' => 'index']);
+			$this->Student->id = $this->request->data['deletedata'];
 		}
 
-		if ($this->Auth->user('school_id') != $check['Student']['school_id'])
+		// １レコード場合
+		if ($this->request->is('get'))
 		{
-			return $this->redirect(['action' => 'index']);
+			// 他の学校のIDを削除しないように
+			$check = $this->Student->find('first', [
+				'conditions' => [
+					'id' => $id,
+					'school_id' => $this->Auth->user('school_id'),
+				],
+				'fields' => ['school_id'],
+			]);
+			if (empty($check))
+			{
+				return $this->redirect(['action' => 'index']);
+			}
+
+			if ($this->Auth->user('school_id') != $check['Student']['school_id'])
+			{
+				return $this->redirect(['action' => 'index']);
+			}
+
+			$this->Student->id = $id;
 		}
 
-		$this->Student->id = $id;
+		// 共通削除
 		if ($this->Student->delete() == false)
 		{
 			return $this->redirect(['action' => 'index']);
@@ -154,5 +163,14 @@ class StudentsController extends AppController {
 
 		$this->Flash->setFlashSuccess('削除しました。');
 		return $this->redirect(['action' => 'index']);
+	}
+
+	// 複数の削除
+	public function delete_all()
+	{
+		if ($this->request->is('get'))
+		{
+			return $this->redirect(['action' => 'index']);
+		}
 	}
 }

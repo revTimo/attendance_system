@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>出席管理</title>
-	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <?= $this->Html->css ('../bootstrap/css/bootstrap.min.css')?>
-  <?= $this->Html->css ('style')?>
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-	<!-- Ionicons -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-	<!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<!-- Theme style -->
-	<?= $this->Html->css('../dist/css/AdminLTE.min') ?>
-	<?= $this->Html->css('../dist/css/skins/skin-blue.min') ?>
-	<!-- Google Font -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>出席管理</title>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<?= $this->Html->css ('../bootstrap/css/bootstrap.min.css')?>
+<?= $this->Html->css ('style')?>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+<!-- Ionicons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- Theme style -->
+<?= $this->Html->css('../dist/css/AdminLTE.min') ?>
+<?= $this->Html->css('../dist/css/skins/skin-blue.min') ?>
+<!-- Google Font -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
-
-  <!-- Main Header -->
   <header class="main-header">
-
-    <!-- Logo -->
     <a href="index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>出</b>席</span>
@@ -160,8 +156,8 @@
         </div>
         <div class="pull-left info">
           <p><?= $login_user ?></p>
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-          <a href="/attendance_system/admin/users/logout/">logout</a>
+          <a><i class="fa fa-circle text-success"></i> Online</a>
+          <a href="/attendance_system/admin/users/logout/"><i class="fa fa-sign-out" aria-hidden="true"></i>logout</a>
         </div>
       </div>
 
@@ -187,50 +183,58 @@
         <li><a href="/attendance_system/admin/attendances/index"><i class="fa fa-link"></i> <span>出席一覧</span></a></li>
         <?php endif ?>
         <?php if($this->request->params['controller'] == 'users') :?>
-        <li class="active"><a href="/attendance_system/admin/users/index"><i class="fa fa-link"></i> <span>管理者</span></a></li>
+        <li class="active"><a href="/attendance_system/admin/users/index"><i class="fa fa-user" aria-hidden="true"></i><span>管理者</span></a></li>
         <?php else :?>
-        <li><a href="/attendance_system/admin/users/index"><i class="fa fa-link"></i> <span>管理者</span></a></li>
+        <li><a href="/attendance_system/admin/users/index"><i class="fa fa-user" aria-hidden="true"></i><span>管理者</span></a></li>
         <?php endif ?>
         <?php if($this->request->params['controller'] == 'students') :?>
         <li class="treeview active">
-          <a href="#"><i class="fa fa-link"></i> <span>学生管理</span>
+          <a href="#"><i class="fa fa-users" aria-hidden="true"></i><span>学生管理</span>
             <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
           </a>
           <ul class="treeview-menu">
             <?php if($this->request->params['action'] == 'add_student') :?>
-            <li class="active"><a href="/attendance_system/admin/students/add_student">学生登録</a></li>
+            <li class="active"><a href="/attendance_system/admin/students/add_student"><i class="fa fa-user-plus"></i>学生登録</a></li>
             <?php else :?>
-            <li><a href="/attendance_system/admin/students/add_student">学生登録</a></li>
+            <li><a href="/attendance_system/admin/students/add_student"><i class="fa fa-user-plus"></i>学生登録</a></li>
             <?php endif ?>
             <?php if($this->request->params['action'] == 'index') :?>
-            <li class="active"><a href="/attendance_system/admin/students/index">学生一覧</a></li>
+            <li class="active"><a href="/attendance_system/admin/students/index"><i class="fa fa-list" aria-hidden="true"></i>学生一覧</a></li>
             <?php else:?>
-            <li><a href="/attendance_system/admin/students/index">学生一覧</a></li>
+            <li><a href="/attendance_system/admin/students/index"><i class="fa fa-list" aria-hidden="true"></i>学生一覧</a></li>
             <?php endif ?>
           </ul>
         </li>
         <?php else :?>
         <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>学生管理</span>
+          <a href="#"><i class="fa fa-users" aria-hidden="true"></i><span>学生管理</span>
             <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/attendance_system/admin/students/add_student">学生登録</a></li>
-            <li><a href="/attendance_system/admin/students/index">学生一覧</a></li>
+            <li><a href="/attendance_system/admin/students/add_student"><i class="fa fa-user-plus"></i>学生登録</a></li>
+            <li><a href="/attendance_system/admin/students/index"><i class="fa fa-list" aria-hidden="true"></i>学生一覧</a></li>
           </ul>
         </li>
         <?php endif ?>
         <?php if($this->request->params['controller'] == 'subjects') :?>
-        <li class="active"><a href="/attendance_system/admin/subjects/index">学科</a></li>
+        <li class="active"><a href="/attendance_system/admin/subjects/index"><i class="fa fa-book" aria-hidden="true"></i><span>学科</span></a></li>
         <?php else :?>
-        <li><a href="/attendance_system/admin/subjects/index">学科</a></li>
+        <li><a href="/attendance_system/admin/subjects/index"><i class="fa fa-book" aria-hidden="true"></i><span>学科</span></a></li>
         <?php endif ?>
-        <li><a href="#">教室</a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>お知らせ</span></a></li>
+        <?php if($this->request->params['controller'] == 'class_rooms'):?>
+        <li class="active"><a href="/attendance_system/admin/class_rooms/index"><i class="fa fa-university" aria-hidden="true"></i><span>教室</span></a></li>
+        <?php else:?>
+        <li><a href="/attendance_system/admin/class_rooms/index"><i class="fa fa-university" areia-hidden="true"></i><span>教室</span></a></li>
+        <?php endif ?>
+        <?php if($this->request->params['controller'] == 'notifications') :?>
+        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>お知らせ</span></a></li>
+        <?php else :?>
+        <li><a href=""><i class="fa-fa-link"></i><span>お知らせ</span></a></li>
+        <?php endif ?>
       </ul>
       <!-- /.sidebar-menu -->
     </section>

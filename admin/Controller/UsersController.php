@@ -148,14 +148,70 @@ class UsersController extends AppController {
 		if ($this->request->is('get'))
 		{
 			return;
-		}	
+		}
+
+		$member = [
+			'school_id' => $this->Auth->user('school_id'),
+			'name' => $this->request->data['User']['name'],
+			'email' => $this->request->data['User']['email'],
+			'password' => substr(md5(uniqid(rand(),'')),0,10),
+		];
+		
+		try
+		{
+			$this->User->begin();
+			if ($this->User->save($member) === false)
+			{
+				$this->User->rollback();
+				$this->Flash->setFlashError('管理者追加できませんでした・保存失敗');
+				return $this->redirect(['action' => 'index']);
+			}
+
+			if ($this->User->member_invite_mail($member) === false)
+			{
+				$this->User->rollback();
+				$this->Flash->setFlashError('管理者追加できませんでした・メール送信失敗');
+				return $this->redirect(['action' => 'index']);
+			}
+
+			$this->User->commit();
+			$this->Flash->setFlashSuccess('管理者が招待されました。');
+			return $this->redirect(['action' => 'index']);
+		}
+		catch(Exception $e)
+		{
+			$this->User->rollback();
+			$this->Flash->setFlashError('管理者追加できませんでした'."\n".$e);
+			return $this->redirect(['action' => 'index']);
+		}
 	}
 
 	//ユーザー削除
 	public function delete ($id = null)
 	{
-		pr('delete page access complete'.$id);
-		exit;
+		// 他の学校のIDを削除しないように
+		$current = $this->User->find('first', [
+			'conditions' => [
+				'id' => $id,
+			],
+			'fields' => ['school_id'],
+		]);
+		if (empty($current))
+		{
+			return $this->redirect(['action' => 'index']);
+		}
+		if ($current['User']['school_id'] != $this->Auth->user('school_id'))
+		{
+			return $this->redirect(['action' => 'index']);
+		}
+		$this->User->id = $id;
+		if ($this->User->delete() == false)
+		{
+			return $this->Flash->setFlashError('削除できませんでした');
+		}
+
+		$this->Flash->setFlashSuccess('削除しました');
+		return $this->redirect(['action' => 'index']);
 	}
 
 	public function logout ()

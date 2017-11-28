@@ -1,4 +1,3 @@
-<!-- <?= pr($major)?> -->
 <div class="col-md-12">
   <!-- Profile Image -->
   <div class="box box-primary">
@@ -8,16 +7,16 @@
       <p class="text-muted text-center"><?= $edit_student['Student']['student_number'] ?></p>
       <ul class="list-group list-group-unbordered">
         <li class="list-group-item">
-          <b>Followers</b> <a class="pull-right">1,322</a>
+          <i class="fa fa-line-chart margin-r-5"></i><b>出席率</b> <a class="pull-right">80%</a>
         </li>
         <li class="list-group-item">
-          <b>Following</b> <a class="pull-right">543</a>
+          <b>成績</b> <a class="pull-right">B</a>
         </li>
         <li class="list-group-item">
-          <b>Friends</b> <a class="pull-right">13,287</a>
+          <b>全体の評価</b> <a class="pull-right">B</a>
         </li>
       </ul>
-      <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>
+      <!-- <a href="#" class="btn btn-danger btn-block"><b>連絡!</b></a> -->
     </div>
     <!-- /.box-body -->
   </div>
@@ -31,11 +30,16 @@
     <div class="box-body">
       <strong><i class="fa fa-book margin-r-5"></i> 専攻</strong>
       <p class="text-muted">
+        <?php if(!empty($major)):?>
         <?= $major['Major']['name']?>
+        <?php else:?>
+        <span>未登録</span>
+        <?php endif?>
       </p>
       <hr>
       <strong><i class="fa fa-pencil margin-r-5"></i> 科目</strong>
       <p>
+        <?php if(!empty($major)):?>
         <?php
             $style = [
               'danger',
@@ -48,13 +52,17 @@
         <?php foreach ($major['Subject'] as $sub) :?>
           <?= '<span class="label label-'.$style[rand(0,4)].'">'.$sub['name'].'</span>'?>
         <?php endforeach ?>
+        <?php else:?>
+          <span>未登録</span>
+        <?php endif ?>
       </p>
       <hr>
       <strong><i class="fa fa-map-marker margin-r-5"></i> 住所</strong>
-      <p class="text-muted">Malibu, California</p>
+      <p class="text-muted"><?= $edit_student['Student']['address'] ?></p>
       <hr>
-      <strong><i class="fa fa-file-text-o margin-r-5"></i> Notes</strong>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
+      <strong><i class="fa fa-envelope-o margin-r-5"></i> 連絡先</strong>
+      <p><?= $edit_student['Student']['email'] ?></p>
+      <hr>
     </div>
     <!-- /.box-body -->
   </div>

@@ -4,7 +4,7 @@
     <div class="panel panel-primary">
       <div class="panel-heading"><strong>管理者追加</strong></div>
         <div class="panel-body">  
-          <?= $this->Form->create('User',['url' => 'register/member_add'])?>
+          <?= $this->Form->create('User',['url' => 'add_member'])?>
           <div class="form-group">
             <label for="name">管理者名</label>
             <?= $this->Form->input('name',['label' => false,'class' => 'form-control']) ?>
@@ -28,7 +28,7 @@
         管理者一覧
       </div>
       <div class="panel-body">
-        <a href="edit" class="btn btn-info btn-sm">登録情報・パスワード変更</a><br><br>
+        <a href="/attendance_system/admin/users/edit" class="btn btn-info btn-sm">登録情報・パスワード変更</a><br><br>
         <table class="table table-default" border="1">
           <thead>
             <tr>
@@ -37,12 +37,13 @@
             </tr>
           </thead>
           <tbody>
-          <!-- admin = 1  -->
             <?php foreach($admin_users as $key => $members) : ?>
             <tr>
               <th><?= ($key +=1) ?></th>
               <td><?= $members['User']['name']?>
-                <a href="delete/<?= $members['User']['id'] ?>" class="label label-danger"　onclick="return confirm('メンバーを削除します、よろしいですか？');">削除</a>
+                <?php if (count($admin_users) >1):?>
+                <a href="/attendance_system/admin/users/delete/<?= $members['User']['id'] ?>" class="label label-danger" onclick="return confirm('管理者を削除します、よろしいですか？');">削除</a>
+                <?php endif ?>
               </td>
             </tr>
             <?php endforeach ?>

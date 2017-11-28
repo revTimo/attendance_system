@@ -33,13 +33,20 @@
 										<?php
 											for($i=0;$i<count($data);$i++)
 											{
-												echo $major[$data['Student']['major_id']];
+												if (array_key_exists($data['Student']['major_id'], $major))
+												{
+													echo $major[$data['Student']['major_id']];
+												}
+												else
+												{
+													echo "未登録";
+												}
 											}
 										?>
 									</td>
-									<td><a href="/attendance_system/admin/students/detail/<?= $data['Student']['id']?>/<?= $data['Student']['major_id']?>">詳細</a></td>
-									<td><a href="/attendance_system/admin/students/edit/<?= $data['Student']['id']?>">edit</a></td>
-									<td><a href="/attendance_system/admin/students/delete/<?= $data['Student']['id']?>" onclick="return confirm('学生を削除します、よろしいですか？');">delete</a></td>
+									<td><a href="/attendance_system/admin/students/detail/<?= $data['Student']['id']?>/<?= $data['Student']['major_id']?>"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>
+									<td><a href="/attendance_system/admin/students/edit/<?= $data['Student']['id']?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+									<td><a href="/attendance_system/admin/students/delete/<?= $data['Student']['id']?>" onclick="return confirm('学生を削除します、よろしいですか？');"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
 								</tr>
 							<?php endforeach ?>
 						</tbody>
