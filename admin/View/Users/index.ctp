@@ -22,33 +22,51 @@
 
 <!-- 管理者一覧 -->
 <div class="row">
-  <div class="col-sm-12">
-    <div class="panel panel-primary">
-      <div class="panel-heading">
-        管理者一覧
+  <div class="col-md-12">
+    <div class="box box-primary">
+      <div class="box-header with-border">
+        <h3 class="box-title">管理者・メンバー一覧</h3><br><br>
+        <a href="edit" class="btn btn-primary btn-sm">登録情報・パスワード変更</a><br><br>
       </div>
-      <div class="panel-body">
-        <a href="/attendance_system/admin/users/edit" class="btn btn-info btn-sm">登録情報・パスワード変更</a><br><br>
-        <table class="table table-default" border="1">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>名</th>
-            </tr>
-          </thead>
-          <tbody>
-            <?php foreach($admin_users as $key => $members) : ?>
-            <tr>
-              <th><?= ($key +=1) ?></th>
-              <td><?= $members['User']['name']?>
-                <?php if (count($admin_users) >1):?>
-                <a href="/attendance_system/admin/users/delete/<?= $members['User']['id'] ?>" class="label label-danger" onclick="return confirm('管理者を削除します、よろしいですか？');">削除</a>
+      <div class="box-body">
+        <!-- 学生一覧 -->
+        <p class="text-red">メンバーstatus更新や削除は管理者のみの権限になっています</p>
+          <table id="example1" class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>名</th>
+                <th>Status</th>
+                <?php if($current_user == ADMIN) :?>
+                <th>Change Status</th>
+                <th>削除</th>
                 <?php endif ?>
-              </td>
-            </tr>
-            <?php endforeach ?>
-          </tbody>
-        </table>
+              </tr>
+            </thead>
+            <tbody>
+              <?php foreach ($admin_users as $members) : ?>
+                <tr>
+                  <td><?= $members['User']['name'] ?></td>
+                  <?php if($members['User']['is_admin'] == ADMIN) :?>
+                  <td>ADMIN</td>
+                  <?php elseif($members['User']['is_admin'] == MEMBER):?>
+                  <td>MEMBER</td>
+                  <?php endif ?>
+                  <?php if($current_user == ADMIN) :?>
+                  <?php if($members['User']['is_admin'] == ADMIN) :?>
+                  <td><a href="/attendance_system/admin/users/change_status/<?= $members['User']['id']?>/retire"　onclick="return confirm('一般メンーバの権限にします。よろしいですか？')">一般メンーバになる</a></td>
+                  <?php elseif($members['User']['is_admin'] == MEMBER):?>
+                  <td><a href="/attendance_system/admin/users/change_status/<?= $members['User']['id']?>/make_admin" onclick="return confirm('管理者の権限にします。よろしいですか？')">管理者にする</a></td>
+                  <?php endif ?>
+                  <td>
+                    <?php if($members['User']['id'] != $current_user_id):?>
+                    <a href="/attendance_system/admin/users/delete/<?= $members['User']['id'] ?>" class="label label-danger" onclick="return confirm('管理者を削除します、よろしいですか？');">削除</a>
+                    <?php endif ?>
+                  </td>
+                  <?php endif ?>
+                </tr>
+              <?php endforeach ?>
+            </tbody>
+          </table>
       </div>
     </div>
   </div>

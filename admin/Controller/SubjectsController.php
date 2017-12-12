@@ -4,6 +4,7 @@ class SubjectsController extends AppController {
 	public $uses = [
 		'Subject',
 		'Major',
+		'StudentSubject',
 	];
 	
 	public function index ()
@@ -52,7 +53,6 @@ class SubjectsController extends AppController {
 				$this->Flash->setFlashError('専攻登録失敗');
 				return $this->redirect(['action' => 'index']);
 			}
-			
 			//科目があるときだけ
 			if (!empty($this->request->data['Subject']['subjects']))
 			{
@@ -72,6 +72,12 @@ class SubjectsController extends AppController {
 					$this->Flash->setFlashError('科目登録失敗');
 					return $this->redirect(['action' => 'index']);
 				}
+				/*
+				 *　ここに中間テーブルに保存の処理が入る
+				 *　今すぐ【上の】保存したsubject idをもらって
+				 *　中間テーブルに学生ＩＤと保存
+				 * $subject_id_list = $this->Subject->subject_ids;
+				　*/
 			}	
 			$this->Subject->commit();
 		}

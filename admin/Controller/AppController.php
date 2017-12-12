@@ -30,6 +30,12 @@ App::uses('Controller', 'Controller');
  * @package		app.Controller
  * @link		https://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
+
+//管理者
+define ('ADMIN',1);
+//一般メンーバ
+define ('MEMBER',0);
+
 class AppController extends Controller {
 
 	public function beforeFilter ()
@@ -107,4 +113,5 @@ class AppController extends Controller {
 		}
 		$this->set('edit_student', $search_student);
 	}
+
 }

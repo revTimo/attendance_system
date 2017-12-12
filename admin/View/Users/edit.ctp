@@ -11,7 +11,7 @@
       <?= $this->Form->input('email',['label' => false,'class' => 'form-control','value' => $edit_data['User']['email']]) ?>
     </div>
     <div class="form-group">
-      <label for="email">以前のパスワード</label>
+      <label for="email">現在のパスワード</label>
       <?= $this->Form->input('old_password',['label' => false,'class' => 'form-control','type' => 'password']) ?>
     </div>
     <div class="form-group">

@@ -23,7 +23,7 @@
               'label' => false,
               'class' => 'select2 col-md-12',
               'name' => 'data[Student][major_id]',
-              'options' => ['no_major_id'=>'専攻を選択してください',$all_major],
+              'options' => [0=>'専攻を選択してください',$all_major],
               ]);
             ?>
           </div>

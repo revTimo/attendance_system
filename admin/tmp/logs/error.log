@@ -9748,3 +9748,1147 @@ Stack Trace:
 #8 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
 #9 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
+2017-11-28 15:15:23 Error: [ParseError] syntax error, unexpected 'Subject' (T_STRING), expecting variable (T_VARIABLE)
+Request URL: /attendance_system/admin/subjects/index
+Stack Trace:
+#0 [internal function]: App::load('Subject')
+#1 [internal function]: spl_autoload_call('Subject')
+#2 /home/tuang/attendance_system/lib/Cake/Utility/ClassRegistry.php(146): class_exists('Subject')
+#3 /home/tuang/attendance_system/lib/Cake/Model/Model.php(1084): ClassRegistry::init('Subject')
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(893): Model->_constructLinkedModel('Subject', 'Subject', NULL)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Model.php(926): Model->__isset('Subject')
+#6 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1205): Model->__get('Subject')
+#7 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Major), Array)
+#8 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#9 /home/tuang/attendance_system/admin/Controller/SubjectsController.php(14): Model->find('all', Array)
+#10 [internal function]: SubjectsController->index()
+#11 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(SubjectsController), Array)
+#12 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#14 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2017-11-28 15:26:49 Error: [ParseError] syntax error, unexpected 'afterSave' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /attendance_system/admin/subjects/index
+Stack Trace:
+#0 [internal function]: App::load('Subject')
+#1 [internal function]: spl_autoload_call('Subject')
+#2 /home/tuang/attendance_system/lib/Cake/Utility/ClassRegistry.php(146): class_exists('Subject')
+#3 /home/tuang/attendance_system/lib/Cake/Model/Model.php(1084): ClassRegistry::init('Subject')
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(893): Model->_constructLinkedModel('Subject', 'Subject', NULL)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Model.php(926): Model->__isset('Subject')
+#6 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1205): Model->__get('Subject')
+#7 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Major), Array)
+#8 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#9 /home/tuang/attendance_system/admin/Controller/SubjectsController.php(14): Model->find('all', Array)
+#10 [internal function]: SubjectsController->index()
+#11 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(SubjectsController), Array)
+#12 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#14 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2017-12-02 09:53:46 Error: [MissingActionException] Action UsersController::forgot_password() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'forgot_password',
+)
+Request URL: /attendance_system/admin/users/forgot_password
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-02 10:57:02 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /attendance_system/admin/users/index
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(858): HelperCollection->__isset('Auth')
+#2 /home/tuang/attendance_system/admin/View/Users/index.ctp(23): View->__get('Auth')
+#3 /home/tuang/attendance_system/lib/Cake/View/View.php(971): include('/home/tuang/att...')
+#4 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#5 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#6 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-12-02 10:59:44 Error: [ParseError] syntax error, unexpected 'if' (T_IF)
+Request URL: /attendance_system/admin/users/index
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-02 11:50:32 Error: [MissingViewException] View file "Users/change_status.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/change_status.ctp',
+)
+Request URL: /attendance_system/admin/users/change_status/4
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(470): View->_getViewFileName('Users/change_st...')
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-12-02 11:52:05 Error: [MissingViewException] View file "Users/change_status.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/change_status.ctp',
+)
+Request URL: /attendance_system/admin/users/change_status/4
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(470): View->_getViewFileName('Users/change_st...')
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-12-02 11:58:23 Error: [Error] Call to a member function write() on null
+Request URL: /attendance_system/admin/users/change_status/17/retire
+Stack Trace:
+#0 [internal function]: UsersController->change_status('17', 'retire')
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-12-02 12:00:56 Error: [Error] Call to a member function write() on null
+Request URL: /attendance_system/admin/users/change_status/4/retire
+Stack Trace:
+#0 [internal function]: UsersController->change_status('4', 'retire')
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-12-02 12:48:28 Error: [Error] Call to a member function write() on null
+Request URL: /attendance_system/admin/users/change_status/4/retire
+Stack Trace:
+#0 [internal function]: UsersController->change_status('4', 'retire')
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-12-02 12:49:02 Error: [Error] Call to a member function write() on null
+Request URL: /attendance_system/admin/users/change_status/4/retire
+Stack Trace:
+#0 [internal function]: UsersController->change_status('4', 'retire')
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-12-02 12:51:13 Error: [Error] Call to a member function write() on null
+Request URL: /attendance_system/admin/users/change_status/17/retire
+Stack Trace:
+#0 [internal function]: UsersController->change_status('17', 'retire')
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-12-02 12:57:55 Error: [Error] Call to a member function write() on null
+Request URL: /attendance_system/admin/users/change_status/4/retire
+Stack Trace:
+#0 [internal function]: UsersController->change_status('4', 'retire')
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-12-02 12:59:51 Error: [Error] Call to a member function write() on null
+Request URL: /attendance_system/admin/users/change_status/4/retire
+Stack Trace:
+#0 [internal function]: UsersController->change_status('4', 'retire')
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-12-02 13:00:41 Error: [Error] Call to a member function write() on null
+Request URL: /attendance_system/admin/users/change_status/4/retire
+Stack Trace:
+#0 [internal function]: UsersController->change_status('4', 'retire')
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-12-02 13:01:56 Error: [Error] Call to a member function write() on null
+Request URL: /attendance_system/admin/users/change_status/4/retire
+Stack Trace:
+#0 [internal function]: UsersController->change_status('4', 'retire')
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-12-02 13:02:58 Error: [Error] Call to a member function write() on null
+Request URL: /attendance_system/admin/users/change_status/4/retire
+Stack Trace:
+#0 [internal function]: UsersController->change_status('4', 'retire')
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-12-02 15:04:01 Error: [ParseError] syntax error, unexpected '[', expecting ')'
+Request URL: /attendance_system/admin/users/index
+Stack Trace:
+#0 [internal function]: App::load('AppController')
+#1 /home/tuang/attendance_system/admin/Controller/UsersController.php(5): spl_autoload_call('AppController')
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(567): include('/home/tuang/att...')
+#3 [internal function]: App::load('UsersController')
+#4 [internal function]: spl_autoload_call('UsersController')
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#6 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#7 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#8 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2017-12-02 15:04:01 Error: Fatal Error (16): Exception thrown without a stack frame in [Unknown, line 0]
+2017-12-02 15:04:01 Error: [FatalErrorException] Exception thrown without a stack frame
+Request URL: /attendance_system/admin/users/index
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(16, 'Exception throw...', 'Unknown', 0)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(16, 'Exception throw...', 'Unknown', 0, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-12-02 15:04:16 Error: [ParseError] syntax error, unexpected '[', expecting ')'
+Request URL: /attendance_system/admin/users/index
+Stack Trace:
+#0 [internal function]: App::load('AppController')
+#1 /home/tuang/attendance_system/admin/Controller/UsersController.php(5): spl_autoload_call('AppController')
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(567): include('/home/tuang/att...')
+#3 [internal function]: App::load('UsersController')
+#4 [internal function]: spl_autoload_call('UsersController')
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#6 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#7 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#8 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2017-12-02 15:04:16 Error: Fatal Error (16): Exception thrown without a stack frame in [Unknown, line 0]
+2017-12-02 15:04:16 Error: [FatalErrorException] Exception thrown without a stack frame
+Request URL: /attendance_system/admin/users/index
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(16, 'Exception throw...', 'Unknown', 0)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(16, 'Exception throw...', 'Unknown', 0, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-12-02 15:04:33 Error: [Error] Call to undefined function save_student_subject()
+Request URL: /attendance_system/admin/users/index
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-12-02 15:05:13 Error: [Error] Call to undefined function save_student_subject()
+Request URL: /attendance_system/admin/users/index
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-12-02 15:05:14 Error: [Error] Call to undefined function save_student_subject()
+Request URL: /attendance_system/admin/users/index
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-12-02 15:06:01 Error: [Error] Call to undefined function save_student_subject()
+Request URL: /attendance_system/admin/users/index
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-12-02 15:06:02 Error: [Error] Call to undefined function save_student_subject()
+Request URL: /attendance_system/admin/users/index
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-12-02 15:06:03 Error: [Error] Call to undefined function save_student_subject()
+Request URL: /attendance_system/admin/users/index
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-12-02 15:06:22 Error: [Error] Call to undefined function save_student_subject()
+Request URL: /attendance_system/admin/users/index
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-12-02 15:23:39 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/admin/users/index
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/UsersController.php(20): AppController->save_student_subject('1', 18)
+#1 [internal function]: UsersController->index()
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-02 15:23:59 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/admin/users/index
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/UsersController.php(20): AppController->save_student_subject('1', 18)
+#1 [internal function]: UsersController->index()
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-02 15:24:35 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/admin/users/index
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/UsersController.php(20): AppController->save_student_subject('1', 20)
+#1 [internal function]: UsersController->index()
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-02 15:26:26 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/admin/users/index
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/UsersController.php(20): AppController->save_student_subject('1', 18)
+#1 [internal function]: UsersController->index()
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-02 15:26:47 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/admin/users/index
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/UsersController.php(20): AppController->save_student_subject('1', 18)
+#1 [internal function]: UsersController->index()
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-02 15:28:20 Error: [ParseError] syntax error, unexpected '$subject_id_list' (T_VARIABLE)
+Request URL: /attendance_system/admin/users/index
+Stack Trace:
+#0 [internal function]: App::load('AppController')
+#1 /home/tuang/attendance_system/admin/Controller/UsersController.php(5): spl_autoload_call('AppController')
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(567): include('/home/tuang/att...')
+#3 [internal function]: App::load('UsersController')
+#4 [internal function]: spl_autoload_call('UsersController')
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#6 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#7 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#8 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2017-12-02 15:28:20 Error: Fatal Error (16): Exception thrown without a stack frame in [Unknown, line 0]
+2017-12-02 15:28:20 Error: [FatalErrorException] Exception thrown without a stack frame
+Request URL: /attendance_system/admin/users/index
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(16, 'Exception throw...', 'Unknown', 0)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(16, 'Exception throw...', 'Unknown', 0, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-12-02 15:31:26 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /attendance_system/admin/users/index
+Stack Trace:
+#0 [internal function]: App::load('AppController')
+#1 /home/tuang/attendance_system/admin/Controller/UsersController.php(5): spl_autoload_call('AppController')
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(567): include('/home/tuang/att...')
+#3 [internal function]: App::load('UsersController')
+#4 [internal function]: spl_autoload_call('UsersController')
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#6 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#7 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#8 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2017-12-02 15:31:26 Error: Fatal Error (16): Exception thrown without a stack frame in [Unknown, line 0]
+2017-12-02 15:31:26 Error: [FatalErrorException] Exception thrown without a stack frame
+Request URL: /attendance_system/admin/users/index
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(16, 'Exception throw...', 'Unknown', 0)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(16, 'Exception throw...', 'Unknown', 0, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-12-02 16:55:48 Error: Fatal Error (64): Cannot declare class StudentsSubjects, because the name is already in use in [/home/tuang/attendance_system/admin/Model/StudentSubject.php, line 5]
+2017-12-02 16:55:48 Error: [FatalErrorException] Cannot declare class StudentsSubjects, because the name is already in use
+Request URL: /attendance_system/admin/students/add_student
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot declare ...', '/home/tuang/att...', 5)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Cannot declare ...', '/home/tuang/att...', 5, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-12-04 09:46:38 Error: [MissingActionException] Action UsersController::forgot_password() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'forgot_password',
+)
+Request URL: /attendance_system/admin/users/forgot_password
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-09 11:03:42 Error: [MissingControllerException] Controller class PluginsController could not be found.
+Exception Attributes: array (
+  'class' => 'PluginsController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/plugins/bootstrap-datepicker.min.css
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-09 11:03:50 Error: [MissingControllerException] Controller class PluginsController could not be found.
+Exception Attributes: array (
+  'class' => 'PluginsController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/plugins/bootstrap-datepicker.min.css
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-09 11:04:41 Error: [MissingControllerException] Controller class PluginsController could not be found.
+Exception Attributes: array (
+  'class' => 'PluginsController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/plugins/timepicker/bootstrap-datepicker.min.css
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-09 11:04:43 Error: [MissingControllerException] Controller class PluginsController could not be found.
+Exception Attributes: array (
+  'class' => 'PluginsController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/plugins/timepicker/bootstrap-datepicker.min.css
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-09 11:42:39 Error: Fatal Error (64): Cannot use empty array elements in arrays in [/home/tuang/attendance_system/admin/View/ClassRooms/index.ctp, line 24]
+2017-12-09 11:42:39 Error: [FatalErrorException] Cannot use empty array elements in arrays
+Request URL: /attendance_system/admin/class_rooms/index
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot use empt...', '/home/tuang/att...', 24)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Cannot use empt...', '/home/tuang/att...', 24, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-12-09 12:00:16 Error: [MissingHelperException] Helper class FromHelper could not be found.
+Exception Attributes: array (
+  'class' => 'FromHelper',
+  'plugin' => false,
+)
+Request URL: /attendance_system/admin/class_rooms/index
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('From')
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(858): HelperCollection->__isset('From')
+#2 /home/tuang/attendance_system/admin/View/ClassRooms/index.ctp(31): View->__get('From')
+#3 /home/tuang/attendance_system/lib/Cake/View/View.php(971): include('/home/tuang/att...')
+#4 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#5 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#6 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#9 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-12-10 16:28:41 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'StudentSubject.name' in 'field list'
+Request URL: /attendance_system/admin/class_rooms/add
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Student...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Student...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Student...', Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(StudentSubject), Array)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(36): Model->find('all', Array)
+#7 [internal function]: ClassRoomsController->add()
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-12-10 16:41:10 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/admin/students/add_student
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/StudentsController.php(88): StudentSubject->save_student_subject('4', '1')
+#1 [internal function]: StudentsController->add_student()
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-10 16:41:58 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/admin/students/add_student
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/StudentsController.php(88): StudentSubject->save_student_subject('5', '1')
+#1 [internal function]: StudentsController->add_student()
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-10 16:42:58 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/admin/students/add_student
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/StudentsController.php(88): StudentSubject->save_student_subject('6', '1')
+#1 [internal function]: StudentsController->add_student()
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-10 16:43:05 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/admin/students/add_student
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/StudentsController.php(88): StudentSubject->save_student_subject('7', '1')
+#1 [internal function]: StudentsController->add_student()
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-10 16:45:15 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/admin/students/add_student
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/StudentsController.php(88): StudentSubject->save_student_subject('8', '1')
+#1 [internal function]: StudentsController->add_student()
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-10 16:45:28 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/admin/students/add_student
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/StudentsController.php(88): StudentSubject->save_student_subject('9', '1')
+#1 [internal function]: StudentsController->add_student()
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-10 16:46:46 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/admin/students/add_student
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/StudentsController.php(88): StudentSubject->save_student_subject('10', '1')
+#1 [internal function]: StudentsController->add_student()
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-10 16:48:37 Error: [Error] Call to a member function saveAll() on null
+Request URL: /attendance_system/admin/students/add_student
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/StudentsController.php(88): StudentSubject->save_student_subject('11', '1')
+#1 [internal function]: StudentsController->add_student()
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-10 16:51:17 Error: [Error] Call to undefined method StudentsController::get_student()
+Request URL: /attendance_system/admin/students/edit/12
+Stack Trace:
+#0 [internal function]: StudentsController->edit('12')
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-12-10 16:51:30 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/admin/students/edit/12
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/StudentsController.php(118): Student->get_student('12')
+#1 [internal function]: StudentsController->edit('12')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-10 16:52:09 Error: [Error] Call to a member function user() on null
+Request URL: /attendance_system/admin/students/edit/12
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/StudentsController.php(118): Student->get_student('12')
+#1 [internal function]: StudentsController->edit('12')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-10 16:53:17 Error: [Error] Call to a member function user() on null
+Request URL: /attendance_system/admin/students/edit/12
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/StudentsController.php(118): Student->get_student('12')
+#1 [internal function]: StudentsController->edit('12')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-10 16:57:13 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'get_student' at line 1
+Request URL: /attendance_system/admin/students/edit/1
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('get_student', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('get_student', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(618): DboSource->fetchAll('get_student', Array, Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(834): DboSource->query('get_student', Array, Object(Student))
+#5 /home/tuang/attendance_system/admin/Controller/StudentsController.php(118): Model->__call('get_student', Array)
+#6 [internal function]: StudentsController->edit('1')
+#7 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#8 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#10 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-12-10 16:57:17 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'get_student' at line 1
+Request URL: /attendance_system/admin/students/edit/12
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('get_student', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('get_student', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(618): DboSource->fetchAll('get_student', Array, Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(834): DboSource->query('get_student', Array, Object(Student))
+#5 /home/tuang/attendance_system/admin/Controller/StudentsController.php(118): Model->__call('get_student', Array)
+#6 [internal function]: StudentsController->edit('12')
+#7 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#8 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#10 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-12-10 17:31:56 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/admin/class_rooms/add
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(48): ClassRoom->save_class_student('1', NULL)
+#1 [internal function]: ClassRoomsController->add()
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-10 17:33:28 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/admin/class_rooms/add
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(48): ClassRoom->save_class_student('2', NULL)
+#1 [internal function]: ClassRoomsController->add()
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-10 17:33:47 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/admin/class_rooms/add
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(48): ClassRoom->save_class_student('3', NULL)
+#1 [internal function]: ClassRoomsController->add()
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-10 17:33:57 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/admin/class_rooms/add
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(48): ClassRoom->save_class_student('4', NULL)
+#1 [internal function]: ClassRoomsController->add()
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-10 17:34:47 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/admin/class_rooms/add
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(47): ClassRoom->save_class_student('5', '2')
+#1 [internal function]: ClassRoomsController->add()
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-10 22:37:20 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user8-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:37:20 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user1-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:37:20 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user6-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:37:20 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:37:20 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user7-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:37:20 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user5-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:37:20 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:37:20 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:37:36 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user1-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:37:36 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:37:36 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user7-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:37:36 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user5-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:37:36 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user8-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:37:36 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user6-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:37:37 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:37:37 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:38:20 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user1-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:38:20 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:38:20 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user8-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:38:20 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user5-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:38:20 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user7-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:38:20 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user6-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:38:20 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:38:20 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:42:35 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user1-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:43:01 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user1-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:43:13 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user1-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:43:37 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user1-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:44:06 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user1-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:45:02 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user1-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:46:23 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user1-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:46:45 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user1-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-10 22:47:40 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user1-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-12 12:50:29 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user1-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-12 12:52:37 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user1-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-12 12:53:16 Error: [MissingActionException] Action ClassRoomsController::dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'dist',
+)
+Request URL: /attendance_system/admin/class_rooms/dist/img/user1-128x128.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-12 13:00:18 Error: [ParseError] syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file
+Request URL: /attendance_system/admin/class_rooms/confirm
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-12 13:06:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Major.student_id' in 'on clause'
+Request URL: /attendance_system/admin/class_rooms/confirm
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Student...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Student...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Student...', Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(Student), Array)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(34): Model->find('all')
+#7 [internal function]: ClassRoomsController->confirm()
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-12-12 13:59:47 Error: [ParseError] syntax error, unexpected '<'
+Request URL: /attendance_system/admin/class_rooms/confirm
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-12 14:00:15 Error: [ParseError] syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+Request URL: /attendance_system/admin/class_rooms/confirm
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-12 15:14:33 Error: [MissingViewException] View file "ClassRooms/class_list.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'ClassRooms/class_list.ctp',
+)
+Request URL: /attendance_system/admin/class_rooms/class_list
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(470): View->_getViewFileName('ClassRooms/clas...')
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

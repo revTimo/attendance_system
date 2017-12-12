@@ -6,6 +6,7 @@ class StudentsController extends AppController {
 		'Student',
 		'Subject',
 		'Major',
+		'StudentSubject',
 	];
 
 	//学生一覧
@@ -32,15 +33,12 @@ class StudentsController extends AppController {
 	public function add_student ($sign = null, $id = null)
 	{
 		//専攻登録のため、select2の一覧が必要
-		$all_major = $this->Major->find('list', [
+		$major_list = $this->Major->find('list', [
 			'confitions' => [
 				'school_id' => $this->Auth->user('school_id'),
 			],
-			'fields' => ['id', 'name'],
-			//join テーブルなしで
-			'recursive' => -1,
 		]);
-		$this->set('all_major', $all_major);
+		$this->set('all_major', $major_list);
 
 		//学生登録
 		if ($this->request->is('post'))
@@ -60,7 +58,6 @@ class StudentsController extends AppController {
 				$this->Student->id = $id;
 				$profile_img = $this->request->data['Student']['current_img'];
 			}
-
 			$save_data = [
 				'name' => $this->request->data['Student']['name'],
 				'student_number' => $this->request->data['Student']['student_number'],
@@ -72,9 +69,33 @@ class StudentsController extends AppController {
 				'image' => $profile_img,
 			];
 
-			if ($this->Student->save($save_data) == false)
+			try
 			{
-				return $this->Flash->setFlashError('学生登録失敗しました。');
+				$this->Student->begin();
+				if ($this->Student->save($save_data) == false)
+				{
+					$this->Student->rollback();
+					return $this->Flash->setFlashError('学生登録失敗しました。');
+				}
+
+				# student_subjectに保存
+				/*
+			 	 *　ここに中間テーブルに保存の処理が入る
+			 	 *　今すぐ【上の】保存したstudent idをもらって
+			 	 *　中間テーブルに学生ＩＤと学生が選択したmajorの中に入っている科目全てのIDをもらう
+			 	 * 
+				 */
+				if ($this->StudentSubject->save_student_subject($this->Student->id, $this->request->data['Student']['major_id']) == false)
+				{
+					$this->Student->rollback();
+					return $this->Flash->setFlashError('StudentSubject登録失敗しました。');
+				}
+				$this->Student->commit();
+			}
+			catch (Exception $e)
+			{
+				$this->Student->rollback();
+				return $this->Flash->setFlashError('学生登録失敗しました。03'.$e);
 			}
 
 			// 編集画面の場合成功メッセージ
@@ -83,6 +104,7 @@ class StudentsController extends AppController {
 				$this->Flash->setFlashSuccess('学生の情報を編集しました。');
 				return $this->redirect(['action' => 'index']);
 			}
+
 			//　通常登録のとき
 			$this->Flash->setFlashSuccess('学生の登録が完了しました。');
 			return $this->redirect(['action' => 'index']);
