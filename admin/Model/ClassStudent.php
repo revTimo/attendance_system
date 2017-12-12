@@ -19,4 +19,15 @@ class ClassStudent extends AppModel {
 		}
 		return true;
 	}
+
+	public function get_attend_students($class_id = null)
+	{
+		$data = $this->find('list', [
+			'conditions' => [
+				'school_id' => AuthComponent::user('school_id'),
+				'class_room_id' => $class_id,
+			],
+		]);
+		return $data;
+	}
 }

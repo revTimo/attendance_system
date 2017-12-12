@@ -11,4 +11,15 @@ class Subject extends AppModel {
 		}
 		return true;
 	}
+
+	// 一覧取得
+	public function subject_list ()
+	{
+		$data = $this->find('list', [
+			'conditions' => [
+				'school_id' => AuthComponent::user('school_id'),
+			],
+		]);
+		return $data;
+	}
 }

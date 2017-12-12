@@ -242,7 +242,7 @@
             <?php if($this->request->params['action'] == 'index') :?>
             <li class="active"><a href="/attendance_system/admin/class_rooms/index"><i class="fa fa-user-plus"></i>教室登録</a></li>
             <?php else :?>
-            <li><a href="/attendance_system/admin/subjects/index"><i class="fa fa-user-plus"></i>教室登録</a></li>
+            <li><a href="/attendance_system/admin/class_rooms/index"><i class="fa fa-user-plus"></i>教室登録</a></li>
             <?php endif ?>
             <?php if($this->request->params['action'] == 'class_list') :?>
             <li class="active"><a href="/attendance_system/admin/class_rooms/class_list"><i class="fa fa-list" aria-hidden="true"></i>教室一覧</a></li>

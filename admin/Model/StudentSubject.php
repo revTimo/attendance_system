@@ -40,4 +40,40 @@ class StudentSubject extends AppModel {
 		}
 		return true;
 	}
+
+	// 授業に参加している学生を取得
+	public function get_attend_student_list ($subject_id = null)
+	{
+		// 授業を受ける学生リスト
+		$get_student = $this->find('all',[
+			'conditions' => [
+				'subject_id' => $subject_id,
+				//'school_id' => AuthComponent::user('school_id'),
+			],
+			'recursive' => -1,
+		]);
+
+		// Major Modelを呼び出す
+		$Major = ClassRegistry::init('Major');
+		//　学生を表示するため配列データ
+		$student_name_list = [];
+		foreach ($get_student as $student)
+		{
+			$student_name_list[] = [
+				'id' => $student['Student']['id'],
+				'name' => $student['Student']['name'],
+				'img' => $student['Student']['image'],
+				// ここはちょっと気持ち悪いなぁ
+				'major' => $Major->find('first',[
+					'conditions' => [
+						'id' => $student['Student']['major_id'],
+						'school_id' => AuthComponent::user('school_id'),
+					],
+					'fields' => ['name'],
+					'recursive' => -1,
+				]),
+			];
+		}
+		return $student_name_list;
+	}
 }

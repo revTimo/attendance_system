@@ -10892,3 +10892,457 @@ Stack Trace:
 #3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
 #4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2017-12-12 21:26:13 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'school_id' in 'where clause'
+Request URL: /attendance_system/admin/class_rooms/class_list
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `ClassRo...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `ClassRo...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `ClassRo...', Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(ClassRoom), Array)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(20): Model->find('all', Array)
+#7 [internal function]: ClassRoomsController->class_list()
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-12-12 22:41:05 Error: [MissingActionException] Action ClassRoomsController::class_rooms() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'class_rooms',
+)
+Request URL: /attendance_system/admin/class_rooms/class_rooms
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-12 22:42:00 Error: [MissingActionException] Action ClassRoomsController::class_rooms() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'class_rooms',
+)
+Request URL: /attendance_system/admin/class_rooms/class_rooms/class_list
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-12 22:42:10 Error: [MissingActionException] Action ClassRoomsController::class_rooms() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'class_rooms',
+)
+Request URL: /attendance_system/admin/class_rooms/class_rooms/class_list
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-12 23:19:53 Error: [ParseError] syntax error, unexpected '_list' (T_STRING), expecting '('
+Request URL: /attendance_system/admin/class_rooms/edit/13
+Stack Trace:
+#0 [internal function]: App::load('StudentSubject')
+#1 [internal function]: spl_autoload_call('StudentSubject')
+#2 /home/tuang/attendance_system/lib/Cake/Utility/ClassRegistry.php(146): class_exists('StudentSubject')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('StudentSubject')
+#4 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(368): Controller->loadModel('StudentSubject')
+#5 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(406): Controller->__isset('StudentSubject')
+#6 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(156): Controller->__get('StudentSubject')
+#7 [internal function]: ClassRoomsController->edit('13')
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-12-12 23:20:41 Error: [ParseError] syntax error, unexpected '_list' (T_STRING), expecting '('
+Request URL: /attendance_system/admin/class_rooms/edit/13
+Stack Trace:
+#0 [internal function]: App::load('StudentSubject')
+#1 [internal function]: spl_autoload_call('StudentSubject')
+#2 /home/tuang/attendance_system/lib/Cake/Utility/ClassRegistry.php(146): class_exists('StudentSubject')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('StudentSubject')
+#4 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(368): Controller->loadModel('StudentSubject')
+#5 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(406): Controller->__isset('StudentSubject')
+#6 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(156): Controller->__get('StudentSubject')
+#7 [internal function]: ClassRoomsController->edit('13')
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-12-12 23:22:23 Error: [ParseError] syntax error, unexpected '_list' (T_STRING), expecting '('
+Request URL: /attendance_system/admin/class_rooms/edit/13
+Stack Trace:
+#0 [internal function]: App::load('StudentSubject')
+#1 [internal function]: spl_autoload_call('StudentSubject')
+#2 /home/tuang/attendance_system/lib/Cake/Utility/ClassRegistry.php(146): class_exists('StudentSubject')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('StudentSubject')
+#4 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(368): Controller->loadModel('StudentSubject')
+#5 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(406): Controller->__isset('StudentSubject')
+#6 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(156): Controller->__get('StudentSubject')
+#7 [internal function]: ClassRoomsController->edit('13')
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-12-12 23:22:27 Error: [ParseError] syntax error, unexpected '_list' (T_STRING), expecting '('
+Request URL: /attendance_system/admin/class_rooms/edit/13
+Stack Trace:
+#0 [internal function]: App::load('StudentSubject')
+#1 [internal function]: spl_autoload_call('StudentSubject')
+#2 /home/tuang/attendance_system/lib/Cake/Utility/ClassRegistry.php(146): class_exists('StudentSubject')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('StudentSubject')
+#4 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(368): Controller->loadModel('StudentSubject')
+#5 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(406): Controller->__isset('StudentSubject')
+#6 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(156): Controller->__get('StudentSubject')
+#7 [internal function]: ClassRoomsController->edit('13')
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-12-12 23:23:36 Error: [ParseError] syntax error, unexpected '_list' (T_STRING), expecting '('
+Request URL: /attendance_system/admin/class_rooms/edit/13
+Stack Trace:
+#0 [internal function]: App::load('StudentSubject')
+#1 [internal function]: spl_autoload_call('StudentSubject')
+#2 /home/tuang/attendance_system/lib/Cake/Utility/ClassRegistry.php(146): class_exists('StudentSubject')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('StudentSubject')
+#4 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(368): Controller->loadModel('StudentSubject')
+#5 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(406): Controller->__isset('StudentSubject')
+#6 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(156): Controller->__get('StudentSubject')
+#7 [internal function]: ClassRoomsController->edit('13')
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-12-12 23:23:54 Error: [ParseError] syntax error, unexpected '_list' (T_STRING), expecting '('
+Request URL: /attendance_system/admin/class_rooms/edit/13
+Stack Trace:
+#0 [internal function]: App::load('StudentSubject')
+#1 [internal function]: spl_autoload_call('StudentSubject')
+#2 /home/tuang/attendance_system/lib/Cake/Utility/ClassRegistry.php(146): class_exists('StudentSubject')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('StudentSubject')
+#4 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(368): Controller->loadModel('StudentSubject')
+#5 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(406): Controller->__isset('StudentSubject')
+#6 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(156): Controller->__get('StudentSubject')
+#7 [internal function]: ClassRoomsController->edit('13')
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-12-12 23:26:38 Error: [ParseError] syntax error, unexpected '_list' (T_STRING), expecting '('
+Request URL: /attendance_system/admin/class_rooms/edit/13
+Stack Trace:
+#0 [internal function]: App::load('StudentSubject')
+#1 [internal function]: spl_autoload_call('StudentSubject')
+#2 /home/tuang/attendance_system/lib/Cake/Utility/ClassRegistry.php(146): class_exists('StudentSubject')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('StudentSubject')
+#4 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(368): Controller->loadModel('StudentSubject')
+#5 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(406): Controller->__isset('StudentSubject')
+#6 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(156): Controller->__get('StudentSubject')
+#7 [internal function]: ClassRoomsController->edit('13')
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-12-12 23:27:25 Error: [MissingControllerException] Controller class ClassRoomsController could not be found.
+Exception Attributes: array (
+  'class' => 'ClassRoomsController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/class_rooms/edit/13
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-12 23:27:32 Error: [MissingControllerException] Controller class ClassRoomsController could not be found.
+Exception Attributes: array (
+  'class' => 'ClassRoomsController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/class_rooms/edit/13
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-12 23:27:33 Error: [ParseError] syntax error, unexpected '_list' (T_STRING), expecting '('
+Request URL: /attendance_system/admin/class_rooms/edit/13
+Stack Trace:
+#0 [internal function]: App::load('StudentSubject')
+#1 [internal function]: spl_autoload_call('StudentSubject')
+#2 /home/tuang/attendance_system/lib/Cake/Utility/ClassRegistry.php(146): class_exists('StudentSubject')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('StudentSubject')
+#4 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(368): Controller->loadModel('StudentSubject')
+#5 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(406): Controller->__isset('StudentSubject')
+#6 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(156): Controller->__get('StudentSubject')
+#7 [internal function]: ClassRoomsController->edit('13')
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-12-12 23:27:36 Error: [ParseError] syntax error, unexpected '_list' (T_STRING), expecting '('
+Request URL: /attendance_system/admin/class_rooms/edit/13
+Stack Trace:
+#0 [internal function]: App::load('StudentSubject')
+#1 [internal function]: spl_autoload_call('StudentSubject')
+#2 /home/tuang/attendance_system/lib/Cake/Utility/ClassRegistry.php(146): class_exists('StudentSubject')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('StudentSubject')
+#4 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(368): Controller->loadModel('StudentSubject')
+#5 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(406): Controller->__isset('StudentSubject')
+#6 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(156): Controller->__get('StudentSubject')
+#7 [internal function]: ClassRoomsController->edit('13')
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-12-12 23:27:59 Error: [ParseError] syntax error, unexpected '_list' (T_STRING), expecting '('
+Request URL: /attendance_system/admin/class_rooms/edit/13
+Stack Trace:
+#0 [internal function]: App::load('StudentSubject')
+#1 [internal function]: spl_autoload_call('StudentSubject')
+#2 /home/tuang/attendance_system/lib/Cake/Utility/ClassRegistry.php(146): class_exists('StudentSubject')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('StudentSubject')
+#4 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(368): Controller->loadModel('StudentSubject')
+#5 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(406): Controller->__isset('StudentSubject')
+#6 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(156): Controller->__get('StudentSubject')
+#7 [internal function]: ClassRoomsController->edit('13')
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-12-12 23:28:33 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/admin/class_rooms/edit/13
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(156): StudentSubject->get_attend_student_list('3')
+#1 [internal function]: ClassRoomsController->edit('13')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-12 23:28:43 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'get_attend_student_list' at line 1
+Request URL: /attendance_system/admin/class_rooms/edit/13
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('get_attend_stud...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('get_attend_stud...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(618): DboSource->fetchAll('get_attend_stud...', Array, Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(834): DboSource->query('get_attend_stud...', Array, Object(AppModel))
+#5 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(156): Model->__call('get_attend_stud...', Array)
+#6 [internal function]: ClassRoomsController->edit('13')
+#7 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#8 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#10 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-12-12 23:30:31 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'school_id' in where clause is ambiguous
+Request URL: /attendance_system/admin/class_rooms/edit/13
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Student...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Student...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Student...', Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(StudentSubject), Array)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /home/tuang/attendance_system/admin/Model/StudentSubject.php(51): Model->find('all', Array)
+#7 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(156): StudentSubject->get_attend_student_list('3')
+#8 [internal function]: ClassRoomsController->edit('13')
+#9 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#12 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-12-12 23:30:36 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'school_id' in where clause is ambiguous
+Request URL: /attendance_system/admin/class_rooms/edit/13
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Student...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Student...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Student...', Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(StudentSubject), Array)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /home/tuang/attendance_system/admin/Model/StudentSubject.php(51): Model->find('all', Array)
+#7 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(156): StudentSubject->get_attend_student_list('3')
+#8 [internal function]: ClassRoomsController->edit('13')
+#9 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#12 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-12-12 23:31:51 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'school_id' in where clause is ambiguous
+Request URL: /attendance_system/admin/class_rooms/edit/13
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Student...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Student...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Student...', Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(StudentSubject), Array)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /home/tuang/attendance_system/admin/Model/StudentSubject.php(51): Model->find('all', Array)
+#7 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(156): StudentSubject->get_attend_student_list('3')
+#8 [internal function]: ClassRoomsController->edit('13')
+#9 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#12 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-12-12 23:32:06 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/admin/class_rooms/edit/13
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(156): StudentSubject->get_attend_student_list('3')
+#1 [internal function]: ClassRoomsController->edit('13')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-12 23:34:00 Error: [MissingActionException] Action ClassRoomsController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'webroot',
+)
+Request URL: /attendance_system/admin/class_rooms/webroot/student_image/no_image.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-12 23:34:18 Error: [MissingActionException] Action ClassRoomsController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'webroot',
+)
+Request URL: /attendance_system/admin/class_rooms/webroot/student_image/no_image.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-12-12 23:35:20 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'school_id' in where clause is ambiguous
+Request URL: /attendance_system/admin/class_rooms/edit/13
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Student...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Student...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Student...', Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(StudentSubject), Array)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /home/tuang/attendance_system/admin/Model/StudentSubject.php(51): Model->find('all', Array)
+#7 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(156): StudentSubject->get_attend_student_list('3')
+#8 [internal function]: ClassRoomsController->edit('13')
+#9 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#12 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-12-12 23:37:22 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'school_id' in where clause is ambiguous
+Request URL: /attendance_system/admin/class_rooms/confirm
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Student...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Student...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Student...', Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(StudentSubject), Array)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(62): Model->find('all', Array)
+#7 [internal function]: ClassRoomsController->confirm()
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-12-12 23:38:40 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'school_id' in where clause is ambiguous
+Request URL: /attendance_system/admin/class_rooms/confirm
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Student...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Student...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Student...', Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(StudentSubject), Array)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(62): Model->find('all', Array)
+#7 [internal function]: ClassRoomsController->confirm()
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-12-12 23:40:24 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'school_id' in where clause is ambiguous
+Request URL: /attendance_system/admin/class_rooms/confirm
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Student...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Student...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Student...', Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(StudentSubject), Array)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(62): Model->find('all', Array)
+#7 [internal function]: ClassRoomsController->confirm()
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-12-12 23:40:33 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'school_id' in where clause is ambiguous
+Request URL: /attendance_system/admin/class_rooms/confirm
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Student...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Student...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Student...', Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(StudentSubject), Array)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /home/tuang/attendance_system/admin/Controller/ClassRoomsController.php(62): Model->find('all', Array)
+#7 [internal function]: ClassRoomsController->confirm()
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ClassRoomsController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-12-12 23:41:08 Error: [MissingControllerException] Controller class WebrootController could not be found.
+Exception Attributes: array (
+  'class' => 'WebrootController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/webroot/student_image/4
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-12 23:41:08 Error: [MissingControllerException] Controller class WebrootController could not be found.
+Exception Attributes: array (
+  'class' => 'WebrootController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/webroot/student_image/7
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-12 23:41:08 Error: [MissingControllerException] Controller class WebrootController could not be found.
+Exception Attributes: array (
+  'class' => 'WebrootController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/webroot/student_image/1
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-12 23:41:43 Error: [MissingActionException] Action ClassRoomsController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassRoomsController',
+  'action' => 'webroot',
+)
+Request URL: /attendance_system/admin/class_rooms/webroot/student_image/
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
