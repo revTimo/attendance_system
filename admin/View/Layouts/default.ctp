@@ -165,22 +165,9 @@
           <a href="/attendance_system/admin/users/logout/"><i class="fa fa-sign-out" aria-hidden="true"></i>logout</a>
         </div>
       </div>
-
-      <!-- search form (Optional) -->
-      <form action="#" method="get" class="sidebar-form">
-        <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
-          <span class="input-group-btn">
-              <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-              </button>
-            </span>
-        </div>
-      </form>
-      <!-- /.search form -->
-
       <!-- Sidebar Menu -->
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">HEADER</li>
+        <li class="header"></li>
         <!-- Optionally, you can add icons to the links -->
         <?php if($this->request->params['controller'] == 'attendances') :?>
         <li class="active"><a href="/attendance_system/admin/attendances/index"><i class="fa fa-link"></i> <span>出席一覧</span></a></li>

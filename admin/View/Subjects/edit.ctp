@@ -37,7 +37,7 @@
     });
   });
 
-  function remove_item(target, $id) {
+  function remove_item(target, id) {
     if (confirm('登録されている科目がDBから削除されます、よろしいですか？') == false)
     {
       return;
@@ -46,7 +46,7 @@
     $.ajax({
       url : "/attendance_system/admin/subjects/delete_edit",
       type : "POST",
-      data : {id : $id},
+      data : {id : id},
       dataType : "text",
       success : function (response) {
         //通信成功時の処理

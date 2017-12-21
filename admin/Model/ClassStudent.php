@@ -2,7 +2,7 @@
 
 class ClassStudent extends AppModel {
 	
-	public function save_class_student ($class_id = null, $students_id = null)
+	public function save_class_student ($class_id = null, $students_id = null, $status = null)
 	{
 		$class_student_id_list = [];
 		foreach ($students_id as $student)
@@ -11,6 +11,14 @@ class ClassStudent extends AppModel {
 				'class_room_id' => $class_id,
 				'student_id' => $student,
 			];
+		}
+
+		// 編集のとき削除しちゃう
+		if ($status == 'edit')
+		{
+			$this->deleteAll([
+				'class_room_id' => $class_id,
+			]);
 		}
 
 		if ($this->saveAll($class_student_id_list) == false)

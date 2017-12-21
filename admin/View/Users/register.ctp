@@ -13,15 +13,15 @@
       </div>
       <div class="form-group has-feedback">
         <?= $this->Form->input('user_name', ['label' =>false, 'class' => 'form-control', 'placeholder' => '名前']) ?>
-        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+        <span class="fa fa-user form-control-feedback" aria-hidden="true"></span>
       </div>
       <div class="form-group has-feedback">
         <?= $this->Form->input('school_name', ['label' =>false, 'class' => 'form-control', 'placeholder' => '学校名']) ?>
-        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+        <span class="fa fa-university form-control-feedback" aria-hidden="true"></span>
       </div>
       <div class="form-group has-feedback">
         <?= $this->Form->input('password', ['label' => false, 'class' => 'form-control', 'placeholder' => 'パスワード']) ?>
-        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+        <span class="fa fa-lock form-control-feedback" aria-hidden="true"></span>
       </div>
       <div class="row">
         <div class="col-xs-12">

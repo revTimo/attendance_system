@@ -23,7 +23,8 @@
               'label' => false,
               'class' => 'select2 col-md-12',
               'name' => 'data[Student][major_id]',
-              'options' => [0=>'専攻を選択してください',$all_major],
+              'options' => ['0' => '専攻を選択してください',$all_major],
+              'selected' => '0',
               ]);
             ?>
           </div>
@@ -52,7 +53,7 @@
 <script>
   $(document).ready(function(){
     $("#image_add").click(function(){
-      $(".profile_img").append('<div class="img_upload"><label for="image">写真</label><?= $this->Form->input("Student.image",["label" => false, "type" => "file", "id" => "student_img"])?><button type="button" class="btn btn-danger btn-xs" onclick="remove(this)">削除</button></div>');
+      $(".profile_img").append('<div class="img_upload"><label for="image">写真</label><?= $this->Form->input("Student.image",["label" => false, "type" => "file", "id" => "student_img", "required"])?><button type="button" class="btn btn-danger btn-xs" onclick="remove(this)">削除</button></div>');
       $("#image_add").css("display", "none");
     });
   });

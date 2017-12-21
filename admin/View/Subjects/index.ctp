@@ -11,7 +11,7 @@
 				</div>
 				<div class="form-group sub">
 					<label for="name">科目</label>
-					<?= $this->Form->input('Subject.subjects.0',['label' => false,'class' => 'form-control sub_clone','required','id' => 'myid']) ?>
+					<?= $this->Form->input('Subject.subjects.0',['label' => false,'class' => 'form-control sub_clone','id' => 'myid']) ?>
 					<button type="button" class="btn btn-danger btn-xs" onclick="remove_item(this)">削除</button> 
 				</div>
 				<span class="clone"></span>
@@ -74,7 +74,7 @@
 	$(document).ready(function(){
 		var subject_clone_count = 1;
 		$("#subject_add").click(function(){
-			$(".clone").append('<div class="form-group sub"><label for="name">科目</label><?= $this->Form->input("Subject.subjects.'+subject_clone_count+'",["label" => false,"class" => "form-control sub_clone","required"]) ?><button type="button" class="btn btn-danger btn-xs" onclick="remove_item(this)">削除</button></div><br>');
+			$(".clone").append('<div class="form-group sub"><label for="name">科目</label><?= $this->Form->input("Subject.subjects.'+subject_clone_count+'",["label" => false,"class" => "form-control sub_clone"]) ?><button type="button" class="btn btn-danger btn-xs" onclick="remove_item(this)">削除</button></div><br>');
 			subject_clone_count++;
 		});
 	});

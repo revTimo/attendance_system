@@ -136,18 +136,24 @@ class ClassRoomsController extends AppController {
 		}
 
 		$this->Flash->setFlashSuccess('教室の登録完了');
-		return $this->redirect(['action' => 'index']);
+		return $this->redirect(['action' => 'class_list']);
 	}
 
 	// クラス編集
-	public function edit ($id = null)
+	public function edit ($class_id = null)
 	{
 		if ($this->request->is('get'))
 		{
+			// 他のIDを編集できないように
+			if ($this->ClassRoom->door($class_id) == false)
+			{
+				$this->Flash->setFlashError('不正なアクセスはできません');
+				return $this->redirect(['action' => 'class_list']);
+			}
 			// retrieve edit data
 			$edit_data = $this->ClassRoom->find('first', [
 				'conditions' => [
-					'id' => $id,
+					'id' => $class_id,
 					'school_id' => $this->Auth->user('school_id'),
 				],
 			]);
@@ -161,11 +167,116 @@ class ClassRoomsController extends AppController {
 			$this->set('student_list', $student_list);
 
 		}
+		if ($this->request->is('post'))
+		{
+			try
+			{
+				$this->ClassRoom->begin();
+				// class_rooms
+				if ($this->ClassRoom->save_class_room($class_id, $this->request->data, 'edit') == false)
+				{
+					$this->ClassRoom->rollback();
+					$this->Flash->setFlashError('編集できませんでした。(classroom保存失敗)');
+					return $this->redirect(['action' => 'class_list']);
+				}
+
+				// class_student
+				if ($this->ClassStudent->save_class_student($class_id, $this->request->data['ClassRoom']['students_id'], 'edit') == false)
+				{
+					$this->ClassRoom->rollback();
+					$this->Flash->setFlashError('編集できませんでした。(classroom保存失敗)');
+					return $this->redirect(['action' => 'class_list']);
+				}
+				$this->ClassRoom->commit();
+				$this->Flash->setFlashSuccess('編集しました。');
+				return $this->redirect(['action' => 'class_list']);
+			}
+			catch(Exception $e)
+			{
+				$this->ClassRoom->rollback();
+				$this->Flash->setFlashError('編集できませんでした。');
+				return $this->redirect(['action' => 'class_list']);
+			}
+		}
 	}
 
 	//クラス削除
 	public function delete ($id = null)
 	{
+		// 一個削除
+		if ($this->request->is('get'))
+		{
+			// まず他のidが削除されないように
+			// 今ログインしている、ユーザーのschool_idと削除するデータのschool_id
+			$target_class = $this->ClassRoom->find('first', [
+				'conditions' => [
+					'id' => $id,
+					'school_id' => $this->Auth->user('school_id'),
+				],
+				'fields' => ['school_id'],
+			]);
+			if (empty($target_class))
+			{
+				return $this->redirect(['action' => 'class_list']);
+			}
 
+			if ($this->Auth->user('school_id') != $target_class['ClassRoom']['school_id'])
+			{
+				$this->Flash->setFlashError('不正なアクセスです。');
+				return $this->redirect(['action' => 'class_list']);
+			}
+			$this->ClassRoom->id = $id;
+		}
+
+		// 複数削除
+		if ($this->request->is('post'))
+		{
+			$this->ClassRoom->id = $this->request->data['deletedata'];// 複数のid
+		}
+
+		// 共通削除
+		if ($this->ClassRoom->delete() == false)
+		{
+			$this->Flash->setFlashError('削除できませんでした。');
+			return $this->redirect(['action' => 'class_list']);
+		}
+
+		$this->Flash->setFlashSuccess('削除しました。');
+		return $this->redirect(['action' => 'class_list']);
+	}
+
+	public function call_student ()
+	{
+		$this->autoRender = FALSE;
+		if($this->request->is('ajax'))
+		{
+			// 授業を受ける学生リスト
+			$get_student = $this->StudentSubject->find('all',[
+				'conditions' => [
+					'subject_id' => $this->request->data['id'],
+					//'school_id' => $this->Auth->user('school_id'),
+				],
+			]);
+			
+			//　学生を表示するため配列データ
+			$student_name_list = [];
+			foreach ($get_student as $student)
+			{
+				$student_name_list[] = [
+					'id' => $student['Student']['id'],
+					'name' => $student['Student']['name'],
+					'img' => $student['Student']['image'],
+					'major' => $this->Major->find('first',[
+						'conditions' => [
+							'id' => $student['Student']['major_id'],
+							'school_id' => $this->Auth->user('school_id'),
+						],
+						'fields' => ['name'],
+						'recursive' => -1,
+					]),
+				];
+			}
+			return json_encode($student_name_list);
+		}
 	}
 }

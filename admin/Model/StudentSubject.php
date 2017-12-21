@@ -3,9 +3,8 @@
 class StudentSubject extends AppModel {
 
 	public $belongsTo = 'Student';
-	
 	// student_subject中間テーブル
-	public function save_student_subject($student_id = null, $major_id = null)
+	public function save_student_subject($student_id = null, $major_id = null, $status = null)
 	{
 		// Major Modelを呼び出す
 		$Major = ClassRegistry::init('Major');
@@ -13,6 +12,7 @@ class StudentSubject extends AppModel {
 		$major = $Major->find('first', [
 			'conditions' => [
 				'id' => $major_id,
+				'school_id' => AuthComponent::user('school_id'),
 			],
 		]);
 
@@ -32,8 +32,17 @@ class StudentSubject extends AppModel {
 			$data[] = [
 				'student_id' => $student_id,
 				'subject_id' => $value,
+				'school_id' => AuthComponent::user('school_id'),
 			];
 		}
+		// 編集の場合
+		if ($status == 28)
+		{
+			$this->deleteAll([
+				'student_id' => $student_id,
+			]);
+		}
+
 		if ($this->saveAll($data) == false)
 		{
 			return false;
@@ -50,7 +59,6 @@ class StudentSubject extends AppModel {
 				'subject_id' => $subject_id,
 				//'school_id' => AuthComponent::user('school_id'),
 			],
-			'recursive' => -1,
 		]);
 
 		// Major Modelを呼び出す

@@ -23,7 +23,7 @@
               'label' => false,
               'class' => 'select2 col-md-12',
               'name' => 'data[Student][major_id]',
-              'options' => ['no_major_id'=>'なし',$all_major],
+              'options' => ['no_major_id'=>'未登録',$all_major],
               'selected' => $edit_student['Student']['major_id'],
               ]);
             ?>

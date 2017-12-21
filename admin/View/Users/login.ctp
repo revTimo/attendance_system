@@ -34,7 +34,7 @@
     </div> -->
     <!-- /.social-auth-links -->
 
-    <a href="forgot_password">パスワードを忘れた</a><br>
+    <!-- <a href="forgot_password">パスワードを忘れた</a><br> -->
     <a href="register" class="text-center">新規登録</a>
 
   </div>

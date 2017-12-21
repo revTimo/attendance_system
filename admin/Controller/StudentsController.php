@@ -85,7 +85,7 @@ class StudentsController extends AppController {
 			 	 *　中間テーブルに学生ＩＤと学生が選択したmajorの中に入っている科目全てのIDをもらう
 			 	 * 
 				 */
-				if ($this->StudentSubject->save_student_subject($this->Student->id, $this->request->data['Student']['major_id']) == false)
+				if ($this->StudentSubject->save_student_subject($this->Student->id, $this->request->data['Student']['major_id'], $sign) == false)
 				{
 					$this->Student->rollback();
 					return $this->Flash->setFlashError('StudentSubject登録失敗しました。');
@@ -193,6 +193,26 @@ class StudentsController extends AppController {
 		if ($this->request->is('get'))
 		{
 			return $this->redirect(['action' => 'index']);
+		}
+	}
+
+	//　ajaxで学生一覧のため
+	public function search_student()
+	{
+		$this->autoRender = FALSE;
+		if ($this->request->is('ajax'))
+		{
+			if ($this->request->data['name'] == '')
+			{
+				return;
+			}
+			$result = $this->Student->find('all', [
+				'conditions'=>[
+					'name like' => '%'.$this->request->data['name'].'%',
+				],
+				'fields' => ['id','name'],
+			]);
+			return json_encode($result);
 		}
 	}
 }
