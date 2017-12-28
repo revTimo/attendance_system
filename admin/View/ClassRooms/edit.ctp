@@ -133,7 +133,6 @@ $("#search_student").keyup(function(){
 		dataType : "json",
 		success : function (response) {
 			$('.show_std').empty();
-			console.log(response);
 			for (var i=0; i<response.length; i++)
 			{
 				$(".show_std").append('<p id="'+response[i]['Student'].id+'" style="background-color: #f5f5f5; cursor: pointer;">'+response[i]['Student'].name+'</p>'+" ");
@@ -159,8 +158,8 @@ function add_student (std_id, i) {
 		},
 		dataType : "json",
 		success : function (response) {
-			console.log(response);
-			$('.std_list ul').append('<li class="std"><img src="/attendance_system/admin/webroot/student_image/'+response.img+'"><a class="users-list-name" href="#">'+response.name+'</a><span class="users-list-date">'+response['major']['Major'].name+'</span><input type="hidden" name="data[ClassRoom][students_id]['+i+']" value="'+response.id+'" id="'+response.id+'"><span onclick="remove_me(this)" class="label label-danger remove_student">削除</span></li>');
+			$('.std_list ul').append('<li class="std"><img src="/attendance_system/admin/webroot/student_image/'+response.img+'"><a class="users-list-name" href="#">'+response.name+'</a><span class="users-list-date">'+response['major']['Major'].name+'</span><input type="hidden" name="data[ClassRoom][students_id]['+Math.floor(Math.random() * $(".std_list li").length)+(1)+']" value="'+response.id+'" id="'+response.id+'"><span onclick="remove_me(this)" class="label label-danger remove_student">削除</span></li>');
+			$(".ninnn").text($(".std_list li").length+" 人");
 		},
 		error : function () {
 			// 通信失敗

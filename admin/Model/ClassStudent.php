@@ -10,6 +10,7 @@ class ClassStudent extends AppModel {
 			$class_student_id_list[] = [
 				'class_room_id' => $class_id,
 				'student_id' => $student,
+				'school_id' => AuthComponent::user('school_id'),
 			];
 		}
 

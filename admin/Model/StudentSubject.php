@@ -51,16 +51,30 @@ class StudentSubject extends AppModel {
 	}
 
 	// 授業に参加している学生を取得
-	public function get_attend_student_list ($subject_id = null)
+	public function get_attend_student_list ($class_id = null)
 	{
+		$ClassStudent = ClassRegistry::init('ClassStudent');
 		// 授業を受ける学生リスト
-		$get_student = $this->find('all',[
+		$get_student_id = $ClassStudent->find('all',[
 			'conditions' => [
-				'subject_id' => $subject_id,
-				//'school_id' => AuthComponent::user('school_id'),
+				'class_room_id' => $class_id,
+				'school_id' => AuthComponent::user('school_id'),
+			],
+			'fields' => ['student_id'],
+		]);
+		$student_ids = [];
+		foreach ($get_student_id as $value) {
+			$student_ids[] = $value['ClassStudent']['student_id'];
+		}
+		// Student
+		$Student = ClassRegistry::init('Student');
+		$get_student = $Student->find('all',[
+			'conditions' => [
+				'id' => $student_ids,
 			],
 		]);
-
+		//　学生を表示するため配列データ
+		$student_name_list = [];
 		// Major Modelを呼び出す
 		$Major = ClassRegistry::init('Major');
 		//　学生を表示するため配列データ

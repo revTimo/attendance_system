@@ -139,6 +139,32 @@ class ClassRoomsController extends AppController {
 		return $this->redirect(['action' => 'class_list']);
 	}
 
+	// 詳細
+	public function detail ($class_id = null)
+	{
+		// 他のIDを編集できないように
+		if ($this->ClassRoom->door($class_id) == false)
+		{
+			$this->Flash->setFlashError('不正なアクセスはできません');
+			return $this->redirect(['action' => 'class_list']);
+		}
+		// retrieve edit data
+		$edit_data = $this->ClassRoom->find('first', [
+			'conditions' => [
+				'id' => $class_id,
+				'school_id' => $this->Auth->user('school_id'),
+			],
+		]);
+
+		// 参加学生一覧
+		$student_list = $this->StudentSubject->get_attend_student_list($class_id);
+		$this->set('data', $edit_data['ClassRoom']);
+		$all_subject = $this->Subject->subject_list();
+		$this->set('all_subject', $all_subject);
+		$this->set('student_list', $student_list);
+
+	}
+
 	// クラス編集
 	public function edit ($class_id = null)
 	{
@@ -159,8 +185,7 @@ class ClassRoomsController extends AppController {
 			]);
 
 			// 参加学生一覧
-			$student_list = $this->StudentSubject->get_attend_student_list($edit_data['ClassRoom']['subject_id']);
-
+			$student_list = $this->StudentSubject->get_attend_student_list($class_id);
 			$this->set('data', $edit_data['ClassRoom']);
 			$all_subject = $this->Subject->subject_list();
 			$this->set('all_subject', $all_subject);
@@ -169,8 +194,6 @@ class ClassRoomsController extends AppController {
 		}
 		if ($this->request->is('post'))
 		{
-			pr($this->request->data);
-			exit;
 			try
 			{
 				$this->ClassRoom->begin();
