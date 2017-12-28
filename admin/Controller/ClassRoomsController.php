@@ -169,6 +169,8 @@ class ClassRoomsController extends AppController {
 		}
 		if ($this->request->is('post'))
 		{
+			pr($this->request->data);
+			exit;
 			try
 			{
 				$this->ClassRoom->begin();

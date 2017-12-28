@@ -56,7 +56,6 @@ class StudentsController extends AppController {
 			if ($sign == 28)
 			{
 				$this->Student->id = $id;
-				$profile_img = $this->request->data['Student']['current_img'];
 			}
 			$save_data = [
 				'name' => $this->request->data['Student']['name'],
@@ -196,7 +195,7 @@ class StudentsController extends AppController {
 		}
 	}
 
-	//　ajaxで学生一覧のため
+	//　ajaxで学生検索一覧のため
 	public function search_student()
 	{
 		$this->autoRender = FALSE;
@@ -206,13 +205,45 @@ class StudentsController extends AppController {
 			{
 				return;
 			}
-			$result = $this->Student->find('all', [
-				'conditions'=>[
-					'name like' => '%'.$this->request->data['name'].'%',
-				],
-				'fields' => ['id','name'],
-			]);
-			return json_encode($result);
+
+			if ($this->request->data['status'] == 'search')
+			{
+				$student = $this->Student->find('all', [
+					'conditions'=>[
+						'name LIKE' => '%'.$this->request->data['name'].'%',
+					],
+				]);
+				return json_encode($student);
+			}
+			
+			// 検索結果から学生の情報を取得
+			if ($this->request->data['status'] == 'add_student')
+			{
+				$student = $this->Student->find('first', [
+					'conditions' => [
+						'id' => $this->request->data['student_id'],
+						'school_id' => $this->Auth->user('school_id'),
+					],
+				]);
+				if (empty($student))
+				{
+					return;
+				}
+				$student_info = [
+					'id' => $student['Student']['id'],
+					'name' => $student['Student']['name'],
+					'img' => $student['Student']['image'],
+					'major' => $this->Major->find('first',[
+						'conditions' => [
+							'id' => $student['Student']['major_id'],
+							'school_id' => $this->Auth->user('school_id'),
+						],
+						'fields' => ['name'],
+						'recursive' => -1,
+					]),
+				];
+				return json_encode($student_info);
+			}
 		}
 	}
 }
