@@ -5,6 +5,10 @@ class StudentUsersController extends AppController {
 	public $uses = [
 		'Student',
 		'StudentUser',
+		'School',
+		'Major',
+		'StudentSubject',
+		'Subject',
 	];
 
 	public function beforeFilter()
@@ -14,8 +18,13 @@ class StudentUsersController extends AppController {
 	}
 	public function index ()
 	{
-		//pr($this->Auth);
-		$this->set('name', $this->Auth->user('name'));
+		$profile_data = $this->StudentUser->find('first', [
+			'conditions' => [
+				'id' => $this->Auth->user('id'),
+				'school_id' => $this->Auth->user('school_id'),
+			],
+		]);
+		$this->set('profile', $profile_data);
 	}
 
 	public function login ()
@@ -45,14 +54,14 @@ class StudentUsersController extends AppController {
 		$this->layout = 'login_register';
 		if ($this->request->is('post'))
 		{
-			if ($this->request->data['StudentUser']['student_number'] == '')
+			if ($this->request->data['StudentUsers']['student_number'] == '')
 			{
 				return $this->Flash->setFlashError('入力してください。');
 			}
 			// 学生番号を管理側のstudentテーブルにあるかを探す
 			$find_student = $this->Student->find('first', [
 				'conditions' => [
-					'student_number' => $this->request->data['StudentUser']['student_number'],
+					'student_number' => $this->request->data['StudentUsers']['student_number'],
 				],
 			]);
 			if (empty($find_student))
@@ -65,6 +74,7 @@ class StudentUsersController extends AppController {
 				'student_number' => $find_student['Student']['student_number'],
 				'school_id' => $find_student['Student']['school_id'],
 				'email' => $find_student['Student']['email'],
+				'profile_img' => 'no_image.jpg',
 			];		
 			// if ある　仮パスワードど作成name to student numberを保存、メール送信
 			try
@@ -100,8 +110,35 @@ class StudentUsersController extends AppController {
 
 	public function edit ()
 	{
-		pr('user_edit_page');
-		exit;
+		if ($this->request->is('get'))
+		{
+			return $this->redirect(['action' => 'index']);
+		}
+		// 入力バリテーション
+		if ($this->request->data['StudentUser']['current_password'] == '' || $this->request->data['StudentUser']['new_password'] == '')
+		{
+			$this->Flash->setFlashError('パスワードを入力してください');
+			return $this->redirect(['action' => 'index']);
+		}
+		$get_pw = $this->StudentUser->find('first', [
+			'conditions' => [
+				'id' => $this->Auth->user('id'),
+			],
+			'fields' => ['password'],
+		]);
+		if (Security::hash($this->request->data['StudentUser']['current_password'], 'blowfish', $get_pw['StudentUser']['password']) != $get_pw['StudentUser']['password'])
+		{
+			$this->Flash->setFlashError('現在のパスワードが一致していません。');
+			return $this->redirect(['action' => 'index']);
+		}
+		$this->StudentUser->id = $this->Auth->user('id');
+		if ($this->StudentUser->saveField('password', $this->request->data['StudentUser']['new_password']) === false)
+		{
+			return $this->Flash->setFlashError('失敗しました');
+		}
+		
+		$this->Flash->setFlashSuccess('パスワードを変えました');
+		return $this->redirect(['action' => 'index']);
 	}
 
 	public function logout ()

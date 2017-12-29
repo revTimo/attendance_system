@@ -12,7 +12,6 @@ class UsersController extends AppController {
 	public function beforeFilter()
 	{
 		parent::beforeFilter();
-		AuthComponent::$sessionKey = 'Auth.Admin';
 		$this->Auth->allow('register');
 	}
 

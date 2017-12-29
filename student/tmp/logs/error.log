@@ -5194,3 +5194,1353 @@ Request URL: /attendance_system/student/bandmember.jpg
 Stack Trace:
 #0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2017-12-29 11:56:49 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 11:56:50 Error: [MissingControllerException] Controller class Bandmember.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bandmember.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bandmember.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 11:56:50 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:01:21 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:01:21 Error: [MissingControllerException] Controller class Bandmember.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bandmember.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bandmember.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:01:21 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:01:22 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:01:22 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:01:22 Error: [MissingControllerException] Controller class Bandmember.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bandmember.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bandmember.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:03:13 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:03:13 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:03:13 Error: [MissingControllerException] Controller class Bandmember.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bandmember.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bandmember.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:03:22 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:03:22 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:03:22 Error: [MissingControllerException] Controller class Bandmember.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bandmember.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bandmember.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:04:10 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:04:10 Error: [MissingControllerException] Controller class Bandmember.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bandmember.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bandmember.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:04:10 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:04:10 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:04:10 Error: [MissingControllerException] Controller class Bandmember.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bandmember.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bandmember.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:04:10 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:04:26 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:04:26 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:04:26 Error: [MissingControllerException] Controller class Bandmember.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bandmember.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bandmember.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:07:11 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:07:11 Error: [MissingControllerException] Controller class Bandmember.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bandmember.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bandmember.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:07:11 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:07:55 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:07:55 Error: [MissingControllerException] Controller class Bandmember.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bandmember.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bandmember.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:07:55 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:09:33 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:09:33 Error: [MissingControllerException] Controller class Bandmember.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bandmember.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bandmember.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:09:33 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:10:17 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:10:17 Error: [MissingControllerException] Controller class Bandmember.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bandmember.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bandmember.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:10:17 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:10:36 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:10:36 Error: [MissingControllerException] Controller class Bandmember.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bandmember.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bandmember.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:10:36 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:11:26 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:11:26 Error: [MissingControllerException] Controller class Bandmember.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bandmember.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bandmember.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:11:26 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:11:33 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:11:33 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:11:33 Error: [MissingControllerException] Controller class Bandmember.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bandmember.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bandmember.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:11:57 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:11:57 Error: [MissingControllerException] Controller class Bandmember.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bandmember.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bandmember.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:11:57 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:12:34 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:12:35 Error: [MissingControllerException] Controller class Bandmember.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bandmember.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bandmember.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:12:35 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:12:54 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:12:54 Error: [MissingControllerException] Controller class Bandmember.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bandmember.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bandmember.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:12:54 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:14:08 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:14:08 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:14:08 Error: [MissingControllerException] Controller class Bandmember.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bandmember.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bandmember.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:14:19 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:14:19 Error: [MissingControllerException] Controller class Bandmember.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bandmember.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bandmember.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:14:19 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:16:14 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:16:14 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:16:45 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:16:45 Error: [MissingControllerException] Controller class Bandmember.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bandmember.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bandmember.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:16:45 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:17:05 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:17:05 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:18:57 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:19:18 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:19:18 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:19:40 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:21:51 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:21:51 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:24:21 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:24:21 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:24:47 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:24:47 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:27:18 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:27:18 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:27:27 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:27:27 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:28:41 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:28:41 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:28:54 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:28:55 Error: [MissingControllerException] Controller class Paris.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Paris.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/paris.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:29:23 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:29:33 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:29:57 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:32:03 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:33:00 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:33:50 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:33:58 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:34:49 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:35:00 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:42:43 Error: [ParseError] syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentUsersController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-29 12:42:43 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:42:51 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:43:12 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:43:24 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 12:47:37 Error: [MissingControllerException] Controller class Bird.jpgController could not be found.
+Exception Attributes: array (
+  'class' => 'Bird.jpgController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/student/bird.jpg
+Stack Trace:
+#0 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-29 14:20:51 Error: [ParseError] syntax error, unexpected ';'
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 [internal function]: App::load('StudentUsersCon...')
+#1 [internal function]: spl_autoload_call('StudentUsersCon...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('StudentUsersCon...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-29 14:28:53 Error: [MissingViewException] View file "StudentUsers/edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'StudentUsers/edit.ctp',
+)
+Request URL: /attendance_system/student/student_users/edit
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(470): View->_getViewFileName('StudentUsers/ed...')
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentUsersController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-12-29 14:52:55 Error: [ArgumentCountError] Too few arguments to function Model::saveField(), 1 passed in /home/tuang/attendance_system/student/Controller/StudentUsersController.php on line 131 and at least 2 expected
+Request URL: /attendance_system/student/student_users/edit
+Stack Trace:
+#0 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(131): Model->saveField('00701tuanG')
+#1 [internal function]: StudentUsersController->edit()
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentUsersController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentUsersController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-29 19:27:37 Error: [Error] Call to undefined method StudentUsersController::get_student()
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 [internal function]: StudentUsersController->index()
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentUsersController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentUsersController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-12-29 19:37:33 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'student_info' at line 1
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('student_info', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('student_info', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(618): DboSource->fetchAll('student_info', Array, Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(834): DboSource->query('student_info', Array, Object(AppModel))
+#5 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(17): Model->__call('student_info', Array)
+#6 [internal function]: StudentUsersController->index()
+#7 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentUsersController), Array)
+#8 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentUsersController), Object(CakeRequest))
+#10 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-12-29 19:37:56 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'student_info' at line 1
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('student_info', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('student_info', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(618): DboSource->fetchAll('student_info', Array, Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(834): DboSource->query('student_info', Array, Object(AppModel))
+#5 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(17): Model->__call('student_info', Array)
+#6 [internal function]: StudentUsersController->index()
+#7 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentUsersController), Array)
+#8 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentUsersController), Object(CakeRequest))
+#10 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-12-29 19:38:39 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'student_infoo' at line 1
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('student_infoo', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('student_infoo', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(618): DboSource->fetchAll('student_infoo', Array, Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(834): DboSource->query('student_infoo', Array, Object(AppModel))
+#5 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(17): Model->__call('student_infoo', Array)
+#6 [internal function]: StudentUsersController->index()
+#7 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentUsersController), Array)
+#8 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentUsersController), Object(CakeRequest))
+#10 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-12-29 19:40:03 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'student_infoo' at line 1
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('student_infoo', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('student_infoo', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(618): DboSource->fetchAll('student_infoo', Array, Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(834): DboSource->query('student_infoo', Array, Object(AppModel))
+#5 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(17): Model->__call('student_infoo', Array)
+#6 [internal function]: StudentUsersController->index()
+#7 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentUsersController), Array)
+#8 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentUsersController), Object(CakeRequest))
+#10 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-12-29 19:40:04 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'student_infoo' at line 1
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('student_infoo', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('student_infoo', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(618): DboSource->fetchAll('student_infoo', Array, Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(834): DboSource->query('student_infoo', Array, Object(AppModel))
+#5 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(17): Model->__call('student_infoo', Array)
+#6 [internal function]: StudentUsersController->index()
+#7 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentUsersController), Array)
+#8 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentUsersController), Object(CakeRequest))
+#10 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-12-29 19:41:17 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'student_infoo' at line 1
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('student_infoo', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('student_infoo', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(618): DboSource->fetchAll('student_infoo', Array, Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(834): DboSource->query('student_infoo', Array, Object(AppModel))
+#5 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(17): Model->__call('student_infoo', Array)
+#6 [internal function]: StudentUsersController->index()
+#7 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentUsersController), Array)
+#8 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentUsersController), Object(CakeRequest))
+#10 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-12-29 19:43:21 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'student_infoo' at line 1
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('student_infoo', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('student_infoo', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(618): DboSource->fetchAll('student_infoo', Array, Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(834): DboSource->query('student_infoo', Array, Object(AppModel))
+#5 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(17): Model->__call('student_infoo', Array)
+#6 [internal function]: StudentUsersController->index()
+#7 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentUsersController), Array)
+#8 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentUsersController), Object(CakeRequest))
+#10 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-12-29 19:59:10 Error: [ParseError] syntax error, unexpected ''Major,'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 [internal function]: App::load('StudentUsersCon...')
+#1 [internal function]: spl_autoload_call('StudentUsersCon...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('StudentUsersCon...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-29 19:59:29 Error: [ParseError] syntax error, unexpected ''Major'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 [internal function]: App::load('StudentUsersCon...')
+#1 [internal function]: spl_autoload_call('StudentUsersCon...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('StudentUsersCon...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-29 19:59:30 Error: [ParseError] syntax error, unexpected ''Major'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 [internal function]: App::load('StudentUsersCon...')
+#1 [internal function]: spl_autoload_call('StudentUsersCon...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('StudentUsersCon...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-29 20:02:55 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(20): AppController->login_student_info('15d2030006')
+#1 [internal function]: StudentUsersController->index()
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentUsersController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentUsersController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-29 20:03:31 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(20): AppController->login_student_info('15d2030006')
+#1 [internal function]: StudentUsersController->index()
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentUsersController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentUsersController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-29 20:03:32 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(20): AppController->login_student_info('15d2030006')
+#1 [internal function]: StudentUsersController->index()
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentUsersController), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentUsersController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-29 20:13:15 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 [internal function]: App::load('AppController')
+#1 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(4): spl_autoload_call('AppController')
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(567): include('/home/tuang/att...')
+#3 [internal function]: App::load('StudentUsersCon...')
+#4 [internal function]: spl_autoload_call('StudentUsersCon...')
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('StudentUsersCon...')
+#6 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#7 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#8 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2017-12-29 20:13:15 Error: Fatal Error (16): Exception thrown without a stack frame in [Unknown, line 0]
+2017-12-29 20:13:15 Error: [FatalErrorException] Exception thrown without a stack frame
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(16, 'Exception throw...', 'Unknown', 0)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(16, 'Exception throw...', 'Unknown', 0, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-12-29 20:23:10 Error: [ParseError] syntax error, unexpected 'foreach' (T_FOREACH)
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 [internal function]: App::load('AppController')
+#1 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(4): spl_autoload_call('AppController')
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(567): include('/home/tuang/att...')
+#3 [internal function]: App::load('StudentUsersCon...')
+#4 [internal function]: spl_autoload_call('StudentUsersCon...')
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('StudentUsersCon...')
+#6 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#7 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#8 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2017-12-29 20:23:10 Error: Fatal Error (16): Exception thrown without a stack frame in [Unknown, line 0]
+2017-12-29 20:23:10 Error: [FatalErrorException] Exception thrown without a stack frame
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(16, 'Exception throw...', 'Unknown', 0)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(16, 'Exception throw...', 'Unknown', 0, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-12-29 20:23:31 Error: [ParseError] syntax error, unexpected 'foreach' (T_FOREACH)
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 [internal function]: App::load('AppController')
+#1 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(4): spl_autoload_call('AppController')
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(567): include('/home/tuang/att...')
+#3 [internal function]: App::load('StudentUsersCon...')
+#4 [internal function]: spl_autoload_call('StudentUsersCon...')
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('StudentUsersCon...')
+#6 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#7 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#8 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2017-12-29 20:23:31 Error: Fatal Error (16): Exception thrown without a stack frame in [Unknown, line 0]
+2017-12-29 20:23:31 Error: [FatalErrorException] Exception thrown without a stack frame
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(16, 'Exception throw...', 'Unknown', 0)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(16, 'Exception throw...', 'Unknown', 0, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-12-29 20:24:04 Error: [ParseError] syntax error, unexpected 'foreach' (T_FOREACH)
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 [internal function]: App::load('AppController')
+#1 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(4): spl_autoload_call('AppController')
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(567): include('/home/tuang/att...')
+#3 [internal function]: App::load('StudentUsersCon...')
+#4 [internal function]: spl_autoload_call('StudentUsersCon...')
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('StudentUsersCon...')
+#6 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#7 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#8 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2017-12-29 20:24:04 Error: Fatal Error (16): Exception thrown without a stack frame in [Unknown, line 0]
+2017-12-29 20:24:04 Error: [FatalErrorException] Exception thrown without a stack frame
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(16, 'Exception throw...', 'Unknown', 0)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(16, 'Exception throw...', 'Unknown', 0, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-12-29 20:25:09 Error: [ParseError] syntax error, unexpected 'foreach' (T_FOREACH)
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 [internal function]: App::load('AppController')
+#1 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(4): spl_autoload_call('AppController')
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(567): include('/home/tuang/att...')
+#3 [internal function]: App::load('StudentUsersCon...')
+#4 [internal function]: spl_autoload_call('StudentUsersCon...')
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('StudentUsersCon...')
+#6 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#7 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#8 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2017-12-29 20:25:09 Error: Fatal Error (16): Exception thrown without a stack frame in [Unknown, line 0]
+2017-12-29 20:25:09 Error: [FatalErrorException] Exception thrown without a stack frame
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(16, 'Exception throw...', 'Unknown', 0)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(16, 'Exception throw...', 'Unknown', 0, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-12-29 20:25:53 Error: [ParseError] syntax error, unexpected 'foreach' (T_FOREACH)
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 [internal function]: App::load('AppController')
+#1 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(4): spl_autoload_call('AppController')
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(567): include('/home/tuang/att...')
+#3 [internal function]: App::load('StudentUsersCon...')
+#4 [internal function]: spl_autoload_call('StudentUsersCon...')
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('StudentUsersCon...')
+#6 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#7 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#8 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2017-12-29 20:25:53 Error: Fatal Error (16): Exception thrown without a stack frame in [Unknown, line 0]
+2017-12-29 20:25:53 Error: [FatalErrorException] Exception thrown without a stack frame
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(16, 'Exception throw...', 'Unknown', 0)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(16, 'Exception throw...', 'Unknown', 0, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-12-29 20:25:59 Error: [ParseError] syntax error, unexpected 'foreach' (T_FOREACH)
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 [internal function]: App::load('AppController')
+#1 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(4): spl_autoload_call('AppController')
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(547): include('/home/tuang/att...')
+#3 [internal function]: App::load('StudentUsersCon...')
+#4 [internal function]: spl_autoload_call('StudentUsersCon...')
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('StudentUsersCon...')
+#6 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#7 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#8 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2017-12-29 20:25:59 Error: Fatal Error (16): Exception thrown without a stack frame in [Unknown, line 0]
+2017-12-29 20:25:59 Error: [FatalErrorException] Exception thrown without a stack frame
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(16, 'Exception throw...', 'Unknown', 0)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(16, 'Exception throw...', 'Unknown', 0, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-12-29 20:27:02 Error: [ParseError] syntax error, unexpected 'foreach' (T_FOREACH)
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 [internal function]: App::load('AppController')
+#1 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(4): spl_autoload_call('AppController')
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(567): include('/home/tuang/att...')
+#3 [internal function]: App::load('StudentUsersCon...')
+#4 [internal function]: spl_autoload_call('StudentUsersCon...')
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('StudentUsersCon...')
+#6 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#7 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#8 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2017-12-29 20:27:02 Error: Fatal Error (16): Exception thrown without a stack frame in [Unknown, line 0]
+2017-12-29 20:27:02 Error: [FatalErrorException] Exception thrown without a stack frame
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(16, 'Exception throw...', 'Unknown', 0)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(16, 'Exception throw...', 'Unknown', 0, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-12-29 20:56:56 Error: Fatal Error (64): Cannot use empty array elements in arrays in [/home/tuang/attendance_system/student/Controller/AppController.php, line 120]
+2017-12-29 20:56:56 Error: [FatalErrorException] Cannot use empty array elements in arrays
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot use empt...', '/home/tuang/att...', 120)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Cannot use empt...', '/home/tuang/att...', 120, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-12-29 21:03:04 Error: Fatal Error (64): Illegal offset type in [/home/tuang/attendance_system/student/Controller/AppController.php, line 103]
+2017-12-29 21:03:04 Error: [FatalErrorException] Illegal offset type
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Illegal offset ...', '/home/tuang/att...', 103)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Illegal offset ...', '/home/tuang/att...', 103, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-12-29 21:03:27 Error: Fatal Error (64): Illegal offset type in [/home/tuang/attendance_system/student/Controller/AppController.php, line 103]
+2017-12-29 21:03:27 Error: [FatalErrorException] Illegal offset type
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Illegal offset ...', '/home/tuang/att...', 103)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Illegal offset ...', '/home/tuang/att...', 103, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-12-29 21:03:28 Error: Fatal Error (64): Illegal offset type in [/home/tuang/attendance_system/student/Controller/AppController.php, line 103]
+2017-12-29 21:03:28 Error: [FatalErrorException] Illegal offset type
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Illegal offset ...', '/home/tuang/att...', 103)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Illegal offset ...', '/home/tuang/att...', 103, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-12-29 21:03:57 Error: [ParseError] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']'
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 [internal function]: App::load('AppController')
+#1 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(4): spl_autoload_call('AppController')
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(567): include('/home/tuang/att...')
+#3 [internal function]: App::load('StudentUsersCon...')
+#4 [internal function]: spl_autoload_call('StudentUsersCon...')
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('StudentUsersCon...')
+#6 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#7 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#8 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2017-12-29 21:03:57 Error: Fatal Error (16): Exception thrown without a stack frame in [Unknown, line 0]
+2017-12-29 21:03:57 Error: [FatalErrorException] Exception thrown without a stack frame
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(16, 'Exception throw...', 'Unknown', 0)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(16, 'Exception throw...', 'Unknown', 0, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2017-12-29 21:04:28 Error: Fatal Error (64): Illegal offset type in [/home/tuang/attendance_system/student/Controller/AppController.php, line 105]
+2017-12-29 21:04:28 Error: [FatalErrorException] Illegal offset type
+Request URL: /attendance_system/student/student_users
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Illegal offset ...', '/home/tuang/att...', 105)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Illegal offset ...', '/home/tuang/att...', 105, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}

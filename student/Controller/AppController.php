@@ -60,6 +60,7 @@ class AppController extends Controller {
 	{
 		parent::beforeFilter();
 		AuthComponent::$sessionKey = 'Auth.Student';
+		$this->login_student_info();
 	}
 	//カスタマイズエラーメッセージ
 	public function setFlashSuccess($msg)
@@ -70,5 +71,70 @@ class AppController extends Controller {
 	public function setFlashError($msg) 
 	{
 		$this->Session->setFlash($msg,'flash_failure');
+	}
+
+	// ログイン学生の情報全てを
+	public function login_student_info ()
+	{
+		if ($this->Auth->user()) {
+			$student_data = $this->Student->find('first', [
+				'conditions' => [
+					'student_number' => $this->Auth->user('student_number'),
+				],
+			]);
+			// 学校名
+			$school_name = $this->School->find('first', [
+				'conditions' => [
+					'id' => $student_data['Student']['school_id'],
+				],
+				'fields' => ['name'],
+			]);
+			// 専攻名
+			$major_name = $this->Major->find('first', [
+				'conditions' => [
+					'id' => $student_data['Student']['major_id'],
+				],
+				'fields' => ['name'],
+			]);
+			
+			// 学科
+			if (!empty($major_name))
+			{
+				$all_subject = $this->StudentSubject->find('all', [
+					'conditions' => [
+						'student_id' => $student_data['Student']['id'],
+					],
+				]);				
+			
+				$subjects_id = [];
+				foreach ($all_subject as $key => $value) {
+					$subjects_id[] = $all_subject[$key]['StudentSubject']['subject_id'];
+				}
+				$subject_list = $this->Subject->find('all', [
+					'conditions' => [
+						'id' => $subjects_id,
+					],
+					'fields' => ['name'],
+				]);
+				$subject_name = [];
+				foreach ($subject_list as $key => $value) {
+					$subject_name[] = $value['Subject']['name'];
+				};
+			}
+			// 専攻が未登録$major_name['Major']['name']
+			if (empty($major_name))
+			{
+				$major_name['Major']['name'] = '未登録';
+				$subject_name = ['未登録'];
+			}
+			$info = [
+				'name' => $student_data['Student']['name'],
+				'major' => $major_name['Major']['name'],
+				'subjects' => $subject_name,
+				'school_name' => $school_name['School']['name'],
+				'grade' => $student_data['Student']['grade'],
+			];
+			$this->set('student_info', $info);
+		}
 	}
 }

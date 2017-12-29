@@ -40,6 +40,7 @@ class AppController extends Controller {
 
 	public function beforeFilter ()
 	{
+		AuthComponent::$sessionKey = 'Auth.Admin';
 		$this->user_info();
 	}
 
