@@ -31,4 +31,44 @@ App::uses('Controller', 'Controller');
  * @link		https://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+	public $components = [
+		'Flash',
+		'Auth' => [
+			'loginAction' => [
+				'controller' => 'student_users',
+				'action' => 'login',
+			],
+			'loginRedirect' => [
+				'controller' => 'student_users',
+				'action' => 'index',
+			],				
+			'logoutRedirect' => [
+				'controller' => 'student_users',
+				'action' => 'login',
+			],
+			'authenticate' => [
+				'Form' => [
+					'fields'=>['username'=>'student_number', 'password' => 'password'],
+					'passwordHasher' => 'Blowfish',
+					'userModel' => 'StudentUser',
+				],
+			],
+		],
+	];
+
+	public function beforeFilter()
+	{
+		parent::beforeFilter();
+		AuthComponent::$sessionKey = 'Auth.Student';
+	}
+	//カスタマイズエラーメッセージ
+	public function setFlashSuccess($msg)
+	{
+		$this->Session->setFlash($msg,'flash_success');
+	}
+
+	public function setFlashError($msg) 
+	{
+		$this->Session->setFlash($msg,'flash_failure');
+	}
 }

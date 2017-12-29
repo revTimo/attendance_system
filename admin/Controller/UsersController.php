@@ -12,6 +12,7 @@ class UsersController extends AppController {
 	public function beforeFilter()
 	{
 		parent::beforeFilter();
+		AuthComponent::$sessionKey = 'Auth.Admin';
 		$this->Auth->allow('register');
 	}
 
@@ -47,7 +48,6 @@ class UsersController extends AppController {
 		{
 			return $this->Flash->setFlashError('入力してください。');
 		}
-		
 		// ログイン失敗
 		if ($this->Auth->login() == false)
 		{

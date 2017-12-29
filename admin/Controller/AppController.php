@@ -58,6 +58,7 @@ class AppController extends Controller {
 				'Form' => [
 					'fields'=>['username'=>'email'],
 					'passwordHasher' => 'Blowfish',
+					'userModel' => 'User',
 				],
 			],
 		],

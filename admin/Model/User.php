@@ -30,7 +30,7 @@ class User extends AppModel {
 			$passwordHasher = new BlowfishPasswordHasher();
 			$this->data[$this->alias]['password'] = $passwordHasher->hash($this->data[$this->alias]['password']);
 		}
-    	return true;
+		return true;
 	}
 
 	//メンバー招待メール
