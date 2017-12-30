@@ -20,6 +20,10 @@ class ClassRoom extends AppModel {
 			],
 			'fields' => ['school_id'],
 		]);
+		if (empty($class))
+		{
+			return false;
+		}
 		if ($class['ClassRoom']['school_id'] != AuthComponent::user('school_id'))
 		{
 			return false;

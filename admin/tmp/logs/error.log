@@ -13023,3 +13023,63 @@ Stack Trace:
 #4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
 #5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2017-12-30 09:51:37 Error: [MissingControllerException] Controller class StudentController could not be found.
+Exception Attributes: array (
+  'class' => 'StudentController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/student
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-30 10:47:28 Error: [ParseError] syntax error, unexpected ''月曜日'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+Request URL: /attendance_system/admin/class_rooms/index
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-30 11:47:47 Error: [ParseError] syntax error, unexpected '}', expecting ';'
+Request URL: /attendance_system/admin/class_students/class_list
+Stack Trace:
+#0 [internal function]: App::load('ClassStudentsCo...')
+#1 [internal function]: spl_autoload_call('ClassStudentsCo...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('ClassStudentsCo...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-30 16:12:05 Error: [ParseError] syntax error, unexpected '}', expecting ';'
+Request URL: /attendance_system/admin/class_students/class_list
+Stack Trace:
+#0 [internal function]: App::load('ClassStudentsCo...')
+#1 [internal function]: spl_autoload_call('ClassStudentsCo...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('ClassStudentsCo...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-30 16:35:39 Error: [ParseError] syntax error, unexpected '}', expecting ';'
+Request URL: /attendance_system/admin/class_students/class_list
+Stack Trace:
+#0 [internal function]: App::load('ClassStudentsCo...')
+#1 [internal function]: spl_autoload_call('ClassStudentsCo...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('ClassStudentsCo...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-12-30 16:42:42 Error: [MissingActionException] Action ClassStudentsController::class_list() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClassStudentsController',
+  'action' => 'class_list',
+)
+Request URL: /attendance_system/admin/class_students/class_list
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassStudentsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

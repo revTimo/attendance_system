@@ -37,6 +37,14 @@
 						<input type="date" name="ClassRoom[semester_to]" class="form-control">
 					</div>
 				</div>
+				<div class="form-group">
+					<label for="name">曜日</label>
+					<?= $this->Form->input('week', [
+						'label' => false,
+						'class' => 'select2 col-md-12',
+						'options' => ['日曜日', '月曜日', '火曜日', '水曜日', '木曜日', '金曜日', '土曜日'],
+					])?>
+				</div>
 				<div class="bootstrap-timepicker">
 					<div class="form-group">
 						<label>授業開始時間:</label>

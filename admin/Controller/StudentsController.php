@@ -34,7 +34,7 @@ class StudentsController extends AppController {
 	{
 		//専攻登録のため、select2の一覧が必要
 		$major_list = $this->Major->find('list', [
-			'confitions' => [
+			'conditions' => [
 				'school_id' => $this->Auth->user('school_id'),
 			],
 		]);
@@ -117,7 +117,7 @@ class StudentsController extends AppController {
 		$this->get_student($id);
 
 		$all_major = $this->Major->find('list', [
-			'confitions' => [
+			'conditions' => [
 				'school_id' => $this->Auth->user('school_id'),
 			],
 			'fields' => ['id', 'name'],

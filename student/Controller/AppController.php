@@ -128,6 +128,7 @@ class AppController extends Controller {
 				$subject_name = ['未登録'];
 			}
 			$info = [
+				'id' => $student_data['Student']['id'],
 				'name' => $student_data['Student']['name'],
 				'major' => $major_name['Major']['name'],
 				'subjects' => $subject_name,
@@ -136,5 +137,46 @@ class AppController extends Controller {
 			];
 			$this->set('student_info', $info);
 		}
+	}
+
+	public function get_class($student_id)
+	{
+		// 学生が参加しているクラス全てを取得
+		$student_class = $this->ClassStudent->find('all', [
+			'conditions' => [
+				'student_id' => $student_id,
+			],
+		]);
+		$class_ids = [];
+		foreach ($student_class as $value) {
+			$class_ids[] = $value['ClassStudent']['class_room_id'];
+		}
+
+		// 授業の詳細
+		$class_detail = $this->ClassRoom->find('all', [
+			'conditions' => [
+				'id' => $class_ids,
+			],
+		]);
+
+		$class = [];
+
+		foreach ($class_detail as $key => $value) {
+			$class[] = [
+				'id' => $value['ClassRoom']['id'],
+				'name' => $value['ClassRoom']['name'],
+				'subject' => $this->Subject->find('first', [
+					'conditions' => [
+						'id' => $value['ClassRoom']['subject_id'],
+					],
+					'fields' => ['id', 'name'],
+				]),
+				'grade' => $value['ClassRoom']['grade'],
+				'start_time' => $value['ClassRoom']['start_time'],
+				'end_time' => $value['ClassRoom']['end_time'],
+				'week' => $value['ClassRoom']['week'],
+			];
+		}
+		return $class;
 	}
 }

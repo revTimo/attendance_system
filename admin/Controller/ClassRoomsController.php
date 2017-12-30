@@ -45,7 +45,6 @@ class ClassRoomsController extends AppController {
 		{
 			return $this->redirect(['action' => 'index']);
 		}
-
 		// major nameが前のページのときfind listだったのでidだけが表示にならないように
 		$subject = $this->Subject->find('first', [
 			'conditions' => [
@@ -96,7 +95,6 @@ class ClassRoomsController extends AppController {
 		{
 			return;
 		}
-
 		try
 		{
 			$this->ClassRoom->begin();
@@ -108,6 +106,7 @@ class ClassRoomsController extends AppController {
 				'grade' => $this->request->data['ClassRoom']['grade'],
 				'start_time' => $this->request->data['ClassRoom']['start_time'],
 				'end_time' => $this->request->data['ClassRoom']['end_time'],
+				'week' => $this->request->data['ClassRoom']['week'],
 				'semester_from' => $this->request->data['ClassRoom']['semester_from'],
 				'semester_to' => $this->request->data['ClassRoom']['semester_to'],
 			];
@@ -149,18 +148,26 @@ class ClassRoomsController extends AppController {
 			return $this->redirect(['action' => 'class_list']);
 		}
 		// retrieve edit data
-		$edit_data = $this->ClassRoom->find('first', [
+		$class_data = $this->ClassRoom->find('first', [
 			'conditions' => [
 				'id' => $class_id,
 				'school_id' => $this->Auth->user('school_id'),
 			],
 		]);
+		// subject idだけが表示にならないように
+		$subject = $this->Subject->find('first', [
+			'conditions' => [
+				'school_id' => $this->Auth->user('school_id'),
+				'id' => $class_data['ClassRoom']['subject_id']
+			],
+			'fields' => ['name'],
+		]);
 
+		
+		$this->set('data', $class_data['ClassRoom']);
+		$this->set('subject_name', $subject['Subject']['name']);
 		// 参加学生一覧
 		$student_list = $this->StudentSubject->get_attend_student_list($class_id);
-		$this->set('data', $edit_data['ClassRoom']);
-		$all_subject = $this->Subject->subject_list();
-		$this->set('all_subject', $all_subject);
 		$this->set('student_list', $student_list);
 
 	}

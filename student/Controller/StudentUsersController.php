@@ -9,6 +9,8 @@ class StudentUsersController extends AppController {
 		'Major',
 		'StudentSubject',
 		'Subject',
+		'ClassStudent',
+		'ClassRoom',
 	];
 
 	public function beforeFilter()
@@ -18,13 +20,16 @@ class StudentUsersController extends AppController {
 	}
 	public function index ()
 	{
-		$profile_data = $this->StudentUser->find('first', [
+		$current_student = $this->Student->find('first', [
 			'conditions' => [
-				'id' => $this->Auth->user('id'),
+				'student_number' => $this->Auth->user('student_number'),
 				'school_id' => $this->Auth->user('school_id'),
 			],
 		]);
-		$this->set('profile', $profile_data);
+
+		// 出席授業
+		$available_class = $this->get_class($current_student['Student']['id']);
+		$this->set('all_class', $available_class);
 	}
 
 	public function login ()

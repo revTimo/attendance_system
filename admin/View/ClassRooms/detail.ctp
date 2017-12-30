@@ -11,7 +11,7 @@
         </div>
         <div class="form-group sub">
           <label for="name">科目</label>
-          <p><?= $data['subject_id']?></p>
+          <p><?= $subject_name?></p>
         </div>
         <div class="form-group">
           <label for="name">学年</label>
@@ -26,6 +26,11 @@
           <div class="input-group">
             <p><?= $data['semester_to']?></p>
           </div>
+        </div>
+        <div class="form-group">
+          <label for="name">曜日</label>
+          <?php $week = ['日曜日','月曜日','火曜日','水曜日','木曜日','金曜日','土曜日'];?>
+          <p><?= $week[$data['week']]?></p>
         </div>
         <div class="bootstrap-timepicker">
           <div class="form-group">

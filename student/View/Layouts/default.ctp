@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <?= $this->Html->css ('passwordmodalstyle')?>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>    
+  <style>
     /* Set black background color, white text and some padding */
     footer {
       background-color: #555;
@@ -89,6 +90,16 @@
 <footer class="container-fluid text-center">
   <p>Footer Text</p>
 </footer>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.1.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.1/jquery.fittext.min.js"></script>
+<script>
+  // 時計
+$('#clock').fitText(1.3);
+function update() {
+  $('#clock').html(moment().format('YYYY-MM-D H:mm:ss'));
+}
+setInterval(update, 1000);
+</script>
 </body>
 </html>

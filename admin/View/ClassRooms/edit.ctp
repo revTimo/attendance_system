@@ -11,51 +11,59 @@
 			<h3 class="box-title">以下の内容で編集されます</h3>
 		</div>
 		<div class="box-body">
-			
+			<div class="form-group">
+				<label for="name">教室名</label>
+				<?= $this->Form->input('name',['label' => false,'class' => 'form-control','required', 'value' => $data['name']]) ?>
+			</div>
+			<div class="form-group sub">
+				<label for="name">科目</label>
+				<?= $this->Form->input('subject_id', [
+					'label' => false,
+					'class' => 'select2 col-md-12',
+					'required',
+					'options' => ['no_subject_id'=>'専攻を選択してください',$all_subject],
+					'selected' => $data['subject_id'],
+				])?>
+			</div>
+			<div class="form-group">
+				<label for="name">学年</label>
+				<?= $this->Form->input('grade',['label' => false,'class' => 'form-control','value' => $data['grade']]) ?>
+			</div>
+			<div class="form-inline">
+				<label>学期</label><br>
+				<div class="input-group">
+					<input type="date" name="ClassRoom[semester_from]" class="form-control" value="<?= $data['semester_from']?>">
+				</div>
+				<span> ~ </span>
+				<div class="input-group">
+					<input type="date" name="ClassRoom[semester_to]" class="form-control" value="<?= $data['semester_to']?>">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="name">曜日</label>
+				<?= $this->Form->input('week', [
+					'label' => false,
+					'class' => 'select2 col-md-12',
+					'options' => ['日曜日', '月曜日', '火曜日', '水曜日', '木曜日', '金曜日', '土曜日'],
+					'selected' => $data['week'],
+				])?>
+			</div>			
+			<div class="bootstrap-timepicker">
 				<div class="form-group">
-					<label for="name">教室名</label>
-					<?= $this->Form->input('name',['label' => false,'class' => 'form-control','required', 'value' => $data['name']]) ?>
+					<label>授業開始時間:</label>
+					<div class="input-group">
+						<input type="time" name="ClassRoom[start_time]" class="form-control" value="<?= $data['start_time']?>">
+					</div>
 				</div>
-				<div class="form-group sub">
-					<label for="name">科目</label>
-					<?= $this->Form->input('subject_id', [
-						'label' => false,
-						'class' => 'select2 col-md-12',
-						'required',
-						'options' => ['no_subject_id'=>'専攻を選択してください',$all_subject],
-						'selected' => $data['subject_id'],
-					])?>
-				</div>
+			</div>
+			<div class="bootstrap-timepicker">
 				<div class="form-group">
-					<label for="name">学年</label>
-					<?= $this->Form->input('grade',['label' => false,'class' => 'form-control','value' => $data['grade']]) ?>
-				</div>
-				<div class="form-inline">
-					<label>学期</label><br>
+					<label>授業終了時間:</label>
 					<div class="input-group">
-						<input type="date" name="ClassRoom[semester_from]" class="form-control" value="<?= $data['semester_from']?>">
-					</div>
-					<span> ~ </span>
-					<div class="input-group">
-						<input type="date" name="ClassRoom[semester_to]" class="form-control" value="<?= $data['semester_to']?>">
+						<input type="time" name="ClassRoom[end_time]" class="form-control" value="<?= $data['end_time']?>">
 					</div>
 				</div>
-				<div class="bootstrap-timepicker">
-					<div class="form-group">
-						<label>授業開始時間:</label>
-						<div class="input-group">
-							<input type="time" name="ClassRoom[start_time]" class="form-control" value="<?= $data['start_time']?>">
-						</div>
-					</div>
-				</div>
-				<div class="bootstrap-timepicker">
-					<div class="form-group">
-						<label>授業終了時間:</label>
-						<div class="input-group">
-							<input type="time" name="ClassRoom[end_time]" class="form-control" value="<?= $data['end_time']?>">
-						</div>
-					</div>
-				</div>
+			</div>
 			<a href="../class_list" class="btn btn-warning">戻る</a>
 			<button type="submit" class="btn btn-primary">登録する</button>
 		</div>

@@ -42,6 +42,12 @@
 						</div>
 					</div>
 				</div>
+				<div class="form-group">
+					<label for="name">曜日</label>
+					<?php $week = ['日曜日','月曜日','火曜日','水曜日','木曜日','金曜日','土曜日'];?>
+					<p><?= $week[$data['week']] ?></p>
+					<?= $this->Form->input('week',['type' => 'hidden','label' => false,'class' => 'form-control','value' => $data['week']]) ?>
+				</div>				
 				<div class="bootstrap-timepicker">
 					<div class="form-group">
 						<label>授業終了時間:</label>
