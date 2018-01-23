@@ -1,7 +1,6 @@
 <div>
-<h3><?= $student_info['school_name']?></h3>
-<p><?= $student_info['name'] ?>さんよこそ</p>
-<a href="#" data-toggle="modal" data-target="#login-modal">パスワードを変える</a>
+	<h3><?= $student_info['school_name']?></h3>
+	<p><?= $student_info['name'] ?>さんよこそ</p>
 </div>
 
 <!-- パスワードを変えるmodal -->
@@ -12,62 +11,64 @@
 			<?= $this->Form->create('StudentUser', ['url' => 'edit'])?>
 				<?= $this->Form->input('current_password', ['type' => 'password', 'label' => false, 'placeholder' => '現在のパスワード', 'required'])?>
 				<?= $this->Form->input('new_password', ['type' => 'password', 'label' => false, 'placeholder' => '新しいパスワード', 'required'])?>
-				<input type="submit" name="login" class="login loginmodal-submit" value="登録">
+				<button type="submit" class="btn btn-success">登録</button>
 			<?= $this->Form->end()?>
 		</div>
 	</div>
 </div>
-
 <!-- 時計と出席授業 -->
 <div class="panel panel-primary">
-  <div class="panel-heading"><div id="clock" class="clock">読み込み中 ...</div></div>
-  <div class="panel-body">
-    <?php foreach($all_class as $class) :?>
-    <div class="thumbnail col-sm-6">
-      <h3><?= $class['name']?>教室</h3>
-      <h4><?= $class['subject']['Subject']['name']?>授業</h4>
-      <p>授業開始時間: <?= $class['start_time']?></p>
-      <button>出席</button>
-    </div>
-  <?php endforeach ?>
-  </div>
+	<div class="panel-heading"><div id="clock" class="clock">読み込み中 ...</div></div>
+	<div class="panel-body">
+		<?php foreach($all_class as $class) :?>
+			<?php if($class['week'] == date('w')) :?>
+				<!-- 授業ある日は一日中ではなく、開始前15分から開始後15分 -->
+				<?php if(date('H:i:s') > date('H:i:s', strtotime("-15minutes", strtotime($class['start_time']))) && date('H:i:s') < date('H:i:s', strtotime("+15minutes", strtotime($class['start_time'])))) :?>
+					<div class="thumbnail col-sm-6">
+						<h3><?= $class['name']?>教室</h3>
+						<h4><?= $class['subject']['Subject']['name']?>授業</h4>
+						<p>授業時間: <?= $class['start_time'].'~'.$class['end_time']?></p>
+						<?php if($is_attending == False) :?>
+							<span class="btn btn-success attendbtn" id="<?= $class['id']?>">出席する</span>
+						<?php else: ?>
+							<span class="label label-info">出席しています</span>
+						<?php endif ?>
+					</div>
+				<?php endif ?>
+			<?php endif ?>
+		<?php endforeach ?>
+	</div>
 </div>
 
 <!-- 時間割 -->
-<div class="table-responsive-sm">
-  <table class="table">
-    <caption>時間割</caption>
-    <thead>
-      <tr>
-        <th>日曜日</th>
-        <th>月曜日</th>
-        <th>火曜日</th>
-        <th>水曜日</th>
-        <th>木曜日</th>
-        <th>金曜日</th>
-        <th>土曜日</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <div class="thumbnail">
-            <span data-toggle="popover" title="授業の詳細" data-content="<?= '201教室 Java 14:00'?>">Java</span>
-          </div>
-          <div class="thumbnail">
-            <span>php</span>
-          </div>
-        </td>
-        <td>
-          <div class="thumbnail">
-            <span>Ruby</span>
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
 
 <script>
-  $('[data-toggle="popover"]').popover();
+// 時計
+$('#clock').fitText(1.3);
+function update() {
+	$('#clock').html(moment().format('YYYY-MM-D H:mm:ss'));
+}
+
+setInterval(update, 1000);
+
+// attend
+$(".attendbtn").on("click", function(){
+	$.ajax({
+		url : "/attendance_system/student/student_users/attend",
+		type : "POST",
+		data : {class_id : $(this).attr('id')},
+		dataType : "json",
+		success : function (response) {
+		//通信成功時の処理
+			if (response.code == 200)
+			{
+				location.href='/attendance_system/student/student_users';
+			}
+		},
+		error : function () {
+		//通信失敗
+			alert('ajax 通信失敗しました');
+		}
+	});
+})
 </script>

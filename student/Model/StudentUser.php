@@ -41,4 +41,13 @@ class StudentUser extends AppModel {
 			return false;
 		}
 	}
+
+	public function delete_student($id)
+	{
+		if ($this->deleteAll(['student_id' => $id]) == false)
+		{
+			return false;
+		}
+		return true;
+	}
 }

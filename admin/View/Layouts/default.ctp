@@ -23,6 +23,8 @@
 <?= $this->Html->css('../plugins/timepicker/bootstrap-timepicker.min')?>
 <!-- Google Font -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+<!-- date time picker -->
+<link rel="stylesheet" href="https://unpkg.com/flatpickr/dist/flatpickr.min.css">
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -252,10 +254,18 @@
         </li>
         <?php endif ?>
 
+        <!-- お知らせ -->
         <?php if($this->request->params['controller'] == 'notifications') :?>
-        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>お知らせ</span></a></li>
+        <li class="active"><a href="/attendance_system/admin/notifications/index"><i class="fa fa-link"></i> <span>お知らせ</span></a></li>
         <?php else :?>
-        <li><a href=""><i class="fa-fa-link"></i><span>お知らせ</span></a></li>
+        <li><a href="/attendance_system/admin/notifications/index"><i class="fa fa-bullhorn" aria-hidden="true"></i><span>お知らせ</span></a></li>
+        <?php endif ?>
+
+        <!-- 設定 -->
+        <?php if($this->request->params['controller'] == 'setting') :?>
+        <li class="active"><a href="#"><i class="fa fa-gears"></i><span>設定</span></a></li>
+        <?php else :?>
+        <li><a href="#"><i class="fa fa-gears"></i><span>設定</span></a></li>
         <?php endif ?>
       </ul>
       <!-- /.sidebar-menu -->
@@ -378,6 +388,10 @@
 <!-- 日本語化 -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/locale/ja.js"></script>
+<!-- date time picker -->
+<script src="https://unpkg.com/flatpickr"></script>
+<script src="https://npmcdn.com/flatpickr/dist/l10n/ja.js"></script>
+
 <script>
   $(function () {
     //日本語にする
@@ -399,7 +413,11 @@
   // checkbox 複数削除したい
   $(function(){
     $('.checkbox').click(function(){
-      $('#off').prop('disabled', !$('.checkbox:checked').length);
+      if ($('.checkbox:checked').length>1)
+      {
+        //$('#off').prop('disabled', !$('.checkbox:checked').length);
+        $('#off').removeAttr('disabled');
+      }
     })
   });
 
@@ -430,6 +448,18 @@
   $('.timepicker').timepicker({
     showInputs: false,
   });
+
+// お知らせ登録のdatetimepicker
+  $(document).ready(function(){
+    flatpickr('.datetimepicker', {
+      enableTime: true,
+      time_24hr: true,
+      dateFormat: 'Y-m-d H:i',
+      minDate: 'today',
+      locale: 'ja',
+  });
+});
+
 </script>
 </body>
 </html>

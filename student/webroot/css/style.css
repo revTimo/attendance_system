@@ -1,10 +1,9 @@
-body {
-	background-color: #576265;
+.timetable {
+	cursor: pointer;
 }
-.vertical-offset-100 {
-	padding-top: 100px;
-}
-.error-message {
-    color: #ff0303;
-    padding: 3px;
+/* Set black background color, white text and some padding */
+footer {
+	background-color: #555;
+	color: white;
+	padding: 20px;
 }

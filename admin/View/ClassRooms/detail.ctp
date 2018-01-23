@@ -66,7 +66,7 @@
         <?php foreach($student_list as $key => $student) :?>
         <li id="<?= $key?>" class="std">
           <img src="/attendance_system/admin/webroot/student_image/<?= $student['img']?>" alt="User Image">
-          <a class="users-list-name" href="#"><?=$student['name']?></a>
+          <span class="users-list-name"><?=$student['name']?></span>
           <span class="users-list-date"><?=$student['major']['Major']['name']?></span>
         </li>
         <?php endforeach ?>

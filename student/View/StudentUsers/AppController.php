@@ -82,13 +82,15 @@ class AppController extends Controller {
 	// 出席チェック【出席ボタン押した後page reloadすると押せられないように】
 	public function check_attendance ()
 	{
-		// temporary_attendanceに入っているattendance_idを取得
+		//pr('hi');
+		//exit;
 		$get_attendance_id = $this->TemporaryAttendance->find('all', [
 			'conditions' => [
 				'student_id' => $this->Auth->user('student_id'),
 			],
 			'fields' => ['attendance_id'],
 		]);
+
 		// 出席していない場合空になる
 		if (empty($get_attendance_id))
 		{
@@ -99,24 +101,13 @@ class AppController extends Controller {
 		{
 			$get_class = $this->Attendance->find('first', [
 				'conditions' => [
-					'id' => $get_attendance_id[0]['TemporaryAttendance']['attendance_id'],
+					'id' => $get_attendance_id['TemporaryAttendance']['attendance_id'],
 				],
+				'fields' => ['class_id'],
 			]);
 
 			$this->set('is_attending', True);
 			$this->set('attending_class', $get_class['Attendance']['class_id']);
-
-			$end_time = $this->ClassRoom->find('first', [
-				'conditions' => [
-					'id' => $get_class['Attendance']['class_id'],
-				],
-				'fields' => ['end_time'],
-			]);
-
-			if (date('H:i:s') >= $end_time['ClassRoom']['end_time'])
-			{
-				$this->TemporaryAttendance->deleteAll(['attendance_id' => $get_attendance_id[0]['TemporaryAttendance']['attendance_id']]);
-			}
 		}
 	}
 

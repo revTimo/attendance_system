@@ -39,6 +39,7 @@ class ClassRoom extends AppModel {
 			'subject_id' => $data['ClassRoom']['subject_id'],
 			'school_id' => AuthComponent::user('school_id'),
 			'grade' => $data['ClassRoom']['grade'],
+			'week' => $data['ClassRoom']['week'],
 			'start_time' => $data['ClassRoom']['start_time'],
 			'end_time' => $data['ClassRoom']['end_time'],
 			'semester_from' => $data['ClassRoom']['semester_from'],

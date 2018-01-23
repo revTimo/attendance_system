@@ -11,6 +11,8 @@ class StudentUsersController extends AppController {
 		'Subject',
 		'ClassStudent',
 		'ClassRoom',
+		'Attendance',
+		'TemporaryAttendance',
 	];
 
 	public function beforeFilter()
@@ -74,6 +76,7 @@ class StudentUsersController extends AppController {
 				return $this->Flash->setFlashError('学生番号が登録されていませんでした。');
 			}
 			$data = [
+				'student_id' => $find_student['Student']['id'],
 				'name' => $find_student['Student']['name'],
 				'password' => substr(md5(uniqid(rand(),'')),0,10),
 				'student_number' => $find_student['Student']['student_number'],
@@ -108,8 +111,6 @@ class StudentUsersController extends AppController {
 				$this->Flash->setFlashError('アカウント発行失敗しました'."\n".$e);
 				return $this->redirect(['action' => 'register']);
 			}
-			// if　ない -> return
-
 		}
 	}
 
@@ -149,5 +150,75 @@ class StudentUsersController extends AppController {
 	public function logout ()
 	{
 		return $this->redirect($this->Auth->logout());
+	}
+
+	public function attend ()
+	{
+		if ($this->request->is('get'))
+		{
+			return $this->redirect(['controller' => 'student_users', 'action' => 'index']);
+		}
+		// json通信
+		$this->autoRender = FALSE;
+		if($this->request->is('ajax'))
+		{
+			$attend_data = $this->attend_class($this->request->data['class_id']);
+			if ($attend_data == false)
+			{
+				$code = 400;
+				$response = [
+					'code' => $code,
+					'class' => $this->request->data['class_id'],
+				];
+				return json_encode($response);
+			}
+			
+			// 出席ＤＢ保存
+			if ($this->Attendance->save($attend_data) == false)
+			{
+				$code = 400;
+				$response = [
+					'code' => $code,
+					'class' => $this->request->data['class_id'],
+				];
+				return json_encode($response);
+			}
+			
+			// temporary_attendance保存
+			$temp_data = [
+				'attendance_id' => $this->Attendance->id,
+				'student_id' => $attend_data['student_id'],
+			];
+			if ($this->TemporaryAttendance->save($temp_data) == false)
+			{
+				$code = 400;
+				$response = [
+					'code' => $code,
+					'class' => $this->request->data['class_id'],
+				];
+				return json_encode($response);
+			}
+
+			$code = 200;
+			$response = [
+				'code' => $code,
+				'class' => $this->request->data['class_id'],
+			];
+			return json_encode($response);
+		}
+	}
+
+	public function timetable ()
+	{
+		$current_student = $this->Student->find('first', [
+			'conditions' => [
+				'student_number' => $this->Auth->user('student_number'),
+				'school_id' => $this->Auth->user('school_id'),
+			],
+		]);
+
+		// 出席授業
+		$available_class = $this->get_class($current_student['Student']['id']);
+		$this->set('all_class', $available_class);
 	}
 }

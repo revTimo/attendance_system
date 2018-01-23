@@ -117,14 +117,17 @@ class ClassRoomsController extends AppController {
 				return $this->redirect(['action' => 'index']);
 			}
 
-			// classroomstudentに教室IDと参加学生ID保存
-			if ($this->ClassStudent->save_class_student($this->ClassRoom->id, $this->request->data['ClassRoom']['students_id']) == false)
+			// 学生はいない、教室だけを作成のとき
+			if (isset($this->request->data['ClassRoom']['students_id']))
 			{
-				$this->ClassRoom->rollback();
-				$this->Flash->setFlashError('ClassStudentの登録が失敗しました');
-				return $this->redirect(['action' => 'index']);
+				// classroomstudentに教室IDと参加学生ID保存
+				if ($this->ClassStudent->save_class_student($this->ClassRoom->id, $this->request->data['ClassRoom']['students_id']) == false)
+				{
+					$this->ClassRoom->rollback();
+					$this->Flash->setFlashError('ClassStudentの登録が失敗しました');
+					return $this->redirect(['action' => 'index']);
+				}
 			}
-
 			$this->ClassRoom->commit();
 		}
 		catch(Exception $e)
@@ -197,8 +200,8 @@ class ClassRoomsController extends AppController {
 			$all_subject = $this->Subject->subject_list();
 			$this->set('all_subject', $all_subject);
 			$this->set('student_list', $student_list);
-
 		}
+
 		if ($this->request->is('post'))
 		{
 			try
@@ -212,13 +215,19 @@ class ClassRoomsController extends AppController {
 					return $this->redirect(['action' => 'class_list']);
 				}
 
-				// class_student
-				if ($this->ClassStudent->save_class_student($class_id, $this->request->data['ClassRoom']['students_id'], 'edit') == false)
+				$this->ClassStudent->deleteAll(['class_room_id' => $class_id]);
+				// 学生がいないとき無視する
+				if (isset($this->request->data['ClassRoom']['students_id']))
 				{
-					$this->ClassRoom->rollback();
-					$this->Flash->setFlashError('編集できませんでした。(classroom保存失敗)');
-					return $this->redirect(['action' => 'class_list']);
+					// class_student
+					if ($this->ClassStudent->save_class_student($class_id, $this->request->data['ClassRoom']['students_id']) == false)
+					{
+						$this->ClassRoom->rollback();
+						$this->Flash->setFlashError('編集できませんでした。(classroom保存失敗)');
+						return $this->redirect(['action' => 'class_list']);
+					}
 				}
+
 				$this->ClassRoom->commit();
 				$this->Flash->setFlashSuccess('編集しました。');
 				return $this->redirect(['action' => 'class_list']);

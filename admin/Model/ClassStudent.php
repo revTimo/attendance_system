@@ -2,7 +2,7 @@
 
 class ClassStudent extends AppModel {
 	
-	public function save_class_student ($class_id = null, $students_id = null, $status = null)
+	public function save_class_student ($class_id = null, $students_id = null)
 	{
 		$class_student_id_list = [];
 		foreach ($students_id as $student)
@@ -15,12 +15,12 @@ class ClassStudent extends AppModel {
 		}
 
 		// 編集のとき削除しちゃう
-		if ($status == 'edit')
+		/*if ($status == 'edit')
 		{
 			$this->deleteAll([
 				'class_room_id' => $class_id,
 			]);
-		}
+		}*/
 
 		if ($this->saveAll($class_student_id_list) == false)
 		{
@@ -39,4 +39,16 @@ class ClassStudent extends AppModel {
 		]);
 		return $data;
 	}
+
+	// 学生を削除するとき中間テーブルも削除
+	// 2.classstudent delete where student_id => $id
+	public function delete_student($id)
+	{
+		if ($this->deleteAll(['student_id' => $id]) == false)
+		{
+			return false;
+		}
+		return true;
+	}
+
 }

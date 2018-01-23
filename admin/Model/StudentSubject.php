@@ -15,8 +15,12 @@ class StudentSubject extends AppModel {
 				'school_id' => AuthComponent::user('school_id'),
 			],
 		]);
-
 		if (empty($major))
+		{
+			return true;
+		}
+
+		if (empty($major['Subject']))
 		{
 			return true;
 		}
@@ -97,5 +101,16 @@ class StudentSubject extends AppModel {
 			];
 		}
 		return $student_name_list;
+	}
+
+	// 学生を削除するとき中間テーブルも削除
+	// 1.studentsubject delete where student_id = $id
+	public function delete_student($id)
+	{
+		if ($this->deleteAll(['student_id' => $id]) == false)
+		{
+			return false;
+		}
+		return true;
 	}
 }

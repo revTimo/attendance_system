@@ -7,6 +7,8 @@ class StudentsController extends AppController {
 		'Subject',
 		'Major',
 		'StudentSubject',
+		'ClassStudent',
+		'StudentUser',
 	];
 
 	//学生一覧
@@ -149,12 +151,14 @@ class StudentsController extends AppController {
 		// 複数の削除
 		if ($this->request->is('post'))
 		{
-			$this->Student->id = $this->request->data['deletedata'];
+			$students_id = $this->request->data['deletedata'];
+			$this->Student->id = $students_id;
 		}
 
 		// １レコード場合
 		if ($this->request->is('get'))
 		{
+			$students_id = $id;
 			// 他の学校のIDを削除しないように
 			$check = $this->Student->find('first', [
 				'conditions' => [
@@ -172,27 +176,59 @@ class StudentsController extends AppController {
 			{
 				return $this->redirect(['action' => 'index']);
 			}
-
-			$this->Student->id = $id;
+			$this->Student->id = $students_id;
 		}
 
 		// 共通削除
-		if ($this->Student->delete() == false)
+		try
 		{
+			$this->Student->begin();
+			// 学生のテーブル
+			if ($this->Student->delete() == false)
+			{
+				$this->Student->rollback();
+				$this->Flash->setFlashError('学生レコードを削除できませんでした。');
+				return $this->redirect(['action' => 'index']);
+			}
+			
+			// 学生を削除するとき中間テーブルも削除+student pageのデーターも
+			// 1.studentsubject delete where student_id = $id
+			if ($this->StudentSubject->delete_student($students_id) == false)
+			{
+				$this->Student->rollback();
+				$this->Flash->setFlashError('StudentSubjectレコードを削除できませんでした。');
+				return $this->redirect(['action' => 'index']);
+			}
+
+			// 2.classstudent delete where student_id => $id
+			if ($this->ClassStudent->delete_student($students_id) == false)
+			{
+				$this->Student->rollback();
+				$this->Flash->setFlashError('StudentClassレコードを削除できませんでした。');
+				return $this->redirect(['action' => 'index']);
+			}
+
+			// 3.student_users delete
+			if ($this->StudentUser->delete_student($students_id) == false)
+			{
+				$this->Student->rollback();
+				$this->Flash->setFlashError('StudentUserレコードを削除できませんでした。');
+				return $this->redirect(['action' => 'index']);
+			}
+
+			// 全て削除
+			$this->Student->commit();
+
+		}
+		catch (Exception $e)
+		{
+			$this->Student->rollback();
+			$this->Flash->setFlashError('学生の全てレコードを削除できませんでした。');
 			return $this->redirect(['action' => 'index']);
 		}
 
 		$this->Flash->setFlashSuccess('削除しました。');
 		return $this->redirect(['action' => 'index']);
-	}
-
-	// 複数の削除
-	public function delete_all()
-	{
-		if ($this->request->is('get'))
-		{
-			return $this->redirect(['action' => 'index']);
-		}
 	}
 
 	//　ajaxで学生検索一覧のため
@@ -211,6 +247,7 @@ class StudentsController extends AppController {
 				$student = $this->Student->find('all', [
 					'conditions'=>[
 						'name LIKE' => '%'.$this->request->data['name'].'%',
+						'school_id' => $this->Auth->user('school_id'),
 					],
 				]);
 				return json_encode($student);
