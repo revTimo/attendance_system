@@ -13,7 +13,11 @@ class StudentUsersController extends AppController {
 		'ClassRoom',
 		'Attendance',
 		'TemporaryAttendance',
+		'Notification',
 	];
+
+	// ページネーション
+	public $components = ['Paginator'];
 
 	public function beforeFilter()
 	{
@@ -208,6 +212,7 @@ class StudentUsersController extends AppController {
 		}
 	}
 
+	//　時間割
 	public function timetable ()
 	{
 		$current_student = $this->Student->find('first', [
@@ -220,5 +225,46 @@ class StudentUsersController extends AppController {
 		// 出席授業
 		$available_class = $this->get_class($current_student['Student']['id']);
 		$this->set('all_class', $available_class);
+	}
+
+	//　お知らせ一覧
+	public function notification()
+	{
+		$this->Paginator->settings = [
+			'conditions' => [
+				'school_id' => $this->Auth->user('school_id'),
+				'publish_at <=' => date('Y-m-d H:i'),
+			],
+			'order' => [
+				'created' => 'DESC',
+			],
+			'limit' => 3,
+		];
+
+		$notifications = $this->Paginator->paginate('Notification');
+		$this->set('show_all_notifications', $notifications);
+	}
+
+	// お知らせidの詳細
+	public function notification_detail ($id = null)
+	{
+		// validation
+		// id が存在しない　あるいは　空
+		$check_notification = $this->Notification->find('first', [
+			'conditions' => [
+				'id' => $id,
+				'school_id' => $this->Auth->user('school_id'),
+			],
+		]);
+		if (empty($check_notification))
+		{
+			return $this->redirect(['action' => 'index']);
+		}
+		// 他の学校をできないように
+		if ($check_notification['Notification']['school_id'] != $this->Auth->user('school_id'))
+		{
+			return $this->redirect(['action' => 'index']);
+		}
+		$this->set('notification_detail', $check_notification);
 	}
 }

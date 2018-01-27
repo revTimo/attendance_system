@@ -67,6 +67,7 @@ class AppController extends Controller {
 		AuthComponent::$sessionKey = 'Auth.Student';
 		$this->login_student_info();
 		$this->check_attendance();
+		$this->side_notification();
 	}
 	//カスタマイズエラーメッセージ
 	public function setFlashSuccess($msg)
@@ -299,5 +300,23 @@ class AppController extends Controller {
 		];
 
 		return $attend_data;
+	}
+
+	// お知らせ
+	public function side_notification()
+	{
+		// とりあえず一覧
+		// 次は conditions => student_id
+		$side_notifications = $this->Notification->find('all', [
+			'conditions' => [
+				'school_id' => $this->Auth->user('school_id'),
+				'publish_at <=' => date('Y-m-d H:i'),
+			],
+			'order' => [
+				'created' => 'DESC',
+			],
+			'limit' => 3,
+		]);
+		$this->set('side_notifications', $side_notifications);
 	}
 }

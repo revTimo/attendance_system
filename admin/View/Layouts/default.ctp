@@ -172,9 +172,9 @@
         <li class="header"></li>
         <!-- Optionally, you can add icons to the links -->
         <?php if($this->request->params['controller'] == 'attendances') :?>
-        <li class="active"><a href="/attendance_system/admin/attendances/index"><i class="fa fa-link"></i> <span>出席一覧</span></a></li>
+        <li class="active"><a href="/attendance_system/admin/attendances/index"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>出席一覧</span></a></li>
         <?php else :?>
-        <li><a href="/attendance_system/admin/attendances/index"><i class="fa fa-link"></i> <span>出席一覧</span></a></li>
+        <li><a href="/attendance_system/admin/attendances/index"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>出席一覧</span></a></li>
         <?php endif ?>
         <?php if($this->request->params['controller'] == 'users') :?>
         <li class="active"><a href="/attendance_system/admin/users/index"><i class="fa fa-user" aria-hidden="true"></i><span>管理者</span></a></li>
@@ -256,7 +256,7 @@
 
         <!-- お知らせ -->
         <?php if($this->request->params['controller'] == 'notifications') :?>
-        <li class="active"><a href="/attendance_system/admin/notifications/index"><i class="fa fa-link"></i> <span>お知らせ</span></a></li>
+        <li class="active"><a href="/attendance_system/admin/notifications/index"><i class="fa fa-bullhorn" aria-hidden="true"></i> <span>お知らせ</span></a></li>
         <?php else :?>
         <li><a href="/attendance_system/admin/notifications/index"><i class="fa fa-bullhorn" aria-hidden="true"></i><span>お知らせ</span></a></li>
         <?php endif ?>
@@ -267,6 +267,9 @@
         <?php else :?>
         <li><a href="#"><i class="fa fa-gears"></i><span>設定</span></a></li>
         <?php endif ?>
+
+        <!-- お問い合わせ -->
+        <li><a href="https://reg18.smp.ne.jp/regist/is?SMPFORM=merg-pfqjo-8338ee1a270877c1bc17c92ee22257f5" target="_blank"><i class="fa fa-phone" aria-hidden="true"></i><span>お問い合わせ</span></a></li>
       </ul>
       <!-- /.sidebar-menu -->
     </section>

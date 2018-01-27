@@ -1,3 +1,8 @@
+<div class="alert alert-info">
+  <strong>よこそ!</strong> 出席管理システムにご興味をお持ちいただき、ありがとうございます。ゲストユーザでログイン可能です。
+  【メールアドレス：guest@mail.com
+  パスワード：guest123】
+</div>
 <div class="login-box">
   <div class="login-logo">
     <a href=""><b>出席管理</b>システム</a>

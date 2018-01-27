@@ -22,14 +22,28 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">Logo</a>
+			<!-- <a class="navbar-brand" href="#">Logo</a> -->
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#">Messages</a></li>
+				<?php if($this->request->params['action'] == 'index') :?>
+				<li class="active"><a href="/attendance_system/student/StudentUsers/index">ホーム</a></li>
+				<?php else :?>
+				<li><a href="/attendance_system/student/StudentUsers/index">ホーム</a></li>
+				<?php endif ?>
+				<?php if($this->request->params['action'] == 'timetable') :?>
+				<li class="active"><a href="/attendance_system/student/StudentUsers/timetable">時間割</a></li>
+				<?php else :?>
+				<li><a href="/attendance_system/student/StudentUsers/timetable">時間割</a></li>
+				<?php endif ?>
+				<?php if($this->request->params['action'] == 'notification') :?>
+				<li class="active"><a href="/attendance_system/student/StudentUsers/notification">お知らせ</a></li>
+				<?php else :?>
+				<li><a href="/attendance_system/student/StudentUsers/notification">お知らせ</a></li>
+				<?php endif ?>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#" data-toggle="modal" data-target="#login-modal"><span class="glyphicon glyphicon-lock"></span>パスワードを変える</a></li>
 				<li><a href="/attendance_system/student/student_users/logout"><span class="glyphicon glyphicon-log-out"></span> ログアウト</a></li>
 			</ul>
 		</div>
@@ -43,7 +57,6 @@
 				<p><a href="#"><?=$student_info['name']?></a></p>
 				<p><?=$student_info['grade']." 年 ".$student_info['major']?></p>
 				<?= $this->Html->image('../profile/no_image.jpg',["class" => "img-circle", "width" => "65", "height" => "65"])?>
-				<p><a href="#" data-toggle="modal" data-target="#login-modal">パスワードを変える</a></p>
 			</div>
 			<div class="well">
 				<p>受ける科目全て</p>
@@ -58,28 +71,36 @@
 				<p><strong>重要なお知らせ!</strong></p>
 				People arefsdfs looking at your profile. Find out whosdfgdf.
 			</div>
-			<p><a href="/attendance_system/student/StudentUsers/index">出席</a></p>
-			<p><a href="/attendance_system/student/StudentUsers/timetable">時間割</a></p>
-			<p><a href="#">タイムライン</a></p>
 		</div>
 		<div class="col-sm-7">
 			<?= $this->Flash->render() ?>
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<div class="col-sm-2 well">
+			<!-- お知らせを３つだけ表示する -->
+			<?php foreach($side_notifications as $show_side_notifications) :?>
 			<div class="thumbnail">
-				<p>お知らせ</p>
-				<p><strong>Paris</strong></p>
-				<p>Fri. 27 November 2015sssss</p>
-				<button class="btn btn-primary">詳細</button>
+				<span class="label label-danger">お知らせ</span>
+				<p><strong><?= $show_side_notifications['Notification']['title'] ?></strong></p>
+				<p><?= mb_substr($show_side_notifications['Notification']['content'], 0, 20) ?>..</p>
+				<a href="/attendance_system/student/StudentUsers/notification_detail/<?= $show_side_notifications['Notification']['id']?>">詳細</a>
 			</div>
-			<div class="well">
-				<p>ADS</p>
-			</div>
-			<div class="well">
-				<p>ADS</p>
-			</div>
-			<a href="#">もっと見る</a>
+			<?php endforeach ?>
+			<a href="/attendance_system/student/StudentUsers/notification" class="btn btn-primary">もっと見る</a>
+		</div>
+	</div>
+</div>
+
+<!-- パスワードを変えるmodal -->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+	<div class="modal-dialog">
+		<div class="loginmodal-container">
+			<p>パスワードを変えます</p>
+			<?= $this->Form->create('StudentUser', ['url' => 'edit'])?>
+				<?= $this->Form->input('current_password', ['type' => 'password', 'label' => false, 'placeholder' => '現在のパスワード', 'required'])?>
+				<?= $this->Form->input('new_password', ['type' => 'password', 'label' => false, 'placeholder' => '新しいパスワード', 'required'])?>
+				<button type="submit" class="btn btn-success">登録</button>
+			<?= $this->Form->end()?>
 		</div>
 	</div>
 </div>

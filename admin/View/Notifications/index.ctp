@@ -37,6 +37,7 @@
 							<tr>
 								<th>タイトル</th>
 								<th>コンテンツ</th>
+								<th>公開日</th>
 								<th>編集</th>
 								<th>削除</th>
 							</tr>
@@ -50,6 +51,7 @@
 									<td>
 										<?= $notification['Notification']['content'] ?>
 									</td>
+									<td><?= $notification['Notification']['publish_at']?></td>
 									<td><a href="/attendance_system/admin/notifications/edit/<?= $notification['Notification']['id']?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
 									<td><a href="/attendance_system/admin/notifications/delete/<?= $notification['Notification']['id']?>" onclick="return confirm('学生を削除します、よろしいですか？');"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
 								</tr>

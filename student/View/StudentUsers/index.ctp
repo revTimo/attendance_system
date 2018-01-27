@@ -1,21 +1,7 @@
 <div>
 	<h3><?= $student_info['school_name']?></h3>
-	<p><?= $student_info['name'] ?>さんよこそ</p>
 </div>
 
-<!-- パスワードを変えるmodal -->
-<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-	<div class="modal-dialog">
-		<div class="loginmodal-container">
-			<p>パスワードを変えます</p>
-			<?= $this->Form->create('StudentUser', ['url' => 'edit'])?>
-				<?= $this->Form->input('current_password', ['type' => 'password', 'label' => false, 'placeholder' => '現在のパスワード', 'required'])?>
-				<?= $this->Form->input('new_password', ['type' => 'password', 'label' => false, 'placeholder' => '新しいパスワード', 'required'])?>
-				<button type="submit" class="btn btn-success">登録</button>
-			<?= $this->Form->end()?>
-		</div>
-	</div>
-</div>
 <!-- 時計と出席授業 -->
 <div class="panel panel-primary">
 	<div class="panel-heading"><div id="clock" class="clock">読み込み中 ...</div></div>
