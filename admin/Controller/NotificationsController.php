@@ -1,6 +1,7 @@
 <?php
 
 class NotificationsController extends AppController {
+	public $components = array('Security');
 	public function index ()
 	{
 		$notifications = $this->Notification->find('all', [
@@ -100,7 +101,25 @@ class NotificationsController extends AppController {
 			$this->Flash->setFlashError('不正なアクセス');
 			return $this->redirect(['action' => 'index']);
 		}
-		$this->Notification->id = $id;
+		/*if ($this->request->is('post'))
+		{
+			foreach ($this->request->data['deletedata'] as $key => $ids) {
+				$students_id[] = intval($ids);
+			}
+			$this->Student->id = $students_id;
+		}*/
+		// １レコード削除
+		if ($this->request->is('get'))
+		{
+			$this->Notification->id = $id;
+		}
+
+		if ($this->request->is('post'))
+		{
+			pr($this->request->data); exit;
+			$this->Notification->id = $this->request->data['deletedata'];
+		}
+		// 共通削除
 		if ($this->Notification->delete() == false)
 		{
 			$this->Flash->setFlashError('削除できませんでした。');

@@ -44,7 +44,31 @@ class AppController extends Controller {
 		$this->user_info();
 	}
 
+	public function set($var, $val = null, $sanitize = true)
+	{
+		if ($sanitize)
+		{
+			$val = $this->__sanitize($val);
+		}
+		return parent::set($var, $val);
+	}
+
+	private function __sanitize($dat)
+	{
+		if (is_array($dat))
+		{
+			foreach ($dat as $cnt => $val)
+			{
+				$dat[$cnt] = $this->__sanitize($val);
+			}
+			return $dat;
+		} else {
+			return htmlspecialchars($dat);
+		}
+	}
+
 	public $components = [
+		'Security',
 		'Flash',
 		'Auth' => [
 			'loginRedirect' => [

@@ -30,7 +30,7 @@
 				<h3 class="box-title">お知らせ一覧</h3>
 			</div>
 			<div class="box-body">
-				<form id="multi_delete" method="post" action="/attendance_system/admin/class_rooms/delete" onsubmit="return confirm('選択されている学生全てが削除されます。よろしいですか');">
+				<form id="multi_delete" method="post" action="/attendance_system/admin/notifications/delete" onsubmit="return confirm('選択されている学生全てが削除されます。よろしいですか');">
 					<button type="submit" name="multi_delete_btn" disabled class="btn btn-danger" id="off">選択したお知らせ全てを削除する</button><br><br>
 					<table id="example1" class="table table-bordered table-striped">
 						<thead>

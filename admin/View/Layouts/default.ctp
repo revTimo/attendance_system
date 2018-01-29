@@ -416,14 +416,19 @@
   // checkbox 複数削除したい
   $(function(){
     $('.checkbox').click(function(){
-      if ($('.checkbox:checked').length>1)
-      {
-        //$('#off').prop('disabled', !$('.checkbox:checked').length);
-        $('#off').removeAttr('disabled');
-      }
+    	if(this.checked)
+    	{
+    		if ($('.checkbox:checked').length > 1)
+    		{
+    			$('#off').removeAttr('disabled');
+    		}
+    	} else {
+    		if ($('.checkbox:checked').length == 1) {
+    			$('#off').attr('disabled', 'disabled');
+    		}
+    	}
     })
   });
-
   // Date picker
   $('#datepicker').datepicker({
     autoclose: true,

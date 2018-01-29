@@ -12,7 +12,7 @@
 				<div class="form-group sub">
 					<label for="name">科目</label>
 					<?= $this->Form->input('Subject.subjects.0',['label' => false,'class' => 'form-control sub_clone','id' => 'myid']) ?>
-					<button type="button" class="btn btn-danger btn-xs" onclick="remove_item(this)">削除</button> 
+					<!-- <button type="button" class="btn btn-danger btn-xs" onclick="remove_item(this)">削除</button>  -->
 				</div>
 				<span class="clone"></span>
 				<button type="button" class="btn btn-primary btn-xs" id="subject_add">追加</button><br><br>

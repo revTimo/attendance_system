@@ -44,9 +44,17 @@ class ClassStudent extends AppModel {
 	// 2.classstudent delete where student_id => $id
 	public function delete_student($id)
 	{
-		if ($this->deleteAll(['student_id' => $id]) == false)
+		$find_student = $this->find('all', [
+			'conditions' => [
+				'student_id' => $id,
+			],
+		]);
+		if (!empty($find_student))
 		{
-			return false;
+			if ($this->deleteAll(['student_id' => $id]) == false)
+			{
+				return false;
+			}
 		}
 		return true;
 	}

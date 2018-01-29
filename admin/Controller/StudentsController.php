@@ -9,6 +9,7 @@ class StudentsController extends AppController {
 		'StudentSubject',
 		'ClassStudent',
 		'StudentUser',
+		'Attendance',
 	];
 
 	//学生一覧
@@ -149,9 +150,12 @@ class StudentsController extends AppController {
 	public function delete ($id = null)
 	{
 		// 複数の削除
+		$students_id = [];
 		if ($this->request->is('post'))
 		{
-			$students_id = $this->request->data['deletedata'];
+			foreach ($this->request->data['deletedata'] as $key => $ids) {
+				$students_id[] = intval($ids);
+			}
 			$this->Student->id = $students_id;
 		}
 
@@ -209,10 +213,26 @@ class StudentsController extends AppController {
 			}
 
 			// 3.student_users delete
-			if ($this->StudentUser->delete_student($students_id) == false)
+			$client_student = $this->StudentUser->find('all', [
+				'conditions' => [
+					'student_id' => $students_id,
+				],
+			]);
+			if (!empty($client_student))
+			{
+				if ($this->StudentUser->deleteAll(['student_id' => $students_id]) == false)
+				{
+					$this->Student->rollback();
+					$this->Flash->setFlashError('StudentClassレコードを削除できませんでした。');
+					return $this->redirect(['action' => 'index']);
+				}
+			}
+
+			// Attendance delete
+			if ($this->Attendance->delete_student($students_id) == false)
 			{
 				$this->Student->rollback();
-				$this->Flash->setFlashError('StudentUserレコードを削除できませんでした。');
+				$this->Flash->setFlashError('Attendanceレコードを削除できませんでした。');
 				return $this->redirect(['action' => 'index']);
 			}
 

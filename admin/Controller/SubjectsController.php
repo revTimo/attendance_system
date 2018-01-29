@@ -6,7 +6,12 @@ class SubjectsController extends AppController {
 		'Major',
 		'StudentSubject',
 	];
-	
+
+	public function beforeFilter()
+	{
+		parent::beforeFilter();
+		$this->Security->requirePost('add_subject');
+	}
 	public function index ()
 	{
 		$data = $this->Major->find('all', [

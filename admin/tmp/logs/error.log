@@ -13453,3 +13453,312 @@ Stack Trace:
 #4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(NotificationsController), Object(CakeRequest))
 #5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2018-01-28 13:18:23 Error: [ParseError] syntax error, unexpected 'array_map' (T_STRING)
+Request URL: /attendance_system/admin/students/delete
+Stack Trace:
+#0 [internal function]: App::load('StudentsControl...')
+#1 [internal function]: spl_autoload_call('StudentsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('StudentsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-01-28 13:18:28 Error: [ParseError] syntax error, unexpected 'array_map' (T_STRING)
+Request URL: /attendance_system/admin/students/delete
+Stack Trace:
+#0 [internal function]: App::load('StudentsControl...')
+#1 [internal function]: spl_autoload_call('StudentsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('StudentsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-01-29 10:44:43 Error: [Error] Call to a member function delete_student() on null
+Request URL: /attendance_system/admin/students/delete
+Stack Trace:
+#0 [internal function]: StudentsController->delete()
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-01-29 10:46:13 Error: [Error] Call to a member function delete_student() on null
+Request URL: /attendance_system/admin/students/delete
+Stack Trace:
+#0 [internal function]: StudentsController->delete()
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-01-29 10:46:44 Error: [Error] Call to a member function delete_student() on null
+Request URL: /attendance_system/admin/students/delete
+Stack Trace:
+#0 [internal function]: StudentsController->delete()
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-01-29 10:47:02 Error: [Error] Call to a member function delete_student() on null
+Request URL: /attendance_system/admin/students/delete
+Stack Trace:
+#0 [internal function]: StudentsController->delete()
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-01-29 10:59:36 Error: [ParseError] syntax error, unexpected '' => false, '' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+Request URL: /attendance_system/admin/notifications/confirm
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(NotificationsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-01-29 21:22:33 Error: [AuthSecurityException] Missing field 'Subject.subjects' in POST data
+Request URL: /attendance_system/admin/subjects/confirm_subject
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Controller/Component/SecurityComponent.php(247): SecurityComponent->_validatePost(Object(SubjectsController))
+#1 /home/tuang/attendance_system/lib/Cake/Utility/ObjectCollection.php(128): SecurityComponent->startup(Object(SubjectsController))
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#6 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-01-29 21:22:52 Error: [AuthSecurityException] Missing field 'Subject.subjects' in POST data
+Request URL: /attendance_system/admin/subjects/confirm_subject
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Controller/Component/SecurityComponent.php(247): SecurityComponent->_validatePost(Object(SubjectsController))
+#1 /home/tuang/attendance_system/lib/Cake/Utility/ObjectCollection.php(128): SecurityComponent->startup(Object(SubjectsController))
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#6 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-01-29 21:23:05 Error: [AuthSecurityException] Missing field 'Subject.subjects' in POST data
+Request URL: /attendance_system/admin/subjects/confirm_subject
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Controller/Component/SecurityComponent.php(247): SecurityComponent->_validatePost(Object(SubjectsController))
+#1 /home/tuang/attendance_system/lib/Cake/Utility/ObjectCollection.php(128): SecurityComponent->startup(Object(SubjectsController))
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#6 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-01-29 21:23:48 Error: [AuthSecurityException] Missing field 'Subject.subjects' in POST data
+Request URL: /attendance_system/admin/subjects/confirm_subject
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Controller/Component/SecurityComponent.php(247): SecurityComponent->_validatePost(Object(SubjectsController))
+#1 /home/tuang/attendance_system/lib/Cake/Utility/ObjectCollection.php(128): SecurityComponent->startup(Object(SubjectsController))
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#6 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-01-29 21:26:28 Error: [AuthSecurityException] Missing field 'Subject.subjects' in POST data
+Request URL: /attendance_system/admin/subjects/confirm_subject
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Controller/Component/SecurityComponent.php(247): SecurityComponent->_validatePost(Object(SubjectsController))
+#1 /home/tuang/attendance_system/lib/Cake/Utility/ObjectCollection.php(128): SecurityComponent->startup(Object(SubjectsController))
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#6 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-01-29 21:33:24 Error: [AuthSecurityException] Missing field 'Subject.subjects' in POST data
+Request URL: /attendance_system/admin/subjects/confirm_subject
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Controller/Component/SecurityComponent.php(247): SecurityComponent->_validatePost(Object(SubjectsController))
+#1 /home/tuang/attendance_system/lib/Cake/Utility/ObjectCollection.php(128): SecurityComponent->startup(Object(SubjectsController))
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#6 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-01-29 21:34:52 Error: [AuthSecurityException] Missing field 'Subject.subjects' in POST data
+Request URL: /attendance_system/admin/subjects/confirm_subject
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Controller/Component/SecurityComponent.php(247): SecurityComponent->_validatePost(Object(SubjectsController))
+#1 /home/tuang/attendance_system/lib/Cake/Utility/ObjectCollection.php(128): SecurityComponent->startup(Object(SubjectsController))
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#6 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-01-29 21:41:22 Error: [Error] Call to undefined method SubjectsController::__sanitize()
+Request URL: /attendance_system/admin/subjects/index
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/AppController.php(102): AppController->set('login_user', 'adminTuang')
+#1 /home/tuang/attendance_system/admin/Controller/AppController.php(44): AppController->user_info()
+#2 /home/tuang/attendance_system/admin/Controller/SubjectsController.php(13): AppController->beforeFilter()
+#3 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): SubjectsController->beforeFilter(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#6 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#7 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-01-29 21:41:22 Error: Fatal Error (1): Uncaught Error: Call to undefined method CakeErrorController::__sanitize() in /home/tuang/attendance_system/admin/Controller/AppController.php:51
+Stack trace:
+#0 /home/tuang/attendance_system/admin/Controller/AppController.php(102): AppController->set('login_user', 'adminTuang')
+#1 /home/tuang/attendance_system/admin/Controller/AppController.php(44): AppController->user_info()
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): AppController->beforeFilter(Object(CakeEvent))
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(158): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(Error))
+#6 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(126): ExceptionRenderer->__construct(Object(Error))
+#7 [internal function]: ErrorHandler::handleException(Ob in [/home/tuang/attendance_system/admin/Controller/AppController.php, line 51]
+2018-01-29 21:41:22 Error: [FatalErrorException] Uncaught Error: Call to undefined method CakeErrorController::__sanitize() in /home/tuang/attendance_system/admin/Controller/AppController.php:51
+Stack trace:
+#0 /home/tuang/attendance_system/admin/Controller/AppController.php(102): AppController->set('login_user', 'adminTuang')
+#1 /home/tuang/attendance_system/admin/Controller/AppController.php(44): AppController->user_info()
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): AppController->beforeFilter(Object(CakeEvent))
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(158): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(Error))
+#6 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(126): ExceptionRenderer->__construct(Object(Error))
+#7 [internal function]: ErrorHandler::handleException(Ob
+Request URL: /attendance_system/admin/subjects/index
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', '/home/tuang/att...', 51)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', '/home/tuang/att...', 51, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2018-01-29 21:41:23 Error: [Error] Call to undefined method SubjectsController::__sanitize()
+Request URL: /attendance_system/admin/subjects/index
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/Controller/AppController.php(102): AppController->set('login_user', 'adminTuang')
+#1 /home/tuang/attendance_system/admin/Controller/AppController.php(44): AppController->user_info()
+#2 /home/tuang/attendance_system/admin/Controller/SubjectsController.php(13): AppController->beforeFilter()
+#3 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): SubjectsController->beforeFilter(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#6 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#7 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-01-29 21:41:23 Error: Fatal Error (1): Uncaught Error: Call to undefined method CakeErrorController::__sanitize() in /home/tuang/attendance_system/admin/Controller/AppController.php:51
+Stack trace:
+#0 /home/tuang/attendance_system/admin/Controller/AppController.php(102): AppController->set('login_user', 'adminTuang')
+#1 /home/tuang/attendance_system/admin/Controller/AppController.php(44): AppController->user_info()
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): AppController->beforeFilter(Object(CakeEvent))
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(158): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(Error))
+#6 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(126): ExceptionRenderer->__construct(Object(Error))
+#7 [internal function]: ErrorHandler::handleException(Ob in [/home/tuang/attendance_system/admin/Controller/AppController.php, line 51]
+2018-01-29 21:41:23 Error: [FatalErrorException] Uncaught Error: Call to undefined method CakeErrorController::__sanitize() in /home/tuang/attendance_system/admin/Controller/AppController.php:51
+Stack trace:
+#0 /home/tuang/attendance_system/admin/Controller/AppController.php(102): AppController->set('login_user', 'adminTuang')
+#1 /home/tuang/attendance_system/admin/Controller/AppController.php(44): AppController->user_info()
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): AppController->beforeFilter(Object(CakeEvent))
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(158): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(Error))
+#6 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(126): ExceptionRenderer->__construct(Object(Error))
+#7 [internal function]: ErrorHandler::handleException(Ob
+Request URL: /attendance_system/admin/subjects/index
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', '/home/tuang/att...', 51)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', '/home/tuang/att...', 51, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2018-01-29 21:42:47 Error: [SecurityException] CSRF token mismatch
+Request URL: /attendance_system/admin/subjects/confirm_subject
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Controller/Component/SecurityComponent.php(250): SecurityComponent->_validateCsrf(Object(SubjectsController))
+#1 /home/tuang/attendance_system/lib/Cake/Utility/ObjectCollection.php(128): SecurityComponent->startup(Object(SubjectsController))
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#6 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-01-29 21:42:51 Error: [SecurityException] CSRF token mismatch
+Request URL: /attendance_system/admin/subjects/confirm_subject
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Controller/Component/SecurityComponent.php(250): SecurityComponent->_validateCsrf(Object(SubjectsController))
+#1 /home/tuang/attendance_system/lib/Cake/Utility/ObjectCollection.php(128): SecurityComponent->startup(Object(SubjectsController))
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#6 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-01-29 21:43:23 Error: [AuthSecurityException] Missing field 'Subject.subjects' in POST data
+Request URL: /attendance_system/admin/subjects/confirm_subject
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Controller/Component/SecurityComponent.php(247): SecurityComponent->_validatePost(Object(SubjectsController))
+#1 /home/tuang/attendance_system/lib/Cake/Utility/ObjectCollection.php(128): SecurityComponent->startup(Object(SubjectsController))
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#6 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-01-29 22:14:51 Error: [AuthSecurityException] Missing field 'Subject.subjects' in POST data
+Request URL: /attendance_system/admin/subjects/confirm_subject
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Controller/Component/SecurityComponent.php(247): SecurityComponent->_validatePost(Object(SubjectsController))
+#1 /home/tuang/attendance_system/lib/Cake/Utility/ObjectCollection.php(128): SecurityComponent->startup(Object(SubjectsController))
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#6 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-01-29 22:15:37 Error: [AuthSecurityException] Missing field 'Subject.subjects' in POST data
+Request URL: /attendance_system/admin/subjects/confirm_subject
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Controller/Component/SecurityComponent.php(247): SecurityComponent->_validatePost(Object(SubjectsController))
+#1 /home/tuang/attendance_system/lib/Cake/Utility/ObjectCollection.php(128): SecurityComponent->startup(Object(SubjectsController))
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#6 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-01-29 22:30:46 Error: [SecurityException] CSRF token mismatch
+Request URL: /attendance_system/admin/subjects/confirm_subject
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Controller/Component/SecurityComponent.php(250): SecurityComponent->_validateCsrf(Object(SubjectsController))
+#1 /home/tuang/attendance_system/lib/Cake/Utility/ObjectCollection.php(128): SecurityComponent->startup(Object(SubjectsController))
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#6 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-01-29 22:32:14 Error: [SecurityException] CSRF token mismatch
+Request URL: /attendance_system/admin/subjects/confirm_subject
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Controller/Component/SecurityComponent.php(250): SecurityComponent->_validateCsrf(Object(SubjectsController))
+#1 /home/tuang/attendance_system/lib/Cake/Utility/ObjectCollection.php(128): SecurityComponent->startup(Object(SubjectsController))
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#6 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-01-29 22:34:00 Error: [SecurityException] The request method must be POST
+Request URL: /attendance_system/admin/subjects/edit/1
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Controller/Component/SecurityComponent.php(232): SecurityComponent->_methodsRequired(Object(SubjectsController))
+#1 /home/tuang/attendance_system/lib/Cake/Utility/ObjectCollection.php(128): SecurityComponent->startup(Object(SubjectsController))
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#6 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
