@@ -163,11 +163,13 @@ class AppController extends Controller {
 					],
 					'fields' => ['name'],
 				]);
+
 				$subject_name = [];
 				foreach ($subject_list as $key => $value) {
 					$subject_name[] = $value['Subject']['name'];
 				};
 			}
+
 			// 専攻が未登録$major_name['Major']['name']
 			if (empty($major_name))
 			{

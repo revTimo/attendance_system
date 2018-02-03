@@ -13762,3 +13762,96 @@ Stack Trace:
 #5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
 #6 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #7 {main}
+2018-01-30 08:11:05 Error: [AuthSecurityException] '_Token' was not found in request data.
+Request URL: /attendance_system/admin/subjects/delete
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Controller/Component/SecurityComponent.php(490): SecurityComponent->_validToken(Object(SubjectsController))
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Component/SecurityComponent.php(247): SecurityComponent->_validatePost(Object(SubjectsController))
+#2 /home/tuang/attendance_system/lib/Cake/Utility/ObjectCollection.php(128): SecurityComponent->startup(Object(SubjectsController))
+#3 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#4 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#6 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#7 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-01-30 10:34:19 Error: [AuthSecurityException] '_Token' was not found in request data.
+Request URL: /attendance_system/admin/class_rooms/delete
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Controller/Component/SecurityComponent.php(490): SecurityComponent->_validToken(Object(ClassRoomsController))
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Component/SecurityComponent.php(247): SecurityComponent->_validatePost(Object(ClassRoomsController))
+#2 /home/tuang/attendance_system/lib/Cake/Utility/ObjectCollection.php(128): SecurityComponent->startup(Object(ClassRoomsController))
+#3 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#4 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#6 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#7 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-01-30 10:35:40 Error: [AuthSecurityException] Unexpected field 'ClassRoom.end_time' in POST data, Unexpected field 'ClassRoom.semester_from' in POST data, Unexpected field 'ClassRoom.semester_to' in POST data, Unexpected field 'ClassRoom.start_time' in POST data
+Request URL: /attendance_system/admin/class_rooms/confirm
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Controller/Component/SecurityComponent.php(247): SecurityComponent->_validatePost(Object(ClassRoomsController))
+#1 /home/tuang/attendance_system/lib/Cake/Utility/ObjectCollection.php(128): SecurityComponent->startup(Object(ClassRoomsController))
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ClassRoomsController), Object(CakeRequest))
+#6 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-01-30 10:42:01 Error: [Error] Call to a member function requirePost() on null
+Request URL: /attendance_system/admin/subjects/index
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): SubjectsController->beforeFilter(Object(CakeEvent))
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-01-30 10:42:04 Error: [Error] Call to a member function requirePost() on null
+Request URL: /attendance_system/admin/subjects/index
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): SubjectsController->beforeFilter(Object(CakeEvent))
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-01-30 22:00:32 Error: [AuthSecurityException] '_Token' was not found in request data.
+Request URL: /attendance_system/admin/notifications/delete
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Controller/Component/SecurityComponent.php(490): SecurityComponent->_validToken(Object(NotificationsController))
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Component/SecurityComponent.php(247): SecurityComponent->_validatePost(Object(NotificationsController))
+#2 /home/tuang/attendance_system/lib/Cake/Utility/ObjectCollection.php(128): SecurityComponent->startup(Object(NotificationsController))
+#3 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#4 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#6 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(NotificationsController), Object(CakeRequest))
+#7 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-01-30 23:09:29 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/admin/subjects/edit/12
+Stack Trace:
+#0 [internal function]: SubjectsController->edit('12')
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(SubjectsController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-01-30 23:42:09 Error: [ParseError] syntax error, unexpected '$inserted_ids' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /attendance_system/admin/subjects/edit/12
+Stack Trace:
+#0 [internal function]: App::load('AppModel')
+#1 /home/tuang/attendance_system/admin/Model/Major.php(3): spl_autoload_call('AppModel')
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(567): include('/home/tuang/att...')
+#3 [internal function]: App::load('Major')
+#4 [internal function]: spl_autoload_call('Major')
+#5 /home/tuang/attendance_system/lib/Cake/Utility/ClassRegistry.php(146): class_exists('Major')
+#6 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('Major')
+#7 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Major')
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(406): Controller->__isset('Major')
+#9 /home/tuang/attendance_system/admin/Controller/SubjectsController.php(98): Controller->__get('Major')
+#10 [internal function]: SubjectsController->edit('12')
+#11 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(SubjectsController), Array)
+#12 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
+#14 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}

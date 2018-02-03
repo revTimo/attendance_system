@@ -30,7 +30,14 @@
 										<?php
 											for($i=0;$i<count($class);$i++)
 											{
-												echo $subject_list[$class['ClassRoom']['subject_id']];
+												if(isset($subject_list[$class['ClassRoom']['subject_id']]))
+												{
+													echo $subject_list[$class['ClassRoom']['subject_id']];
+												}
+												else
+												{
+													echo "科目が未選択か削除されています。";
+												}
 											}
 										?>
 									</td>

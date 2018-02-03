@@ -59,7 +59,7 @@
 				<?= $this->Html->image('../profile/no_image.jpg',["class" => "img-circle", "width" => "65", "height" => "65"])?>
 			</div>
 			<div class="well">
-				<p>受ける科目全て</p>
+				<p>科目</p>
 				<p>
 				<?php foreach($student_info['subjects'] as $subject) :?>
 				<span class="label label-default"><?= $subject?></span>
@@ -69,7 +69,7 @@
 			<div class="alert alert-danger fade in">
 				<a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
 				<p><strong>重要なお知らせ!</strong></p>
-				People arefsdfs looking at your profile. Find out whosdfgdf.
+				重要なお知らせ重要なお知らせ重要なお知らせ
 			</div>
 		</div>
 		<div class="col-sm-7">
@@ -106,7 +106,7 @@
 </div>
 
 <footer class="container-fluid text-center">
-	<p>Footer Text</p>
+	<p></p>
 </footer>
 </body>
 </html>

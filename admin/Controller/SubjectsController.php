@@ -5,12 +5,13 @@ class SubjectsController extends AppController {
 		'Subject',
 		'Major',
 		'StudentSubject',
+		'Student',
 	];
 
 	public function beforeFilter()
 	{
 		parent::beforeFilter();
-		$this->Security->requirePost('add_subject');
+		//$this->Security->requirePost('add_subject');
 	}
 	public function index ()
 	{
@@ -161,7 +162,7 @@ class SubjectsController extends AppController {
 						return $this->redirect(['action' => 'index']);
 					}
 				}
-				
+
 				//もし編集画面に新しい科目を追加した場合
 				if (array_key_exists('new_subjects', $this->request->data['Subject']))
 				{
@@ -177,6 +178,43 @@ class SubjectsController extends AppController {
 					{
 						$this->Subject->rollback();
 						$this->Flash->setFlashError('新しい科目登録失敗');
+						return $this->redirect(['action' => 'index']);
+					}
+					// 変わったsubjectの
+					// ここ
+					//その変わった科目【major_id】を取っている学生たちを探す
+					//$findStudent = $this->Student->find('all', ['conditions' => ['major_id' => $変わったsubjectsテーブルからもらうmajor_id]]);
+					$findStudent = $this->Student->find('all', [
+						'conditions' => [
+							'major_id' => $id, // parameterにmajor_idが入っています
+						],
+					]);
+					// 見つけました
+					// その学生たちのidを取得、
+					$student_ids = [];
+					foreach ($findStudent as $student)
+					{
+						$student_ids[] = $student['Student']['id'];
+					}
+					//pr($student_ids); exit;
+					// それとさっき変わった subjectsテーブルのid(s)を取得
+					$update_subject_id = $this->Subject->subject_ids;
+					$update_studentSubject = [];
+					foreach($student_ids as $value_std)
+					{
+						foreach ($update_subject_id as $value_subject) 
+						{
+							$update_studentSubject[] = [
+								'student_id' => $value_std,
+								'subject_id' => $value_subject,
+								'school_id' => $this->Auth->user('school_id'),
+							];
+						}
+					}
+					if ($this->StudentSubject->saveAll($update_studentSubject) == false)
+					{
+						$this->Subject->rollback();
+						$this->Flash->setFlashError('StudentSubject登録失敗');
 						return $this->redirect(['action' => 'index']);
 					}
 				}
@@ -211,7 +249,7 @@ class SubjectsController extends AppController {
 					'fields' => ['id']
 				]);
 			}
-			
+
 			//複数の専攻id
 			$major_ids = [];
 			//複数の科目のid
@@ -269,7 +307,6 @@ class SubjectsController extends AppController {
 		try
 		{
 			$this->Subject->begin();
-			
 			//専攻は１つだけなので固定ＩＤを指定して1rowだけを削除
 			if ($this->Major->delete() == false)
 			{

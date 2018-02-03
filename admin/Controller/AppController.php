@@ -68,7 +68,7 @@ class AppController extends Controller {
 	}
 
 	public $components = [
-		'Security',
+		//'Security',
 		'Flash',
 		'Auth' => [
 			'loginRedirect' => [

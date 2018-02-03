@@ -1,7 +1,7 @@
 <?php
 
 class NotificationsController extends AppController {
-	public $components = array('Security');
+	//public $components = array('Security');
 	public function index ()
 	{
 		$notifications = $this->Notification->find('all', [
@@ -82,43 +82,40 @@ class NotificationsController extends AppController {
 
 	public function delete ($id = null)
 	{
+		// １レコード削除
+		if ($this->request->is('get'))
+		{
+			$delete_ids = $id;
+		}
+		// 複数を削除
+		if ($this->request->is('post'))
+		{
+			$delete_ids = $this->request->data['deletedata'];
+		}
 		// validation
 		// id null のとき
-		$delete_notification = $this->Notification->find('first', [
+		$delete_notification = $this->Notification->find('all', [
 			'conditions' => [
-				'id' => $id,
+				'id' => $delete_ids,
 			],
 		]);
+		//pr($delete_notification); exit;
 		if (empty($delete_notification))
 		{
 			$this->Flash->setFlashError('不正なアクセス');
 			return $this->redirect(['action' => 'index']);
 		}
 		// 他の学校をできないように
-		$this->Notification->id = $id;
-		if ($this->Notification->field('school_id') != $this->Auth->user('school_id'))
+		foreach ($delete_notification as $check)
 		{
-			$this->Flash->setFlashError('不正なアクセス');
-			return $this->redirect(['action' => 'index']);
-		}
-		/*if ($this->request->is('post'))
-		{
-			foreach ($this->request->data['deletedata'] as $key => $ids) {
-				$students_id[] = intval($ids);
+			if ($check['Notification']['school_id'] != $this->Auth->user('school_id'))
+			{
+				$this->Flash->setFlashError('不正なアクセス');
+				return $this->redirect(['action' => 'index']);
 			}
-			$this->Student->id = $students_id;
-		}*/
-		// １レコード削除
-		if ($this->request->is('get'))
-		{
-			$this->Notification->id = $id;
 		}
 
-		if ($this->request->is('post'))
-		{
-			pr($this->request->data); exit;
-			$this->Notification->id = $this->request->data['deletedata'];
-		}
+		$this->Notification->id = $delete_ids;
 		// 共通削除
 		if ($this->Notification->delete() == false)
 		{

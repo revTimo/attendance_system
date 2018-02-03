@@ -17,7 +17,7 @@
                 <?= $this->Form->input('password', ['label' =>false, 'class' => 'form-control', 'placeholder' => 'パスワード', 'required']) ?>
               </div>
               <label>
-                <a href="/attendance_system/student/student_users/register">初めて</a>
+                <a href="/attendance_system/student/student_users/register">初めての学生</a>
               </label>
               <input class="btn btn-lg btn-success btn-block" type="submit" value="ログイン">
             </fieldset>

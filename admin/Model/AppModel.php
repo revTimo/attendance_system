@@ -45,4 +45,16 @@ class AppModel extends Model {
 		$dataSource = $this->getDataSource();
 		$dataSource->rollback($this);
 	}
+
+	// saveAll後、last inserted id(s) がほしい
+	var $inserted_ids = array();
+
+	function afterSave($created, $options = [])
+	{
+		if($created)
+		{
+			$this->inserted_ids[] = $this->getInsertID();
+		}
+		return true;
+	}
 }
