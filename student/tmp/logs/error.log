@@ -9882,3 +9882,225 @@ Stack Trace:
 #2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
 #3 [internal function]: App::shutdown()
 #4 {main}
+2018-02-06 23:45:01 Error: [ParseError] syntax error, unexpected '='
+Request URL: /attendance_system/student/StudentUsers
+Stack Trace:
+#0 [internal function]: App::load('AppController')
+#1 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(4): spl_autoload_call('AppController')
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(567): include('/home/tuang/att...')
+#3 [internal function]: App::load('StudentUsersCon...')
+#4 [internal function]: spl_autoload_call('StudentUsersCon...')
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('StudentUsersCon...')
+#6 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#7 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#8 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2018-02-06 23:45:01 Error: Fatal Error (16): Exception thrown without a stack frame in [Unknown, line 0]
+2018-02-06 23:45:01 Error: [FatalErrorException] Exception thrown without a stack frame
+Request URL: /attendance_system/student/StudentUsers
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(16, 'Exception throw...', 'Unknown', 0)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(16, 'Exception throw...', 'Unknown', 0, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2018-02-06 23:57:25 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/student/StudentUsers
+Stack Trace:
+#0 /home/tuang/attendance_system/student/Controller/AppController.php(70): AppController->check_latetime()
+#1 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(24): AppController->beforeFilter()
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): StudentUsersController->beforeFilter(Object(CakeEvent))
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentUsersController), Object(CakeRequest))
+#6 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-02-06 23:57:25 Error: Fatal Error (1): Uncaught Error: Call to a member function find() on null in /home/tuang/attendance_system/student/Controller/AppController.php:142
+Stack trace:
+#0 /home/tuang/attendance_system/student/Controller/AppController.php(69): AppController->login_student_info()
+#1 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): AppController->beforeFilter(Object(CakeEvent))
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#3 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(158): Controller->startupProcess()
+#4 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(Error))
+#5 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(126): ExceptionRenderer->__construct(Object(Error))
+#6 [internal function]: ErrorHandler::handleException(Object(Error))
+#7 {main}
+  thrown in [/home/tuang/attendance_system/student/Controller/AppController.php, line 142]
+2018-02-06 23:57:25 Error: [FatalErrorException] Uncaught Error: Call to a member function find() on null in /home/tuang/attendance_system/student/Controller/AppController.php:142
+Stack trace:
+#0 /home/tuang/attendance_system/student/Controller/AppController.php(69): AppController->login_student_info()
+#1 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): AppController->beforeFilter(Object(CakeEvent))
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#3 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(158): Controller->startupProcess()
+#4 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(Error))
+#5 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(126): ExceptionRenderer->__construct(Object(Error))
+#6 [internal function]: ErrorHandler::handleException(Object(Error))
+#7 {main}
+  thrown
+Request URL: /attendance_system/student/StudentUsers
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', '/home/tuang/att...', 142)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', '/home/tuang/att...', 142, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2018-02-06 23:57:41 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/student/StudentUsers
+Stack Trace:
+#0 /home/tuang/attendance_system/student/Controller/AppController.php(70): AppController->check_latetime()
+#1 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(24): AppController->beforeFilter()
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): StudentUsersController->beforeFilter(Object(CakeEvent))
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentUsersController), Object(CakeRequest))
+#6 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-02-06 23:57:41 Error: Fatal Error (1): Uncaught Error: Call to a member function find() on null in /home/tuang/attendance_system/student/Controller/AppController.php:142
+Stack trace:
+#0 /home/tuang/attendance_system/student/Controller/AppController.php(69): AppController->login_student_info()
+#1 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): AppController->beforeFilter(Object(CakeEvent))
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#3 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(158): Controller->startupProcess()
+#4 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(Error))
+#5 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(126): ExceptionRenderer->__construct(Object(Error))
+#6 [internal function]: ErrorHandler::handleException(Object(Error))
+#7 {main}
+  thrown in [/home/tuang/attendance_system/student/Controller/AppController.php, line 142]
+2018-02-06 23:57:41 Error: [FatalErrorException] Uncaught Error: Call to a member function find() on null in /home/tuang/attendance_system/student/Controller/AppController.php:142
+Stack trace:
+#0 /home/tuang/attendance_system/student/Controller/AppController.php(69): AppController->login_student_info()
+#1 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): AppController->beforeFilter(Object(CakeEvent))
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#3 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(158): Controller->startupProcess()
+#4 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(Error))
+#5 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(126): ExceptionRenderer->__construct(Object(Error))
+#6 [internal function]: ErrorHandler::handleException(Object(Error))
+#7 {main}
+  thrown
+Request URL: /attendance_system/student/StudentUsers
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', '/home/tuang/att...', 142)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', '/home/tuang/att...', 142, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2018-02-06 23:57:51 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/student/StudentUsers
+Stack Trace:
+#0 /home/tuang/attendance_system/student/Controller/AppController.php(70): AppController->check_latetime()
+#1 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(24): AppController->beforeFilter()
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): StudentUsersController->beforeFilter(Object(CakeEvent))
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentUsersController), Object(CakeRequest))
+#6 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-02-06 23:57:51 Error: Fatal Error (1): Uncaught Error: Call to a member function find() on null in /home/tuang/attendance_system/student/Controller/AppController.php:142
+Stack trace:
+#0 /home/tuang/attendance_system/student/Controller/AppController.php(69): AppController->login_student_info()
+#1 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): AppController->beforeFilter(Object(CakeEvent))
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#3 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(158): Controller->startupProcess()
+#4 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(Error))
+#5 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(126): ExceptionRenderer->__construct(Object(Error))
+#6 [internal function]: ErrorHandler::handleException(Object(Error))
+#7 {main}
+  thrown in [/home/tuang/attendance_system/student/Controller/AppController.php, line 142]
+2018-02-06 23:57:51 Error: [FatalErrorException] Uncaught Error: Call to a member function find() on null in /home/tuang/attendance_system/student/Controller/AppController.php:142
+Stack trace:
+#0 /home/tuang/attendance_system/student/Controller/AppController.php(69): AppController->login_student_info()
+#1 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): AppController->beforeFilter(Object(CakeEvent))
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#3 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(158): Controller->startupProcess()
+#4 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(Error))
+#5 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(126): ExceptionRenderer->__construct(Object(Error))
+#6 [internal function]: ErrorHandler::handleException(Object(Error))
+#7 {main}
+  thrown
+Request URL: /attendance_system/student/StudentUsers
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', '/home/tuang/att...', 142)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', '/home/tuang/att...', 142, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2018-02-06 23:58:17 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/student/StudentUsers
+Stack Trace:
+#0 /home/tuang/attendance_system/student/Controller/AppController.php(70): AppController->check_latetime()
+#1 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(24): AppController->beforeFilter()
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): StudentUsersController->beforeFilter(Object(CakeEvent))
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentUsersController), Object(CakeRequest))
+#6 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-02-06 23:58:17 Error: Fatal Error (1): Uncaught Error: Call to a member function find() on null in /home/tuang/attendance_system/student/Controller/AppController.php:142
+Stack trace:
+#0 /home/tuang/attendance_system/student/Controller/AppController.php(69): AppController->login_student_info()
+#1 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): AppController->beforeFilter(Object(CakeEvent))
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#3 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(158): Controller->startupProcess()
+#4 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(Error))
+#5 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(126): ExceptionRenderer->__construct(Object(Error))
+#6 [internal function]: ErrorHandler::handleException(Object(Error))
+#7 {main}
+  thrown in [/home/tuang/attendance_system/student/Controller/AppController.php, line 142]
+2018-02-06 23:58:17 Error: [FatalErrorException] Uncaught Error: Call to a member function find() on null in /home/tuang/attendance_system/student/Controller/AppController.php:142
+Stack trace:
+#0 /home/tuang/attendance_system/student/Controller/AppController.php(69): AppController->login_student_info()
+#1 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): AppController->beforeFilter(Object(CakeEvent))
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#3 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(158): Controller->startupProcess()
+#4 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(Error))
+#5 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(126): ExceptionRenderer->__construct(Object(Error))
+#6 [internal function]: ErrorHandler::handleException(Object(Error))
+#7 {main}
+  thrown
+Request URL: /attendance_system/student/StudentUsers
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', '/home/tuang/att...', 142)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', '/home/tuang/att...', 142, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2018-02-06 23:58:30 Error: [Error] Call to a member function find() on null
+Request URL: /attendance_system/student/StudentUsers
+Stack Trace:
+#0 /home/tuang/attendance_system/student/Controller/AppController.php(70): AppController->check_latetime()
+#1 /home/tuang/attendance_system/student/Controller/StudentUsersController.php(24): AppController->beforeFilter()
+#2 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): StudentUsersController->beforeFilter(Object(CakeEvent))
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(StudentUsersController), Object(CakeRequest))
+#6 /home/tuang/attendance_system/student/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-02-06 23:58:30 Error: Fatal Error (1): Uncaught Error: Call to a member function find() on null in /home/tuang/attendance_system/student/Controller/AppController.php:142
+Stack trace:
+#0 /home/tuang/attendance_system/student/Controller/AppController.php(69): AppController->login_student_info()
+#1 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): AppController->beforeFilter(Object(CakeEvent))
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#3 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(158): Controller->startupProcess()
+#4 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(Error))
+#5 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(126): ExceptionRenderer->__construct(Object(Error))
+#6 [internal function]: ErrorHandler::handleException(Object(Error))
+#7 {main}
+  thrown in [/home/tuang/attendance_system/student/Controller/AppController.php, line 142]
+2018-02-06 23:58:30 Error: [FatalErrorException] Uncaught Error: Call to a member function find() on null in /home/tuang/attendance_system/student/Controller/AppController.php:142
+Stack trace:
+#0 /home/tuang/attendance_system/student/Controller/AppController.php(69): AppController->login_student_info()
+#1 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): AppController->beforeFilter(Object(CakeEvent))
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#3 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(158): Controller->startupProcess()
+#4 /home/tuang/attendance_system/lib/Cake/Error/ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(Error))
+#5 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(126): ExceptionRenderer->__construct(Object(Error))
+#6 [internal function]: ErrorHandler::handleException(Object(Error))
+#7 {main}
+  thrown
+Request URL: /attendance_system/student/StudentUsers
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', '/home/tuang/att...', 142)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', '/home/tuang/att...', 142, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}

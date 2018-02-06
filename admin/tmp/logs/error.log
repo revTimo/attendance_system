@@ -13855,3 +13855,246 @@ Stack Trace:
 #13 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SubjectsController), Object(CakeRequest))
 #14 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #15 {main}
+2018-02-04 08:17:06 Error: [ParseError] syntax error, unexpected '{', expecting '('
+Request URL: /attendance_system/admin/settings/index
+Stack Trace:
+#0 [internal function]: App::load('SettingsControl...')
+#1 [internal function]: spl_autoload_call('SettingsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SettingsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-06 21:34:01 Error: [Error] Call to undefined method SettingsController::check()
+Request URL: /attendance_system/admin/settings
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Event/CakeEventManager.php(243): SettingsController->beforeFilter(Object(CakeEvent))
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SettingsController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-02-06 21:35:52 Error: [ParseError] syntax error, unexpected '$is_set' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /attendance_system/admin/settings
+Stack Trace:
+#0 [internal function]: App::load('SettingsControl...')
+#1 [internal function]: spl_autoload_call('SettingsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SettingsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-06 21:36:00 Error: [ParseError] syntax error, unexpected '$is_set' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /attendance_system/admin/settings
+Stack Trace:
+#0 [internal function]: App::load('SettingsControl...')
+#1 [internal function]: spl_autoload_call('SettingsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SettingsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-06 21:36:15 Error: [ParseError] syntax error, unexpected '$is_set' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /attendance_system/admin/settings
+Stack Trace:
+#0 [internal function]: App::load('SettingsControl...')
+#1 [internal function]: spl_autoload_call('SettingsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SettingsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-06 21:38:20 Error: [ParseError] syntax error, unexpected 'UNSET' (T_UNSET)
+Request URL: /attendance_system/admin/settings
+Stack Trace:
+#0 [internal function]: App::load('SettingsControl...')
+#1 [internal function]: spl_autoload_call('SettingsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SettingsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-06 21:41:19 Error: [ParseError] syntax error, unexpected 'UNSET' (T_UNSET)
+Request URL: /attendance_system/admin/settings
+Stack Trace:
+#0 [internal function]: App::load('SettingsControl...')
+#1 [internal function]: spl_autoload_call('SettingsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SettingsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-06 21:41:46 Error: [ParseError] syntax error, unexpected 'UNSET' (T_UNSET)
+Request URL: /attendance_system/admin/settings
+Stack Trace:
+#0 [internal function]: App::load('SettingsControl...')
+#1 [internal function]: spl_autoload_call('SettingsControl...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('SettingsControl...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-06 21:45:11 Error: [ParseError] syntax error, unexpected '?>', expecting ':'
+Request URL: /attendance_system/admin/settings
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SettingsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-06 22:02:40 Error: [ParseError] syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+Request URL: /attendance_system/admin/settings
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SettingsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-06 22:03:49 Error: [ParseError] syntax error, unexpected '"', expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+Request URL: /attendance_system/admin/settings
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SettingsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-06 22:04:08 Error: [ParseError] syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+Request URL: /attendance_system/admin/settings
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SettingsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-06 22:06:51 Error: [ParseError] syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+Request URL: /attendance_system/admin/settings
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SettingsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-06 22:06:56 Error: [ParseError] syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+Request URL: /attendance_system/admin/settings
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SettingsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-06 22:07:06 Error: [ParseError] syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+Request URL: /attendance_system/admin/settings
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SettingsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-06 22:07:59 Error: [ParseError] syntax error, unexpected 'value' (T_STRING), expecting ']'
+Request URL: /attendance_system/admin/settings
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SettingsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-06 22:10:27 Error: [ParseError] syntax error, unexpected '$setting_info' (T_VARIABLE), expecting ']'
+Request URL: /attendance_system/admin/settings
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SettingsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-06 22:10:46 Error: [ParseError] syntax error, unexpected '"', expecting ']'
+Request URL: /attendance_system/admin/settings
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SettingsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-06 22:10:56 Error: [ParseError] syntax error, unexpected '"', expecting ']'
+Request URL: /attendance_system/admin/settings
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SettingsController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-06 23:22:40 Error: [MissingControllerException] Controller class SettingController could not be found.
+Exception Attributes: array (
+  'class' => 'SettingController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/setting/set_default
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-06 23:22:44 Error: [MissingControllerException] Controller class SettingController could not be found.
+Exception Attributes: array (
+  'class' => 'SettingController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/setting/set_default
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-06 23:24:08 Error: [MissingControllerException] Controller class SettingController could not be found.
+Exception Attributes: array (
+  'class' => 'SettingController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/setting/set_default
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-06 23:25:09 Error: [MissingControllerException] Controller class SettingController could not be found.
+Exception Attributes: array (
+  'class' => 'SettingController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/setting/set_default
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-06 23:25:47 Error: [MissingControllerException] Controller class SettingController could not be found.
+Exception Attributes: array (
+  'class' => 'SettingController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/setting/set_default
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-06 23:26:13 Error: [MissingControllerException] Controller class SettingController could not be found.
+Exception Attributes: array (
+  'class' => 'SettingController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/setting/set_default
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

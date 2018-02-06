@@ -20,7 +20,7 @@
 					<?php foreach($all_class as $class) :?>
 						<?php if($class['week'] == 0):?>
 							<div class="thumbnail">
-								<span class="timetable" data-toggle="popover" title="授業の詳細" data-content="<?= $class['name'].'教室'.'【'.''.$class['start_time'].'】'?>">
+								<span class="timetable" data-toggle="popover" data-placement="top" title="授業の詳細" data-content="<?= $class['name'].'教室'.'【'.''.$class['start_time'].'】'?>">
 									<?php if(isset($class['subject']['Subject']['name'])) :?>
 										<?= $class['subject']['Subject']['name'] ?>
 									<?php else :?>
@@ -36,7 +36,7 @@
 					<?php foreach($all_class as $class) :?>
 						<?php if($class['week'] == 1):?>
 							<div class="thumbnail">
-								<span class="timetable" data-toggle="popover" title="授業の詳細" data-content="<?= $class['name'].'教室'.'【'.''.$class['start_time'].'】'?>">
+								<span class="timetable" data-toggle="popover" data-placement="top" title="授業の詳細" data-content="<?= $class['name'].'教室'.'【'.''.$class['start_time'].'】'?>">
 									<?php if(isset($class['subject']['Subject']['name'])) :?>
 										<?= $class['subject']['Subject']['name'] ?>
 									<?php else :?>
@@ -52,7 +52,7 @@
 					<?php foreach($all_class as $class) :?>
 						<?php if($class['week'] == 2):?>
 							<div class="thumbnail">
-								<span class="timetable" data-toggle="popover" title="授業の詳細" data-content="<?= $class['name'].'教室'.'【'.''.$class['start_time'].'】'?>">
+								<span class="timetable" data-toggle="popover" data-placement="top" title="授業の詳細" data-content="<?= $class['name'].'教室'.'【'.''.$class['start_time'].'】'?>">
 									<?php if(isset($class['subject']['Subject']['name'])) :?>
 										<?= $class['subject']['Subject']['name'] ?>
 									<?php else :?>
@@ -68,7 +68,7 @@
 					<?php foreach($all_class as $class) :?>
 						<?php if($class['week'] == 3):?>
 							<div class="thumbnail">
-								<span class="timetable" data-toggle="popover" title="授業の詳細" data-content="<?= $class['name'].'教室'.'【'.''.$class['start_time'].'】'?>">
+								<span class="timetable" data-toggle="popover" data-placement="top" title="授業の詳細" data-content="<?= $class['name'].'教室'.'【'.''.$class['start_time'].'】'?>">
 									<?php if(isset($class['subject']['Subject']['name'])) :?>
 										<?= $class['subject']['Subject']['name'] ?>
 									<?php else :?>
@@ -84,7 +84,7 @@
 					<?php foreach($all_class as $class) :?>
 						<?php if($class['week'] == 4):?>
 							<div class="thumbnail">
-								<span class="timetable" data-toggle="popover" title="授業の詳細" data-content="<?= $class['name'].'教室'.'【'.''.$class['start_time'].'】'?>">
+								<span class="timetable" data-toggle="popover" data-placement="top" title="授業の詳細" data-content="<?= $class['name'].'教室'.'【'.''.$class['start_time'].'】'?>">
 									<?php if(isset($class['subject']['Subject']['name'])) :?>
 										<?= $class['subject']['Subject']['name'] ?>
 									<?php else :?>
@@ -100,7 +100,7 @@
 					<?php foreach($all_class as $class) :?>
 						<?php if($class['week'] == 5):?>
 							<div class="thumbnail">
-								<span class="timetable" data-toggle="popover" title="授業の詳細" data-content="<?= $class['name'].'教室'.'【'.''.$class['start_time'].'】'?>">
+								<span class="timetable" data-toggle="popover" data-placement="top" title="授業の詳細" data-content="<?= $class['name'].'教室'.'【'.''.$class['start_time'].'】'?>">
 									<?php if(isset($class['subject']['Subject']['name'])) :?>
 										<?= $class['subject']['Subject']['name'] ?>
 									<?php else :?>
@@ -116,7 +116,7 @@
 					<?php foreach($all_class as $class) :?>
 						<?php if($class['week'] == 6):?>
 							<div class="thumbnail">
-								<span class="timetable" data-toggle="popover" title="授業の詳細" data-content="<?= $class['name'].'教室'.'【'.''.$class['start_time'].'】'?>">
+								<span class="timetable" data-toggle="popover" data-placement="top" title="授業の詳細" data-content="<?= $class['name'].'教室'.'【'.''.$class['start_time'].'】'?>">
 									<?php if(isset($class['subject']['Subject']['name'])) :?>
 										<?= $class['subject']['Subject']['name'] ?>
 									<?php else :?>

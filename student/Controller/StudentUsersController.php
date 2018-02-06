@@ -14,6 +14,7 @@ class StudentUsersController extends AppController {
 		'Attendance',
 		'TemporaryAttendance',
 		'Notification',
+		'Setting',
 	];
 
 	// ページネーション
@@ -176,7 +177,7 @@ class StudentUsersController extends AppController {
 				];
 				return json_encode($response);
 			}
-			
+
 			// 出席ＤＢ保存
 			if ($this->Attendance->save($attend_data) == false)
 			{
@@ -187,7 +188,7 @@ class StudentUsersController extends AppController {
 				];
 				return json_encode($response);
 			}
-			
+
 			// temporary_attendance保存
 			$temp_data = [
 				'attendance_id' => $this->Attendance->id,

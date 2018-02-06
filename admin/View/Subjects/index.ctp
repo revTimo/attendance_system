@@ -56,10 +56,10 @@
 								?>
 								<?php foreach($data['Subject'] as $sub) :?>
 									<?= '<span class="label label-'.$style[rand(0,4)].'">'.$sub['name'].'</span>'?>
-								<?php endforeach ?>		
+								<?php endforeach ?>
 							</td>
 							<td><a href="/attendance_system/admin/subjects/edit/<?= $data['Major']['id']?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-							<td><a href="/attendance_system/admin/subjects/delete/<?= $data['Major']['id']?>" onclick="return confirm('専攻と科目を削除します、よろしいですか？');"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+							<td><a href="/attendance_system/admin/subjects/delete/<?= $data['Major']['id']?>" onclick="return confirm('専攻と科目を削除します。　さらに、学生と教室が登録されている場合全ての学科が削除されます。よろしいですか？');"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
 						</tr>
 					<?php endforeach ?>
 				</tbody>

@@ -31,10 +31,14 @@ App::uses('Controller', 'Controller');
  * @link		https://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 
-//管理者
+// 管理者
 define ('ADMIN',1);
-//一般メンーバ
+// 一般メンーバ
 define ('MEMBER',0);
+// 遅刻時間が設定されている
+define ('SET_LATE', 1);
+// 遅刻時間をリセット
+define ('UNSET_LATE', 0);
 
 class AppController extends Controller {
 

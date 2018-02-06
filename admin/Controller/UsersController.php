@@ -7,6 +7,7 @@ class UsersController extends AppController {
 		'User',
 		'School',
 		'Major',
+		'Setting',
 	];
 	public $components = array('Session');
 	public function beforeFilter()
@@ -101,7 +102,14 @@ class UsersController extends AppController {
 			{
 				$this->User->rollback();
 				return $this->Flash->setFlashError('登録できませんでした');
-			}			
+			}
+			// 遅刻時間デフォルト設定
+			if ($this->Setting->default_set_latetime ($this->School->id) == false)
+			{
+				$this->User->rollback();
+				return $this->Flash->setFlashError('登録できませんでした');
+			}
+
 			$this->User->commit();
 		}
 		catch (Exception $e)

@@ -36,6 +36,7 @@ define("ABSENCE", 0);
  * @link		https://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+	private $latelimit;
 	public $components = [
 		'Flash',
 		'Auth' => [
@@ -66,6 +67,7 @@ class AppController extends Controller {
 		parent::beforeFilter();
 		AuthComponent::$sessionKey = 'Auth.Student';
 		$this->login_student_info();
+		$this->check_latetime();
 		$this->check_attendance();
 		$this->side_notification();
 	}
@@ -78,6 +80,17 @@ class AppController extends Controller {
 	public function setFlashError($msg) 
 	{
 		$this->Session->setFlash($msg,'flash_failure');
+	}
+
+	// 何分までなら遅刻
+	public function check_latetime ()
+	{
+		$check = $this->Setting->find('first', [
+			'conditions' => [
+				'school_id' => $this->Auth->user('school_id'),
+			],
+		]);
+		$this->latelimit = $check['Setting']['late_limit_time'];
 	}
 
 	// 出席チェック【出席ボタン押した後page reloadすると押せられないように】
@@ -272,7 +285,9 @@ class AppController extends Controller {
 		}
 
 		// 5min
-		$late_limit_time = date('H:i:s', strtotime("+5minutes", strtotime($class_start_time)));
+		$time = "+".$this->latelimit."minutes";
+		$late_limit_time = date('H:i:s', strtotime($time, strtotime($class_start_time)));
+		//pr($late_limit_time); exit;
 		// 遅刻 or 欠席
 		if ($current_time > $class_start_time)
 		{
