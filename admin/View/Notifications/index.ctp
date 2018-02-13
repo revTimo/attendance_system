@@ -1,4 +1,5 @@
 <!-- 学科登録 -->
+<!-- CK Editor -->
 <div class="row">
 	<div class="col-sm-12">
 		<div class="panel panel-primary">
@@ -11,7 +12,7 @@
 				</div>
 				<div class="form-group">
 					<label for="name">コンテンツ</label>
-					<?= $this->Form->input('content', ['type' => 'textarea', 'label' => false, 'class' => 'form-control', 'required']) ?>
+					<?= $this->Form->input('content', ['type' => 'textarea', 'label' => false, 'class' => 'form-control', 'required', 'rows' => '10', 'cols' => '80', 'id' => 'notification_editor']) ?>
 				</div>
 				<div class="form-group">
 					<label for="name">公開日</label>
@@ -23,6 +24,7 @@
 		</div>
 	</div>
 </div>
+
 <div class="row">
 	<div class="col-md-12">
 		<div class="box box-primary">
@@ -63,3 +65,9 @@
 		</div>
 	</div>
 </div>
+<!-- CK Editor -->
+<?= $this->Html->script('../ckeditor/ckeditor.js')?>
+<script>
+// CK editor
+CKEDITOR.replace('notification_editor');
+</script>

@@ -14098,3 +14098,371 @@ Request URL: /attendance_system/admin/setting/set_default
 Stack Trace:
 #0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2018-02-10 14:48:04 Error: Fatal Error (64): Cannot use [] for reading in [/home/tuang/attendance_system/admin/Controller/AttendancesController.php, line 21]
+2018-02-10 14:48:04 Error: [FatalErrorException] Cannot use [] for reading
+Request URL: /attendance_system/admin/attendances/index
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', '/home/tuang/att...', 21)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Cannot use [] f...', '/home/tuang/att...', 21, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2018-02-10 15:01:39 Error: [ParseError] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /attendance_system/admin/attendances/index
+Stack Trace:
+#0 [internal function]: App::load('ClassStudent')
+#1 [internal function]: spl_autoload_call('ClassStudent')
+#2 /home/tuang/attendance_system/lib/Cake/Utility/ClassRegistry.php(146): class_exists('ClassStudent')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('ClassStudent')
+#4 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(368): Controller->loadModel('ClassStudent')
+#5 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(406): Controller->__isset('ClassStudent')
+#6 /home/tuang/attendance_system/admin/Controller/AttendancesController.php(21): Controller->__get('ClassStudent')
+#7 [internal function]: AttendancesController->index()
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(AttendancesController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AttendancesController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-02-10 15:02:07 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'school_id' in where clause is ambiguous
+Request URL: /attendance_system/admin/attendances/index
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `ClassSt...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `ClassSt...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `ClassSt...', Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(ClassStudent), Array)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /home/tuang/attendance_system/admin/Controller/AttendancesController.php(23): Model->find('all', Array)
+#7 [internal function]: AttendancesController->index()
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(AttendancesController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AttendancesController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-02-10 15:02:40 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'school_id' in where clause is ambiguous
+Request URL: /attendance_system/admin/attendances/index
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `ClassSt...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `ClassSt...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `ClassSt...', Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(ClassStudent), Array)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#6 /home/tuang/attendance_system/admin/Controller/AttendancesController.php(23): Model->find('all', Array)
+#7 [internal function]: AttendancesController->index()
+#8 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(AttendancesController), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AttendancesController), Object(CakeRequest))
+#11 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-02-10 15:03:05 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ClassRoom.class_student_id' in 'field list'
+Request URL: /attendance_system/admin/attendances/index
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `ClassRo...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `ClassRo...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1524): DboSource->fetchAll('SELECT `ClassRo...', Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1358): DboSource->_fetchHasMany(Object(ClassStudent), 'SELECT `ClassRo...', Array)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1217): DboSource->queryAssociation(Object(ClassStudent), Object(ClassRoom), 'hasMany', 'ClassRoom', Array, Array, true, Array, 0, Array)
+#6 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(ClassStudent), Array)
+#7 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#8 /home/tuang/attendance_system/admin/Controller/AttendancesController.php(23): Model->find('all', Array)
+#9 [internal function]: AttendancesController->index()
+#10 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(AttendancesController), Array)
+#11 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AttendancesController), Object(CakeRequest))
+#13 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2018-02-10 15:03:33 Error: [MissingTableException] Table class_rooms_class_students for model ClassRoomsClassStudent was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'class_rooms_class_students',
+  'class' => 'ClassRoomsClassStudent',
+  'ds' => 'default',
+)
+Request URL: /attendance_system/admin/attendances/index
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3667): Model->setSource('class_rooms_cla...')
+#1 /home/tuang/attendance_system/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#2 /home/tuang/attendance_system/lib/Cake/Model/Model.php(898): Model->schema()
+#3 /home/tuang/attendance_system/lib/Cake/Model/Model.php(926): Model->__isset('ClassRoomsClass...')
+#4 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3743): Model->__get('ClassRoomsClass...')
+#5 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1866): Model->joinModel('ClassRoomsClass...', Array)
+#6 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1337): DboSource->generateAssociationQuery(Object(ClassStudent), Object(ClassRoom), 'hasAndBelongsTo...', 'ClassRoom', Array, Array, true)
+#7 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1217): DboSource->queryAssociation(Object(ClassStudent), Object(ClassRoom), 'hasAndBelongsTo...', 'ClassRoom', Array, Array, true, Array, 0, Array)
+#8 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(ClassStudent), Array)
+#9 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#10 /home/tuang/attendance_system/admin/Controller/AttendancesController.php(23): Model->find('all', Array)
+#11 [internal function]: AttendancesController->index()
+#12 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(AttendancesController), Array)
+#13 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AttendancesController), Object(CakeRequest))
+#15 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2018-02-10 15:03:43 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ClassRoom.class_student_id' in 'field list'
+Request URL: /attendance_system/admin/attendances/index
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `ClassRo...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `ClassRo...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1524): DboSource->fetchAll('SELECT `ClassRo...', Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1358): DboSource->_fetchHasMany(Object(ClassStudent), 'SELECT `ClassRo...', Array)
+#5 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1217): DboSource->queryAssociation(Object(ClassStudent), Object(ClassRoom), 'hasMany', 'ClassRoom', Array, Array, true, Array, 0, Array)
+#6 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(ClassStudent), Array)
+#7 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#8 /home/tuang/attendance_system/admin/Controller/AttendancesController.php(23): Model->find('all', Array)
+#9 [internal function]: AttendancesController->index()
+#10 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(AttendancesController), Array)
+#11 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AttendancesController), Object(CakeRequest))
+#13 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2018-02-10 15:09:06 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /attendance_system/admin/attendances/index
+Stack Trace:
+#0 [internal function]: App::load('AttendancesCont...')
+#1 [internal function]: spl_autoload_call('AttendancesCont...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('AttendancesCont...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-10 15:47:33 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'attendance_system.class_students.class_id' in 'on clause'
+Request URL: /attendance_system/admin/attendances/index
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Student...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Student...', Array, Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1547): DboSource->fetchAll('SELECT `Student...', Array)
+#4 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1396): DboSource->_fetchHasAndBelongsToMany(Object(ClassStudent), 'SELECT `Student...', Array, 'Student')
+#5 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1217): DboSource->queryAssociation(Object(ClassStudent), Object(Student), 'hasAndBelongsTo...', 'Student', Array, Array, true, Array, 0, Array)
+#6 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(ClassStudent), Array)
+#7 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#8 /home/tuang/attendance_system/admin/Controller/AttendancesController.php(29): Model->find('all', Array)
+#9 [internal function]: AttendancesController->index()
+#10 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(AttendancesController), Array)
+#11 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AttendancesController), Object(CakeRequest))
+#13 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2018-02-10 15:47:52 Error: [Error] Call to a member function schema() on null
+Request URL: /attendance_system/admin/attendances/index
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1402): Model->joinModel('', Array)
+#1 /home/tuang/attendance_system/lib/Cake/Model/Datasource/DboSource.php(1217): DboSource->queryAssociation(Object(ClassStudent), Object(Student), 'hasAndBelongsTo...', 'Student', Array, Array, true, Array, 0, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3038): DboSource->read(Object(ClassStudent), Array)
+#3 /home/tuang/attendance_system/lib/Cake/Model/Model.php(3010): Model->_readDataSource('all', Array)
+#4 /home/tuang/attendance_system/admin/Controller/AttendancesController.php(29): Model->find('all', Array)
+#5 [internal function]: AttendancesController->index()
+#6 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(AttendancesController), Array)
+#7 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AttendancesController), Object(CakeRequest))
+#9 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-10 16:19:47 Error: [ParseError] syntax error, unexpected '4' (T_LNUMBER), expecting variable (T_VARIABLE) or '{' or '$'
+Request URL: /attendance_system/admin/attendances/index
+Stack Trace:
+#0 [internal function]: App::load('AttendancesCont...')
+#1 [internal function]: spl_autoload_call('AttendancesCont...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('AttendancesCont...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-10 16:23:12 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /attendance_system/admin/attendances/index
+Stack Trace:
+#0 [internal function]: App::load('AttendancesCont...')
+#1 [internal function]: spl_autoload_call('AttendancesCont...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('AttendancesCont...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-10 18:16:00 Error: [ParseError] syntax error, unexpected ';'
+Request URL: /attendance_system/admin/attendances
+Stack Trace:
+#0 [internal function]: App::load('AttendancesCont...')
+#1 [internal function]: spl_autoload_call('AttendancesCont...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('AttendancesCont...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-10 18:16:26 Error: [ParseError] syntax error, unexpected ','
+Request URL: /attendance_system/admin/attendances
+Stack Trace:
+#0 [internal function]: App::load('AttendancesCont...')
+#1 [internal function]: spl_autoload_call('AttendancesCont...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('AttendancesCont...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-10 18:16:49 Error: [ParseError] syntax error, unexpected ';'
+Request URL: /attendance_system/admin/attendances
+Stack Trace:
+#0 [internal function]: App::load('AttendancesCont...')
+#1 [internal function]: spl_autoload_call('AttendancesCont...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('AttendancesCont...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-10 18:17:00 Error: [ParseError] syntax error, unexpected ';'
+Request URL: /attendance_system/admin/attendances
+Stack Trace:
+#0 [internal function]: App::load('AttendancesCont...')
+#1 [internal function]: spl_autoload_call('AttendancesCont...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('AttendancesCont...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-10 18:17:11 Error: [ParseError] syntax error, unexpected ';'
+Request URL: /attendance_system/admin/attendances
+Stack Trace:
+#0 [internal function]: App::load('AttendancesCont...')
+#1 [internal function]: spl_autoload_call('AttendancesCont...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('AttendancesCont...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-10 18:29:49 Error: [Error] Cannot use object of type DateTime as array
+Request URL: /attendance_system/admin/attendances
+Stack Trace:
+#0 [internal function]: AttendancesController->index()
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(AttendancesController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AttendancesController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-02-10 18:30:40 Error: [Error] Cannot use object of type DateTime as array
+Request URL: /attendance_system/admin/attendances
+Stack Trace:
+#0 [internal function]: AttendancesController->index()
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(AttendancesController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AttendancesController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-02-10 18:30:43 Error: [Error] Cannot use object of type DateTime as array
+Request URL: /attendance_system/admin/attendances
+Stack Trace:
+#0 [internal function]: AttendancesController->index()
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(AttendancesController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AttendancesController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-02-10 18:31:43 Error: [Error] Cannot use object of type DateTime as array
+Request URL: /attendance_system/admin/attendances
+Stack Trace:
+#0 [internal function]: AttendancesController->index()
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(AttendancesController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AttendancesController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-02-10 18:32:05 Error: [Error] Cannot use object of type DateTime as array
+Request URL: /attendance_system/admin/attendances
+Stack Trace:
+#0 [internal function]: AttendancesController->index()
+#1 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(AttendancesController), Array)
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AttendancesController), Object(CakeRequest))
+#4 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-02-10 18:35:20 Error: [ParseError] syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file
+Request URL: /attendance_system/admin/attendances
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AttendancesController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-10 19:13:04 Error: Fatal Error (1): Allowed memory size of 20971520 bytes exhausted (tried to allocate 10510336 bytes) in [/home/tuang/attendance_system/lib/Cake/Utility/Debugger.php, line 795]
+2018-02-10 19:13:04 Error: [FatalErrorException] Allowed memory size of 20971520 bytes exhausted (tried to allocate 10510336 bytes)
+Request URL: /attendance_system/admin/attendances
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/home/tuang/att...', 795)
+#1 /home/tuang/attendance_system/lib/Cake/Core/App.php(970): ErrorHandler::handleError(1, 'Allowed memory ...', '/home/tuang/att...', 795, Array)
+#2 /home/tuang/attendance_system/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2018-02-11 06:41:50 Error: [MissingControllerException] Controller class AttendanceController could not be found.
+Exception Attributes: array (
+  'class' => 'AttendanceController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/attendance/detail/7
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-11 06:42:14 Error: [MissingControllerException] Controller class AttendanceController could not be found.
+Exception Attributes: array (
+  'class' => 'AttendanceController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/attendance/detail/7
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-11 06:42:44 Error: [MissingControllerException] Controller class AttendanceController could not be found.
+Exception Attributes: array (
+  'class' => 'AttendanceController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/attendance/detail/7
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-11 06:43:17 Error: [MissingControllerException] Controller class AttendanceController could not be found.
+Exception Attributes: array (
+  'class' => 'AttendanceController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/attendance/detail/7
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-11 06:44:10 Error: [MissingControllerException] Controller class AttendanceController could not be found.
+Exception Attributes: array (
+  'class' => 'AttendanceController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/attendance/detail/8
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-11 06:49:23 Error: [ParseError] syntax error, unexpected '*'
+Request URL: /attendance_system/admin/attendances/detail/9
+Stack Trace:
+#0 [internal function]: App::load('AttendancesCont...')
+#1 [internal function]: spl_autoload_call('AttendancesCont...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('AttendancesCont...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-11 10:47:38 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /attendance_system/admin/attendances/detail/8
+Stack Trace:
+#0 [internal function]: App::load('AttendancesCont...')
+#1 [internal function]: spl_autoload_call('AttendancesCont...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('AttendancesCont...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-12 16:37:01 Error: [MissingControllerException] Controller class AttendanceController could not be found.
+Exception Attributes: array (
+  'class' => 'AttendanceController',
+  'plugin' => NULL,
+)
+Request URL: /attendance_system/admin/attendance
+Stack Trace:
+#0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

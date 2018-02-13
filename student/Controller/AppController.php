@@ -67,7 +67,6 @@ class AppController extends Controller {
 		parent::beforeFilter();
 		AuthComponent::$sessionKey = 'Auth.Student';
 		$this->login_student_info();
-		$this->check_latetime();
 		$this->check_attendance();
 		$this->side_notification();
 	}
@@ -284,6 +283,7 @@ class AppController extends Controller {
 			$status = ATTEND;
 		}
 
+		$this->check_latetime();
 		// 5min
 		$time = "+".$this->latelimit."minutes";
 		$late_limit_time = date('H:i:s', strtotime($time, strtotime($class_start_time)));

@@ -1,7 +1,6 @@
 <?php
 
 class ClassStudent extends AppModel {
-	
 	public function save_class_student ($class_id = null, $students_id = null)
 	{
 		$class_student_id_list = [];

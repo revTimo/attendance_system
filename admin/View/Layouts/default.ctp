@@ -3,7 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>出席管理</title>
+<meta http-equiv="content-language" content="ja">
+<title>出席管理|学生管理</title>
+<meta name="description" content="出席管理システムは学生、教室、科目の管理ができるシステムです。">
+<meta name="keywords" content="出席管理,出席管理システム,学生管理,学校管理,教室管理,学科管理,無料,attendance,student,subject,class,free,attendance_system">
 <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 <?= $this->Html->css ('../bootstrap/css/bootstrap.min.css')?>
 <?= $this->Html->css ('style')?>
@@ -31,173 +34,135 @@
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
-  <header class="main-header">
-    <a href="index2.html" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>出</b>席</span>
-      <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>出席</b>管理</span>
-    </a>
+	<header class="main-header">
+		<a href="index2.html" class="logo"><span class="logo-mini"><b>出</b>席</span><span class="logo-lg"><b>出席</b>管理</span></a>
+		<!-- Header Navbar -->
+		<nav class="navbar navbar-static-top" role="navigation">
+		<!-- Sidebar toggle button-->
+		<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button"><span class="sr-only">Toggle navigation</span></a>
+		</nav>
+	</header>
 
-    <!-- Header Navbar -->
-    <nav class="navbar navbar-static-top" role="navigation">
-      <!-- Sidebar toggle button-->
-      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-        <span class="sr-only">Toggle navigation</span>
-      </a>
-      <!-- Navbar Right Menu -->
-      <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav">
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
+	<aside class="main-sidebar">
+	<section class="sidebar">
+		<div class="user-panel">
+			<div class="pull-left image">
+				<img src="https://image.freepik.com/free-icon/user-image-with-black-background_318-34564.jpg" class="img-circle" alt="User Image">
+			</div>
+			<div class="pull-left info">
+				<p><?= $login_user ?></p>
+				<a><i class="fa fa-circle text-success"></i> Online</a>
+				<a href="/attendance_system/admin/users/logout/"><i class="fa fa-sign-out" aria-hidden="true"></i>logout</a>
+			</div>
+		</div>
+		<!-- Sidebar Menu -->
+		<ul class="sidebar-menu" data-widget="tree">
+			<li class="header"></li>
+			<!-- Optionally, you can add icons to the links -->
+			<?php if($this->request->params['controller'] == 'attendances') :?>
+				<li class="active"><a href="/attendance_system/admin/attendances/index"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>出席一覧</span></a></li>
+			<?php else :?>
+				<li><a href="/attendance_system/admin/attendances/index"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>出席一覧</span></a></li>
+			<?php endif ?>
+			<?php if($this->request->params['controller'] == 'users') :?>
+				<li class="active"><a href="/attendance_system/admin/users/index"><i class="fa fa-user" aria-hidden="true"></i><span>管理者</span></a></li>
+			<?php else :?>
+				<li><a href="/attendance_system/admin/users/index"><i class="fa fa-user" aria-hidden="true"></i><span>管理者</span></a></li>
+			<?php endif ?>
+			<?php if($this->request->params['controller'] == 'students') :?>
+				<li class="treeview active"><a href="#"><i class="fa fa-users" aria-hidden="true"></i><span>学生管理</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i>
+				</span></a>
+				<ul class="treeview-menu">
+					<?php if($this->request->params['action'] == 'add_student') :?>
+						<li class="active"><a href="/attendance_system/admin/students/add_student"><i class="fa fa-user-plus"></i>学生登録</a></li>
+					<?php else :?>
+						<li><a href="/attendance_system/admin/students/add_student"><i class="fa fa-user-plus"></i>学生登録</a></li>
+					<?php endif ?>
+					<?php if($this->request->params['action'] == 'index') :?>
+						<li class="active"><a href="/attendance_system/admin/students/index"><i class="fa fa-list" aria-hidden="true"></i>学生一覧</a></li>
+					<?php else:?>
+						<li><a href="/attendance_system/admin/students/index"><i class="fa fa-list" aria-hidden="true"></i>学生一覧</a></li>
+					<?php endif ?>
+				</ul>
+				</li>
+			<?php else :?>
+				<li class="treeview"><a href="#"><i class="fa fa-users" aria-hidden="true"></i><span>学生管理</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+					<ul class="treeview-menu">
+						<li><a href="/attendance_system/admin/students/add_student"><i class="fa fa-user-plus"></i>学生登録</a></li>
+						<li><a href="/attendance_system/admin/students/index"><i class="fa fa-list" aria-hidden="true"></i>学生一覧</a></li>
+					</ul>
+				</li>
+			<?php endif ?>
+			<?php if($this->request->params['controller'] == 'subjects') :?>
+				<li class="active"><a href="/attendance_system/admin/subjects/index"><i class="fa fa-book" aria-hidden="true"></i><span>学科</span></a></li>
+			<?php else :?>
+				<li><a href="/attendance_system/admin/subjects/index"><i class="fa fa-book" aria-hidden="true"></i><span>学科</span></a></li>
+			<?php endif ?>
+			<?php if($this->request->params['controller'] == 'class_rooms') :?>
+				<li class="treeview active"><a href="#"><i class="fa fa-users" aria-hidden="true"></i><span>教室管理</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+					<ul class="treeview-menu">
+						<?php if($this->request->params['action'] == 'index') :?>
+							<li class="active"><a href="/attendance_system/admin/class_rooms/index"><i class="fa fa-user-plus"></i>教室登録</a></li>
+						<?php else :?>
+							<li><a href="/attendance_system/admin/class_rooms/index"><i class="fa fa-user-plus"></i>教室登録</a></li>
+						<?php endif ?>
+						<?php if($this->request->params['action'] == 'class_list') :?>
+							<li class="active"><a href="/attendance_system/admin/class_rooms/class_list"><i class="fa fa-list" aria-hidden="true"></i>教室一覧</a></li>
+						<?php else:?>
+							<li><a href="/attendance_system/admin/class_rooms/class_list"><i class="fa fa-list" aria-hidden="true"></i>教室一覧</a></li>
+						<?php endif ?>
+					</ul>
+				</li>
+			<?php else :?>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-users" aria-hidden="true"></i><span>教室管理</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="/attendance_system/admin/class_rooms/index"><i class="fa fa-user-plus"></i>教室登録</a></li>
+						<li><a href="/attendance_system/admin/class_rooms/class_list"><i class="fa fa-list" aria-hidden="true"></i>教室一覧</a></li>
+					</ul>
+				</li>
+			<?php endif ?>
+			<!-- お知らせ -->
+			<?php if($this->request->params['controller'] == 'notifications') :?>
+				<li class="active"><a href="/attendance_system/admin/notifications/index"><i class="fa fa-bullhorn" aria-hidden="true"></i> <span>お知らせ</span></a></li>
+			<?php else :?>
+				<li><a href="/attendance_system/admin/notifications/index"><i class="fa fa-bullhorn" aria-hidden="true"></i><span>お知らせ</span></a></li>
+			<?php endif ?>
+			<!-- 設定 -->
+			<?php if($this->request->params['controller'] == 'settings') :?>
+				<li class="active"><a href="/attendance_system/admin/settings/index"><i class="fa fa-gears"></i><span>設定</span></a></li>
+			<?php else :?>
+				<li><a href="/attendance_system/admin/settings/index"><i class="fa fa-gears"></i><span>設定</span></a></li>
+			<?php endif ?>
+			<!-- お問い合わせ -->
+			<li><a href="https://reg18.smp.ne.jp/regist/is?SMPFORM=merg-pfqjo-8338ee1a270877c1bc17c92ee22257f5" target="_blank"><i class="fa fa-phone" aria-hidden="true"></i><span>お問い合わせ</span></a></li>
+		</ul>
+	</section>
+	</aside>
 
-    <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
-
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel">
-        <div class="pull-left image">
-          <img src="https://image.freepik.com/free-icon/user-image-with-black-background_318-34564.jpg" class="img-circle" alt="User Image">
-        </div>
-        <div class="pull-left info">
-          <p><?= $login_user ?></p>
-          <a><i class="fa fa-circle text-success"></i> Online</a>
-          <a href="/attendance_system/admin/users/logout/"><i class="fa fa-sign-out" aria-hidden="true"></i>logout</a>
-        </div>
-      </div>
-      <!-- Sidebar Menu -->
-      <ul class="sidebar-menu" data-widget="tree">
-        <li class="header"></li>
-        <!-- Optionally, you can add icons to the links -->
-        <?php if($this->request->params['controller'] == 'attendances') :?>
-        <li class="active"><a href="/attendance_system/admin/attendances/index"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>出席一覧</span></a></li>
-        <?php else :?>
-        <li><a href="/attendance_system/admin/attendances/index"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>出席一覧</span></a></li>
-        <?php endif ?>
-        <?php if($this->request->params['controller'] == 'users') :?>
-        <li class="active"><a href="/attendance_system/admin/users/index"><i class="fa fa-user" aria-hidden="true"></i><span>管理者</span></a></li>
-        <?php else :?>
-        <li><a href="/attendance_system/admin/users/index"><i class="fa fa-user" aria-hidden="true"></i><span>管理者</span></a></li>
-        <?php endif ?>
-        <?php if($this->request->params['controller'] == 'students') :?>
-        <li class="treeview active">
-          <a href="#"><i class="fa fa-users" aria-hidden="true"></i><span>学生管理</span>
-            <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-          </a>
-          <ul class="treeview-menu">
-            <?php if($this->request->params['action'] == 'add_student') :?>
-            <li class="active"><a href="/attendance_system/admin/students/add_student"><i class="fa fa-user-plus"></i>学生登録</a></li>
-            <?php else :?>
-            <li><a href="/attendance_system/admin/students/add_student"><i class="fa fa-user-plus"></i>学生登録</a></li>
-            <?php endif ?>
-            <?php if($this->request->params['action'] == 'index') :?>
-            <li class="active"><a href="/attendance_system/admin/students/index"><i class="fa fa-list" aria-hidden="true"></i>学生一覧</a></li>
-            <?php else:?>
-            <li><a href="/attendance_system/admin/students/index"><i class="fa fa-list" aria-hidden="true"></i>学生一覧</a></li>
-            <?php endif ?>
-          </ul>
-        </li>
-        <?php else :?>
-        <li class="treeview">
-          <a href="#"><i class="fa fa-users" aria-hidden="true"></i><span>学生管理</span>
-            <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="/attendance_system/admin/students/add_student"><i class="fa fa-user-plus"></i>学生登録</a></li>
-            <li><a href="/attendance_system/admin/students/index"><i class="fa fa-list" aria-hidden="true"></i>学生一覧</a></li>
-          </ul>
-        </li>
-        <?php endif ?>
-        <?php if($this->request->params['controller'] == 'subjects') :?>
-        <li class="active"><a href="/attendance_system/admin/subjects/index"><i class="fa fa-book" aria-hidden="true"></i><span>学科</span></a></li>
-        <?php else :?>
-        <li><a href="/attendance_system/admin/subjects/index"><i class="fa fa-book" aria-hidden="true"></i><span>学科</span></a></li>
-        <?php endif ?>
-
-        <?php if($this->request->params['controller'] == 'class_rooms') :?>
-        <li class="treeview active">
-          <a href="#"><i class="fa fa-users" aria-hidden="true"></i><span>教室管理</span>
-            <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-          </a>
-          <ul class="treeview-menu">
-            <?php if($this->request->params['action'] == 'index') :?>
-            <li class="active"><a href="/attendance_system/admin/class_rooms/index"><i class="fa fa-user-plus"></i>教室登録</a></li>
-            <?php else :?>
-            <li><a href="/attendance_system/admin/class_rooms/index"><i class="fa fa-user-plus"></i>教室登録</a></li>
-            <?php endif ?>
-            <?php if($this->request->params['action'] == 'class_list') :?>
-            <li class="active"><a href="/attendance_system/admin/class_rooms/class_list"><i class="fa fa-list" aria-hidden="true"></i>教室一覧</a></li>
-            <?php else:?>
-            <li><a href="/attendance_system/admin/class_rooms/class_list"><i class="fa fa-list" aria-hidden="true"></i>教室一覧</a></li>
-            <?php endif ?>
-          </ul>
-        </li>
-        <?php else :?>
-        <li class="treeview">
-          <a href="#"><i class="fa fa-users" aria-hidden="true"></i><span>教室管理</span>
-            <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="/attendance_system/admin/class_rooms/index"><i class="fa fa-user-plus"></i>教室登録</a></li>
-            <li><a href="/attendance_system/admin/class_rooms/class_list"><i class="fa fa-list" aria-hidden="true"></i>教室一覧</a></li>
-          </ul>
-        </li>
-        <?php endif ?>
-
-        <!-- お知らせ -->
-        <?php if($this->request->params['controller'] == 'notifications') :?>
-        <li class="active"><a href="/attendance_system/admin/notifications/index"><i class="fa fa-bullhorn" aria-hidden="true"></i> <span>お知らせ</span></a></li>
-        <?php else :?>
-        <li><a href="/attendance_system/admin/notifications/index"><i class="fa fa-bullhorn" aria-hidden="true"></i><span>お知らせ</span></a></li>
-        <?php endif ?>
-
-        <!-- 設定 -->
-        <?php if($this->request->params['controller'] == 'settings') :?>
-        <li class="active"><a href="/attendance_system/admin/settings/index"><i class="fa fa-gears"></i><span>設定</span></a></li>
-        <?php else :?>
-        <li><a href="/attendance_system/admin/settings/index"><i class="fa fa-gears"></i><span>設定</span></a></li>
-        <?php endif ?>
-
-        <!-- お問い合わせ -->
-        <li><a href="https://reg18.smp.ne.jp/regist/is?SMPFORM=merg-pfqjo-8338ee1a270877c1bc17c92ee22257f5" target="_blank"><i class="fa fa-phone" aria-hidden="true"></i><span>お問い合わせ</span></a></li>
-      </ul>
-      <!-- /.sidebar-menu -->
-    </section>
-    <!-- /.sidebar -->
-  </aside>
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Main content -->
-    <section class="content container-fluid">
-        <?= $this->Flash->render() ?>
-        <?php echo $this->fetch('content'); ?>
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-
-  <!-- Main Footer -->
-  <footer class="main-footer">
-    <!-- To the right -->
-    <div class="pull-right hidden-xs">
-      <!-- Anything you want -->
-    </div>
-    <!-- Default to the left -->
-    <strong>Copyright &copy; 2017 <a>HAU MUN TUANG</a>.</strong> All rights reserved.
-  </footer>
+	<!-- Content Wrapper. Contains page content -->
+	<div class="content-wrapper">
+		<!-- Main content -->
+		<section class="content container-fluid">
+			<?= $this->Flash->render() ?>
+			<?php echo $this->fetch('content'); ?>
+		</section>
+		<!-- /.content -->
+	</div>
+	<!-- /.content-wrapper -->
+	<!-- Main Footer -->
+	<footer class="main-footer">
+		<!-- To the right -->
+		<div class="pull-right hidden-xs">
+			<!-- Anything you want -->
+		</div>
+		<!-- Default to the left -->
+		<strong>Copyright &copy; 2017 <a>HAU MUN TUANG</a>.</strong> All rights reserved.
+	</footer>
 </div>
 <!-- ./wrapper -->
 
@@ -213,6 +178,7 @@
 <?= $this->Html->script('../plugins/daterangepicker/daterangepicker')?>
 <!-- bootstrap time picker -->
 <?= $this->Html->script('../plugins/timepicker/bootstrap-timepicker.min')?>
+
 <!-- 日本語化 -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/locale/ja.js"></script>
@@ -221,78 +187,75 @@
 <script src="https://npmcdn.com/flatpickr/dist/l10n/ja.js"></script>
 <!-- slide button -->
 <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-
 <script>
-  $(function () {
-    //日本語にする
-    $.extend( $.fn.dataTable.defaults, { 
-      language: {
-        url: "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Japanese.json"
-      }
-    });
-    $('#example1').DataTable()
-    $('#example2').DataTable({
-      'paging'      : true,
-      'lengthChange': false,
-      'searching'   : false,
-      'ordering'    : true,
-      'info'        : true,
-      'autoWidth'   : false
-    });
-  });
-  // checkbox 複数削除したい
-  $(function(){
-    $('.checkbox').click(function(){
-    	if(this.checked)
-    	{
-    		if ($('.checkbox:checked').length > 1)
-    		{
-    			$('#off').removeAttr('disabled');
-    		}
-    	} else {
-    		if ($('.checkbox:checked').length == 1) {
-    			$('#off').attr('disabled', 'disabled');
-    		}
-    	}
-    })
-  });
-  // Date picker
-  $('#datepicker').datepicker({
-    autoclose: true,
-    language: 'ja',
-  });
+	$(function () {
+	//日本語にする
+	$.extend( $.fn.dataTable.defaults, { 
+		language: {
+			url: "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Japanese.json"
+		}
+	});
+	// warning msg off
+	$.fn.dataTable.ext.errMode = 'none';
+	$('#example1').DataTable({
+		'scrollX': true
+	});
+});
+// checkbox 複数削除したい
+$(function(){
+	$('.checkbox').click(function(){
+		if(this.checked)
+		{
+			if ($('.checkbox:checked').length > 1)
+			{
+				$('#off').removeAttr('disabled');
+			}
+		} else {
+			if ($('.checkbox:checked').length == 1) {
+				$('#off').attr('disabled', 'disabled');
+			}
+		}
+	})
+});
 
-  // Date range picker 日本語化に
-  $('#reservation').daterangepicker({
-    format:'YYYY/MM/DD',
-    showDropdowns: false,
-    opens: 'left',
-    locale: {
-      applyLabel: '選択',
-      cancelLabel: 'クリア',
-      fromLabel: '開始日',
-      toLabel: '終了日',
-      weekLabel: 'W',
-      customRangeLabel: '自分で指定',
-      daysOfWeek: moment.weekdaysMin(),
-      monthNames: moment.monthsShort(),
-      firstDay: moment.localeData()._week.dow
-    }
-  });
-  //Timepicker
-  $('.timepicker').timepicker({
-    showInputs: false,
-  });
+// Date picker
+$('#datepicker').datepicker({
+	autoclose: true,
+	language: 'ja',
+});
+
+// Date range picker 日本語化に
+$('#reservation').daterangepicker({
+	format:'YYYY/MM/DD',
+	showDropdowns: false,
+	opens: 'left',
+	locale: {
+		applyLabel: '選択',
+		cancelLabel: 'クリア',
+		fromLabel: '開始日',
+		toLabel: '終了日',
+		weekLabel: 'W',
+		customRangeLabel: '自分で指定',
+		daysOfWeek: moment.weekdaysMin(),
+		monthNames: moment.monthsShort(),
+		firstDay: moment.localeData()._week.dow
+	}
+});
+
+//Timepicker
+$('.timepicker').timepicker({
+	showInputs: false,
+});
 
 // お知らせ登録のdatetimepicker
-  $(document).ready(function(){
-    flatpickr('.datetimepicker', {
-      enableTime: true,
-      time_24hr: true,
-      dateFormat: 'Y-m-d H:i',
-      minDate: 'today',
-      locale: 'ja',
-  });
+$(document).ready(function(){
+	flatpickr('.datetimepicker', {
+		enableTime: true,
+		time_24hr: true,
+		dateFormat: 'Y-m-d H:i',
+		minDate: 'today',
+		locale: 'ja',
+	});
 });
 
 </script>

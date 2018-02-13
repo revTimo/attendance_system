@@ -12,7 +12,7 @@
 				</div>
 				<div class="form-group">
 					<label for="name">コンテンツ</label>
-					<?= $this->Form->input('content', ['type' => 'textarea', 'label' => false, 'class' => 'form-control', 'required', 'value' => $edit_notification['Notification']['content']]) ?>
+					<?= $this->Form->input('content', ['type' => 'textarea', 'label' => false, 'class' => 'form-control', 'required', 'value' => $edit_notification['Notification']['content'],  'rows' => '10', 'cols' => '80', 'id' => 'notification_editor']) ?>
 				</div>
 				<div class="form-group">
 					<label for="name">公開日</label>
@@ -24,3 +24,9 @@
 		</div>
 	</div>
 </div>
+<!-- CK Editor -->
+<?= $this->Html->script('../ckeditor/ckeditor.js')?>
+<script>
+// CK editor
+CKEDITOR.replace('notification_editor');
+</script>

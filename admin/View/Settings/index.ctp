@@ -25,12 +25,11 @@
 <script>
 if ($('input.checkbox_check').is(':checked')) {
 	$("#set_time").empty().append('<p class="text-red" id="alert_setting">現在の遅刻時間<?= $setting_info['value']?>分になっています。</p><?= $this->Form->create("Setting",["url" => "set_latetime"])?><div class="col-xs-3"><?= $this->Form->input("late_limit_time", ["label" => false, "class" => "form-control", "required", "min" => "0", "max" => "60", "value" => $setting_info['value']]) ?></div><button type="submit" class="btn btn-primary btn-sm">編集する</button><?= $this->Form->end()?>');
-	$("#toggle-two").change(function() {
+	$("#toggle-two").on("change", function() {
 		if (confirm('デフォルトの設定に戻ります。よろしいですか？') == false)
 		{
-			return;
+			return location.href='/attendance_system/admin/settings/index';
 		}
-		
 		$.ajax({
 			url : "/attendance_system/admin/settings/set_default",
 			type : "POST",
@@ -51,7 +50,7 @@ if ($('input.checkbox_check').is(':checked')) {
 			}
 		});
 	})
-}　else {
+} else {
 	$("#toggle-two").change(function() {
 		if(this.checked) {
 			$("#set_time").empty().append('<?= $this->Form->create('Setting',['url' => 'set_latetime'])?><div class="col-xs-3"><?= $this->Form->input('late_limit_time', ['label' => false, 'class' => 'form-control', 'required', 'min' => '0', 'max' => '60']) ?></div><button type="submit" class="btn btn-primary">設定する</button><?= $this->Form->end()?>');
