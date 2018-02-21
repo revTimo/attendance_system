@@ -14466,3 +14466,187 @@ Request URL: /attendance_system/admin/attendance
 Stack Trace:
 #0 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2018-02-13 21:10:06 Error: [ParseError] syntax error, unexpected ')'
+Request URL: /attendance_system/admin/attendances/detail/8
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AttendancesController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-13 21:32:57 Error: [ParseError] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /attendance_system/admin/attendances/detail/7
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AttendancesController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-16 22:04:30 Error: [Error] Call to a member function Object() on null
+Request URL: /attendance_system/admin/attendances/detail/8
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(971): include()
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AttendancesController), Object(CakeRequest))
+#6 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-02-16 22:04:52 Error: [Error] Call to a member function Object() on null
+Request URL: /attendance_system/admin/attendances/detail/8
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(971): include()
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#2 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#3 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AttendancesController), Object(CakeRequest))
+#6 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-02-17 08:46:57 Error: [ParseError] syntax error, unexpected ')'
+Request URL: /attendance_system/admin/attendances/detail/7
+Stack Trace:
+#0 [internal function]: App::load('AttendancesCont...')
+#1 [internal function]: spl_autoload_call('AttendancesCont...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('AttendancesCont...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-17 09:32:59 Error: [ParseError] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /attendance_system/admin/attendances/index
+Stack Trace:
+#0 [internal function]: App::load('AttendancesCont...')
+#1 [internal function]: spl_autoload_call('AttendancesCont...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('AttendancesCont...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-17 09:33:09 Error: [ParseError] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /attendance_system/admin/attendances/index
+Stack Trace:
+#0 [internal function]: App::load('AttendancesCont...')
+#1 [internal function]: spl_autoload_call('AttendancesCont...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('AttendancesCont...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-17 09:33:21 Error: [ParseError] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /attendance_system/admin/attendances/index
+Stack Trace:
+#0 [internal function]: App::load('AttendancesCont...')
+#1 [internal function]: spl_autoload_call('AttendancesCont...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('AttendancesCont...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-17 09:33:36 Error: [ParseError] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /attendance_system/admin/attendances/index
+Stack Trace:
+#0 [internal function]: App::load('AttendancesCont...')
+#1 [internal function]: spl_autoload_call('AttendancesCont...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('AttendancesCont...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-17 09:33:55 Error: [ParseError] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /attendance_system/admin/attendances/index
+Stack Trace:
+#0 [internal function]: App::load('AttendancesCont...')
+#1 [internal function]: spl_autoload_call('AttendancesCont...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('AttendancesCont...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-17 09:34:00 Error: [ParseError] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /attendance_system/admin/attendances/index
+Stack Trace:
+#0 [internal function]: App::load('AttendancesCont...')
+#1 [internal function]: spl_autoload_call('AttendancesCont...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('AttendancesCont...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-17 19:46:45 Error: [ParseError] syntax error, unexpected ''fields'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+Request URL: /attendance_system/admin/attendances/index
+Stack Trace:
+#0 [internal function]: App::load('AttendancesCont...')
+#1 [internal function]: spl_autoload_call('AttendancesCont...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('AttendancesCont...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-17 20:03:15 Error: [ParseError] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /attendance_system/admin/attendances/index
+Stack Trace:
+#0 [internal function]: App::load('AttendancesCont...')
+#1 [internal function]: spl_autoload_call('AttendancesCont...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('AttendancesCont...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-17 21:04:40 Error: [ParseError] syntax error, unexpected '$id' (T_VARIABLE), expecting :: (T_PAAMAYIM_NEKUDOTAYIM)
+Request URL: /attendance_system/admin/attendances/index
+Stack Trace:
+#0 [internal function]: App::load('AttendancesCont...')
+#1 [internal function]: spl_autoload_call('AttendancesCont...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('AttendancesCont...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-17 21:09:17 Error: [ParseError] syntax error, unexpected ';', expecting ']'
+Request URL: /attendance_system/admin/attendances/index
+Stack Trace:
+#0 [internal function]: App::load('AttendancesCont...')
+#1 [internal function]: spl_autoload_call('AttendancesCont...')
+#2 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(266): class_exists('AttendancesCont...')
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-17 21:33:01 Error: [ParseError] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /attendance_system/admin/attendances/detail/8
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/View/View.php(933): View->_evaluate('/home/tuang/att...', Array)
+#1 /home/tuang/attendance_system/lib/Cake/View/View.php(473): View->_render('/home/tuang/att...')
+#2 /home/tuang/attendance_system/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#3 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AttendancesController), Object(CakeRequest))
+#5 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-02-18 11:18:14 Error: [MissingActionException] Action AttendancesController::index2.html() could not be found.
+Exception Attributes: array (
+  'controller' => 'AttendancesController',
+  'action' => 'index2.html',
+)
+Request URL: /attendance_system/admin/attendances/index2.html
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AttendancesController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-02-19 11:40:02 Error: [MissingActionException] Action NotificationsController::index2.html() could not be found.
+Exception Attributes: array (
+  'controller' => 'NotificationsController',
+  'action' => 'index2.html',
+)
+Request URL: /attendance_system/admin/notifications/index2.html
+Stack Trace:
+#0 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/tuang/attendance_system/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(NotificationsController), Object(CakeRequest))
+#2 /home/tuang/attendance_system/admin/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

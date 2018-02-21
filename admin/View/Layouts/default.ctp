@@ -187,6 +187,7 @@
 <script src="https://npmcdn.com/flatpickr/dist/l10n/ja.js"></script>
 <!-- slide button -->
 <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+<script src="http://cdn.datatables.net/plug-ins/1.10.16/api/sum().js"></script>
 <script>
 	$(function () {
 	//日本語にする

@@ -66,11 +66,6 @@
 				<?php endforeach ?>
 				</p>
 			</div>
-			<div class="alert alert-danger fade in">
-				<a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-				<p><strong>重要なお知らせ!</strong></p>
-				重要なお知らせ重要なお知らせ重要なお知らせ
-			</div>
 		</div>
 		<div class="col-sm-7">
 			<?= $this->Flash->render() ?>
@@ -82,7 +77,7 @@
 			<div class="thumbnail">
 				<span class="label label-danger">お知らせ</span>
 				<p><strong><?= $show_side_notifications['Notification']['title'] ?></strong></p>
-				<p><?= mb_substr($show_side_notifications['Notification']['content'], 0, 20) ?>..</p>
+				<p><?= htmlspecialchars_decode(mb_substr($show_side_notifications['Notification']['content'], 0, 20)) ?>..</p>
 				<a href="/attendance_system/student/StudentUsers/notification_detail/<?= $show_side_notifications['Notification']['id']?>">詳細</a>
 			</div>
 			<?php endforeach ?>

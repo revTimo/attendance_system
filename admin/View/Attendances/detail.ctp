@@ -24,6 +24,7 @@
 						<?php foreach($allAttendance['date'] as $semester_date) :?>
 							<tr>
 								<td><?= $semester_date['day'] ?></td>
+
 								<?php if(empty($studentAttend)) :?>
 									<?php foreach($allAttendance['student'] as $student) :?>
 										<td></td>
@@ -32,7 +33,6 @@
 								<?php foreach($studentAttend as $show_status) :?>
 									<?php if($semester_date == $show_status['date']) :?>
 										<?php foreach($allAttendance['student'] as $student) :?>
-											<?php if($student['id'] == $show_status['student_id']) :?>
 												<?php if ($show_status['status'] == 0) :?>
 													<td><span><i class="fa fa-times" aria-hidden="true"></i></span></td>
 												<?php endif ?>
@@ -42,10 +42,7 @@
 												<?php if ($show_status['status'] == 2) :?>
 													<td><span><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></span></td>
 												<?php endif ?>
-											<?php endif ?>
 										<?php endforeach ?>
-									<?php else :?>
-										<td></td>
 									<?php endif ?>
 								<?php endforeach ?>
 							</tr>

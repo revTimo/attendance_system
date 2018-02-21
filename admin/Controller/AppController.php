@@ -39,6 +39,12 @@ define ('MEMBER',0);
 define ('SET_LATE', 1);
 // 遅刻時間をリセット
 define ('UNSET_LATE', 0);
+// 出席
+define("ATTEND", 1);
+// 遅れ
+define("LATE", 2);
+// 欠席
+define("ABSENCE", 0);
 
 class AppController extends Controller {
 

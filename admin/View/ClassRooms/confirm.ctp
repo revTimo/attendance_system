@@ -78,7 +78,7 @@
 					<a class="users-list-name" href="#"><?=$student['name']?></a>
 					<span class="users-list-date"><?=$student['major']['Major']['name']?></span>
 					<?= $this->Form->input("ClassRoom.students_id.$key", ['type' => 'hidden', 'value' => $student['id'], 'id' => $student['id']]) ?>
-					<a onclick="remove_student(<?=$key?>)">get out</a>
+					<a onclick="remove_student(<?=$key?>)">削除</a>
 				</li>
 				<?php endforeach ?>
 			</ul>

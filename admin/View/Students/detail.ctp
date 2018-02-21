@@ -13,7 +13,7 @@
           <b>成績</b> <a class="pull-right">B</a>
         </li>
         <li class="list-group-item">
-          <b>全体の評価</b> <a class="pull-right">B</a>
+          <b>評価</b> <a class="pull-right">B</a>
         </li>
       </ul>
       <!-- <a href="#" class="btn btn-danger btn-block"><b>連絡!</b></a> -->

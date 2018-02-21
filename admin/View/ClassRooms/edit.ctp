@@ -20,6 +20,7 @@
 				<?= $this->Form->input('subject_id', [
 					'label' => false,
 					'class' => 'select2 col-md-12',
+					'id' => "changeSubject",
 					'required',
 					'options' => ['no_subject_id'=>'専攻を選択してください',$all_subject],
 					'selected' => $data['subject_id'],
@@ -112,7 +113,7 @@
 <script>
 $(".ninnn").text($(".std_list li").length+" 人");
 
-$(".select2").change(function(){
+$("#changeSubject").change(function(){
 	$.ajax({
 		url : "/attendance_system/admin/class_rooms/call_student",
 		type : "POST",
